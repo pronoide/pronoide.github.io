@@ -1,0 +1,68 @@
+body {
+}
+
+h1 {
+  color: #E04000;
+}
+
+img {
+    max-width: 100%;
+}
+
+.team, .categoria {
+  color: #325578;
+  font-size: 1.4em;
+}
+
+.container {
+  width: 100%;
+  padding-left: 2em;
+  padding-right: 2em;
+}
+
+section.container {
+  padding-top: 4em;
+  padding-bottom: 1em;
+}
+
+#que-hacemos {
+  padding-top: 5em;
+}
+
+section:nth-child(even) {
+  background-color: rgba(112, 144, 160, 0.2);
+  background-size: cover;
+}
+
+.navbar {
+  box-shadow: 0px -3px 0px rgba(50, 50, 50, 0.2) inset;
+}
+
+.navbar .nav > .active > a {
+  box-shadow: 0px -3px 0px rgba(50, 50, 50, 0.6) inset;
+}
+
+.img-rounded {
+  display: inline-block;
+  border-radius: 50%;
+  overflow: hidden;
+  border: 2px solid #325578;
+}
+
+.fixed{
+    position: fixed;
+    bottom: -20px;
+    height: 50px
+}
+
+footer{
+  padding-top: 5px;
+  color: #fff;
+  position: static;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  background-color: #7090A0;
+  border: 0px;
+  box-shadow: 0px 3px 0px rgba(50, 50, 50, 0.2) inset;
+}
