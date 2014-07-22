@@ -5,13 +5,22 @@ h1 {
   color: #E04000;
 }
 
+h2 {
+  display: inline-block;
+  color: #325578;
+  font-size: 1.6em;
+  font-weight: 500;
+}
+
 img {
     max-width: 100%;
 }
 
-.team, .categoria {
+blockquote {
   color: #325578;
-  font-size: 1.4em;
+  font-size: 1.6em;
+  font-weight: 500;
+  font-style: italic;
 }
 
 .container {
@@ -42,27 +51,37 @@ section:nth-child(even) {
   box-shadow: 0px -3px 0px rgba(50, 50, 50, 0.6) inset;
 }
 
+.img-border-radius {
+  display: inline-block;
+  border-radius: 20px;
+  overflow: hidden;
+  border: 1px solid #325578;
+  max-width: 100%;
+}
+
 .img-rounded {
   display: inline-block;
   border-radius: 50%;
   overflow: hidden;
-  border: 2px solid #325578;
+  border: 1px solid #325578;
 }
 
-.fixed{
-    position: fixed;
-    bottom: -20px;
-    height: 50px
-}
-
-footer{
+footer {
+  font-size: 1.3em;
   padding-top: 5px;
   color: #fff;
-  position: static;
-  left: 0;
   width: 100%;
   text-align: center;
   background-color: #7090A0;
+  min-height: 90px;
   border: 0px;
   box-shadow: 0px 3px 0px rgba(50, 50, 50, 0.2) inset;
+}
+
+footer a {
+  color: #fff;
+}
+
+footer a:hover {
+  text-decoration: none;
 }

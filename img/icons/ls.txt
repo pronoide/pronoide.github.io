@@ -1,0 +1,241 @@
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 text-center">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h2>Java (JSE y JEE)</h2>
+            </div>
+            <div class="panel-body">
+              <img src="img/icons/128/java.jpg" alt="Java (JSE y JEE)">
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 text-center">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h2>Spring</h2>
+            </div>
+            <div class="panel-body">
+              <img src="img/icons/128/spring.jpg" alt="Spring">
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 text-center">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h2>Persistencia de datos</h2>
+            </div>
+            <div class="panel-body">
+              <img src="img/icons/128/persistence.jpg" alt="Persistencia de datos">
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 text-center">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h2>.Net</h2>
+            </div>
+            <div class="panel-body">
+              <img src="img/icons/128/microsoft.net.jpg" alt=".Net">
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 text-center">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h2>Desarrollo rápido</h2>
+            </div>
+            <div class="panel-body">
+              <img src="img/icons/128/train.jpg" alt="Desarrollo rápido">
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 text-center">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h2>Buenas prácticas</h2>
+            </div>
+            <div class="panel-body">
+              <img src="img/icons/128/development.jpg" alt="Buenas prácticas">
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 text-center">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h2>Desarrollo web</h2>
+            </div>
+            <div class="panel-body">
+              <img src="img/icons/128/web.jpg" alt="Desarrollo web">
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 text-center">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h2>Android</h2>
+            </div>
+            <div class="panel-body">
+              <img src="img/icons/128/android.jpg" alt="Android">
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 text-center">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h2>iPhone</h2>
+            </div>
+            <div class="panel-body">
+              <img src="img/icons/128/iphone.jpg" alt="iPhone">
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 text-center">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h2>Windows</h2>
+            </div>
+            <div class="panel-body">
+              <img src="img/icons/128/windows.jpg" alt="Windows">
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 text-center">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h2>Middleware</h2>
+            </div>
+            <div class="panel-body">
+              <img src="img/icons/128/puzzle.jpg" alt="Middleware">
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 text-center">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h2>Cloud</h2>
+            </div>
+            <div class="panel-body">
+              <img src="img/icons/128/cloud.jpg" alt="Cloud">
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 text-center">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h2>NoSQL</h2>
+            </div>
+            <div class="panel-body">
+              <img src="img/icons/128/no-sql.jpg" alt="NoSQL">
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 text-center">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h2>Herramientas y DevOps</h2>
+            </div>
+            <div class="panel-body">
+              <img src="img/icons/128/tools.jpg" alt="Herramientas y DevOps">
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 text-center">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h2>Últimas tendencias</h2>
+            </div>
+            <div class="panel-body">
+              <img src="img/icons/128/trend.jpg" alt="Últimas tendencias">
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 text-center">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h2>Gestión de proyectos</h2>
+            </div>
+            <div class="panel-body">
+              <img src="img/icons/128/dossier.jpg" alt="Gestión de proyectos">
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 text-center">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h2>Análisis y diseño</h2>
+            </div>
+            <div class="panel-body">
+              <img src="img/icons/128/design.jpg" alt="Análisis y diseño">
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 text-center">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h2>Generación de informes</h2>
+            </div>
+            <div class="panel-body">
+              <img src="img/icons/128/report.jpg" alt="Generación de informes">
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 text-center">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h2>Proyectos pilotos</h2>
+            </div>
+            <div class="panel-body">
+              <img src="img/icons/128/test-tube.jpg" alt="Proyectos pilotos">
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 text-center">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h2>Servidores de aplicaciones</h2>
+            </div>
+            <div class="panel-body">
+              <img src="img/icons/128/server.jpg" alt="Servidores de aplicaciones">
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 text-center">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h2>Gestores de contenidos</h2>
+            </div>
+            <div class="panel-body">
+              <img src="img/icons/128/wordpress.jpg" alt="Gestores de contenidos">
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 text-center">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h2>Administración de portales</h2>
+            </div>
+            <div class="panel-body">
+              <img src="img/icons/128/portlets.jpg" alt="Administración de portales">
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 text-center">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h2>Bases de Datos</h2>
+            </div>
+            <div class="panel-body">
+              <img src="img/icons/128/database.jpg" alt="Bases de Datos">
+            </div>
+          </div>
+        </div>
+        <div class="col-xs-12 col-sm-6 col-md-4 col-lg-3 text-center">
+          <div class="panel panel-default">
+            <div class="panel-heading">
+              <h2>Linux y virtualización</h2>
+            </div>
+            <div class="panel-body">
+              <img src="img/icons/128/linux.jpg" alt="Linux y virtualización">
+            </div>
+          </div>
+        </div>
+
