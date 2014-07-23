@@ -66,10 +66,6 @@ section:nth-child(even) {
   border: 1px solid #325578;
 }
 
-.img-desplazada{
-  padding-left: 5px; 
-}
-
 footer {
   font-size: 1.3em;
   padding-top: 5px;
