@@ -67,8 +67,7 @@ section:nth-child(even) {
 }
 
 .img-desplazada{
-  position: relative;
-  left: 3em;
+  padding:15px; 
 }
 
 footer {
