@@ -518,7 +518,7 @@
             var selectedSection = $(this).attr('href');
             var posY = $(selectedSection).offset().top;
             $('html, body')
-              .animate({ scrollTop: posY}, {duration:speed, easing: 'easeInOutQuint'});
+              .animate({ scrollTop: posY}, {duration:speed, easing: 'easeOutQuint'});
             e.preventDefault();
         }
 
