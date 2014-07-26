@@ -1,0 +1,18 @@
+# humanstxt.org/
+# The humans responsible & Technology colophon
+
+# The humans responsible
+
+    Fernando Redondo Ramírez    -- @pronoide_fer
+    Luis Ramón Álvarez González -- @lralvarez
+    Óliver Centeno Álvarez      -- @olivercenteno
+    Rubén Gómez García          -- @rubgomez
+    Víctor Herrero Cazurro      -- @VictorHerrero1
+    Fernando Silvano Gil Pérez  -- @fsgilp
+    Adolfo Sanz de Diego        -- @asanzdiego
+
+# Technology colophon
+
+    Language: Spanish, English
+    Technologies: Bootstrap, Less
+    Tools: Brackets.io, Inkscape, GIMP, Phatch
