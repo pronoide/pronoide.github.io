@@ -3,6 +3,10 @@ h2 {
   color: #E04000;
 }
 
+h2:after {
+  content: ":";
+}
+
 h3 {
   font-size: 1.5em;
 }
@@ -30,10 +34,6 @@ section.container {
 
 #descripcion h2 {
   display: inline-block;
-}
-
-#descripcion h2:after {
-  content: ":";
 }
 
 #descripcion h3 {
