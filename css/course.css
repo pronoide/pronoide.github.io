@@ -9,8 +9,6 @@ h3 {
 
 h4 {
   font-size: 1.3em;
-  display: list-item;
-  margin-left: 1em;
 }
 
 #title {
@@ -26,6 +24,10 @@ section.container {
   padding-left: 1em;
 }
 
+#descripcion img {
+  padding-top: 1em;
+}
+
 #descripcion h2 {
   display: inline-block;
 }
@@ -38,8 +40,28 @@ section.container {
   display: inline;
 }
 
+#contenidos h2 {
+  counter-reset: tema;
+}
+
 #contenidos h3 {
   color: #325578;
+  counter-reset: subtema;
+  counter-increment: tema;
+}
+
+#contenidos h4 {
+  display: list-item;
+  margin-left: 1em;
+  counter-increment: subtema;
+}
+
+#contenidos h3:before {
+  content: counter(tema) ". ";
+}
+
+#contenidos h4:before {
+  content: counter(tema) "." counter(subtema) ". ";
 }
 
 #recursos h3 {
