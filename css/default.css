@@ -1,18 +1,10 @@
-body {
-}
-
 h1 {
   color: #E04000;
 }
 
 h2 {
-  color: #325578;
   font-size: 1.4em;
   font-weight: 500;
-}
-
-#panel-heading > h2 {
-  display: inline-block;
 }
 
 img {
@@ -30,15 +22,6 @@ blockquote {
   width: 100%;
   padding-left: 2em;
   padding-right: 2em;
-}
-
-section.container {
-  padding-top: 4em;
-  padding-bottom: 1em;
-}
-
-#que-hacemos {
-  padding-top: 5em;
 }
 
 section:nth-child(even) {

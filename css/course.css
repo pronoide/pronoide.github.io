@@ -1,0 +1,53 @@
+h2 {
+  font-size: 1.7em;
+  color: #E04000;
+}
+
+h3 {
+  font-size: 1.5em;
+}
+
+h4 {
+  font-size: 1.3em;
+  display: list-item;
+  margin-left: 1em;
+}
+
+#title {
+  padding-top: 4em;
+}
+
+section.container {
+  padding-top: 1em;
+  padding-bottom: 2em;
+}
+
+#descripcion .row {
+  padding-left: 1em;
+}
+
+#descripcion h2 {
+  display: inline-block;
+}
+
+#descripcion h2:after {
+  content: ":";
+}
+
+#descripcion h3 {
+  display: inline;
+}
+
+#contenidos h3 {
+  color: #325578;
+}
+
+#recursos h3 {
+  font-size: 1.1em;
+  display: list-item;
+  margin-left: 1em;
+}
+
+#recursos a {
+  font-size: 1.3em;
+}
