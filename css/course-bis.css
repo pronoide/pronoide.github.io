@@ -69,15 +69,3 @@ section.container {
 #recursos a {
   font-size: 1.3em;
 }
-
-@media (min-width: 768px) {
-  #contenidos .panel {
-    min-height: 550px;
-  }
-}
-
-@media (min-width: 1170px) {
-  #contenidos .panel {
-    min-height: 450px;
-  }
-}
