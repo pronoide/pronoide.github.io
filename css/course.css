@@ -51,8 +51,6 @@ section.container {
 }
 
 #contenidos h4 {
-  display: list-item;
-  margin-left: 1em;
   counter-increment: subtema;
 }
 
@@ -66,8 +64,6 @@ section.container {
 
 #recursos h3 {
   font-size: 1.1em;
-  display: list-item;
-  margin-left: 1em;
 }
 
 #recursos a {
