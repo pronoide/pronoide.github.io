@@ -7,6 +7,10 @@ h2 {
   font-weight: 500;
 }
 
+section a {
+  text-decoration: underline;
+}
+
 img {
     max-width: 100%;
 }
