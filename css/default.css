@@ -75,3 +75,11 @@ footer a {
 footer a:hover {
   text-decoration: none;
 }
+
+@media all and (min-width: 768px) {
+
+  .fixed{
+    position: fixed;
+    bottom: -35px;
+  }
+}
