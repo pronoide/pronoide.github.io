@@ -10,6 +10,7 @@
     Víctor Herrero Cazurro      -- @VictorHerrero1
     Fernando Silvano Gil Pérez  -- @fsgilp
     Adolfo Sanz de Diego        -- @asanzdiego
+    Félix De Pablo Lobo         -- @fdepablol
 
 # Technology colophon
 
