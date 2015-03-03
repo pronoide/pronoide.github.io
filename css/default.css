@@ -28,7 +28,7 @@ blockquote {
   padding-right: 2em;
 }
 
-section:nth-child(even) {
+section.dark {
   background-color: rgba(112, 144, 160, 0.2);
   background-size: cover;
 }
