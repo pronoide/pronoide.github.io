@@ -1,0 +1,24 @@
+h2 {
+  padding-top: 0em;
+  color: #325578;
+}
+
+section.container {
+  padding-top: 1em;
+  padding-bottom: 1em;
+}
+section.container li {
+  font-size: 1.2em
+}
+
+#perfiles {
+  padding-top: 5em;
+}
+
+#que-buscamos {
+  padding-bottom: 5em;
+}
+
+.panel {
+  margin-top: 2em;
+}
