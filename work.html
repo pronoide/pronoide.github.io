@@ -10,7 +10,7 @@
 
     <link rel="icon" href="img/logo/pronoide-3-125.png">
 
-    <title> Oferta de trabajo | Pronide</title>
+    <title>Oferta de trabajo | Pronide</title>
 
     <!-- CSS -->
     <link href="lib/bootstrap-3.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
@@ -63,10 +63,10 @@
 	      <div class="text-center col-xs-12 col-sm-6 col-md-3 col-lg-3">
 	          <div class="panel panel-default">
 	            <div class="panel-heading">
-	              <h2>Formador técnico desarrollo <br /> Java</h2>
+	              <h2>Formador técnico<br />Java</h2>
 	            </div>
 	            <div class="panel-body">
-	               <p>Java EE, Spring, Hibernate, JSF, <br/> Groovy, Maven, Gradle, etc.</p>
+	               <p>Java EE, Spring, Hibernate, JSF,<br/>Groovy, Maven, Gradle, etc.</p>
 	            </div>
 	            <div class="panel-footer">
 	              <img src="img/icons/48/java-bis.png" alt="Java EE" />
@@ -78,10 +78,10 @@
 	      <div class="text-center col-xs-12 col-sm-6 col-md-3 col-lg-3">
 	          <div class="panel panel-default">
 	            <div class="panel-heading">
-	              <h2>Formador técnico desarrollo <br /> JavaScript</h2>
+	              <h2>Formador técnico<br />JavaScript</h2>
 	            </div>
 	            <div class="panel-body">
-	               <p>JS, Angular, Backbone, Extjs, <br/> Less/Sass, Grunt, HTML5/CSS3, etc.</p>
+	               <p>JS, Angular, Backbone, Extjs,<br/>Less/Sass, Grunt, HTML5/CSS3, etc.</p>
 	            </div>
 	            <div class="panel-footer">
 	              <img src="img/icons/48/js.png" alt="Javascript" />
@@ -93,10 +93,10 @@
 	      <div class="text-center col-xs-12 col-sm-6 col-md-3 col-lg-3">
 	          <div class="panel panel-default">
 	            <div class="panel-heading">
-	              <h2>Formador técnico <br /> Devops y NoSQL </h2>
+	              <h2>Formador técnico<br />Devops y NoSQL </h2>
 	            </div>
 	            <div class="panel-body">
-	               <p>Linux, Servidores Aplicaciones, <br/> Mongo, Cassandra, etc </p>
+	               <p>Linux, Servidores Aplicaciones,<br/>Mongo, Cassandra, etc </p>
 	            </div>
 	            <div class="panel-footer">
 	              <img src="img/icons/48/linux.png" alt="Linux" />
@@ -108,10 +108,10 @@
 	      <div class="text-center col-xs-12 col-sm-6 col-md-3 col-lg-3">
 	          <div class="panel panel-default">
 	            <div class="panel-heading">
-	              <h2>Formador técnico desarrollo <br /> aplicaciones móviles</h2>
+	              <h2>Formador técnico<br />aplicaciones móviles</h2>
 	            </div>
 	            <div class="panel-body">
-	               <p>iOS, Android, <br/> Cordova, Phonegap, etc.</p>
+	               <p>iOS, Android,<br/>Cordova, Phonegap, etc.</p>
 	            </div>
 	            <div class="panel-footer">
 	              <img src="img/icons/48/android.png" alt="Android" />
@@ -125,14 +125,7 @@
     
     <!-- que-ofrecemos -->
     <section id="que-ofrecemos" class="container">
-          <h1>¿Qué Ofrecemos?</h1>
-<!--           <p>
-			-	Posibilidad de aprender constantemente nuevas tecnologías. <br />
-			-	Buen ambiente y entorno colaborativo <br />
-			-	Horario de trabajo presencial para impartir los cursos, resto del tiempo auto gestionable desde tu propia casa. <br />
-			-	Muchas vacaciones, puentes y semanas lentas (ritmo de trabajo de baja intensidad). <br />
-			-	Contrato de trabajo indefinido y salario de 30000 €</p> -->
-			
+          <h1>¿Qué ofrecemos?</h1>
 		<ul>
 		<li>Posibilidad de aprender constantemente nuevas tecnologías. </li>
 		<li>Buen ambiente y entorno colaborativo. </li>
@@ -172,43 +165,6 @@
     <!-- Placed at the end of the document so the pages load faster -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="lib/bootstrap-3.2.0/dist/js/bootstrap.min.js"></script>
-    <script src="lib/jquery.easing.1.3/jquery.easing.1.3.js" type="text/javascript" ></script>
 
-    <script>
-    $(document).ready(function(){
-  
-        var scrollValue, speed = 2000;
-
-        // hide menu after click on mobile
-        $('.navbar .nav > li > a').click(function(){
-
-            $('.navbar-collapse.in')
-              .removeClass('in').addClass('collapse').css('height', '0');
-        });
-
-        // go to section
-        $('.navbar .nav > li > a').on('click', goSection);
-
-        function goSection(e){
-            var selectedSection = $(this).attr('href');
-            var posY = $(selectedSection).offset().top;
-            $('html, body')
-              .animate({ scrollTop: posY}, {duration:speed, easing: 'easeOutSine'});
-            e.preventDefault();
-        }
-
-        $(document).on('scroll', parallax);
-
-        function parallax() {
-            scrollValue = $('html').scrollTop() || $('body').scrollTop();
-            $('section').each(function (){
-                $(this).css(
-                  { backgroundPosition: 
-                   'center '+((scrollValue-$(this).offset().top) * .9)+'px' });
-            });
-        }
-
-    });
-    </script>
   </body>
 </html>
