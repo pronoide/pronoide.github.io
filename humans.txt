@@ -11,6 +11,9 @@
     Fernando Silvano Gil Pérez  -- @fsgilp
     Adolfo Sanz de Diego        -- @asanzdiego
     Félix De Pablo Lobo         -- @fdepablol
+    Javier Gómez Santos         -- @Javi_Pronoide
+    Nuria Lacón Blasco          -- @NuriaLacon
+    Isabel Pastor Villa
 
 # Technology colophon
 
