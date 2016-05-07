@@ -1,3 +1,7 @@
+body {
+  font-size: 1.6em;
+}
+
 h1 {
   color: #E04000;
 }
@@ -7,6 +11,9 @@ h2 {
   font-weight: 500;
 }
 
+p {
+  font-size: 1.2em;
+}
 section a {
   text-decoration: underline;
 }
