@@ -33,3 +33,7 @@ a.work {
 a.work:hover {
   color: #325578 !important;
 }
+
+li {
+  font-size: 1.2em;
+}
