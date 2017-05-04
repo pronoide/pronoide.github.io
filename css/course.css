@@ -1,5 +1,5 @@
 h2 {
-  font-size: 1.7em;
+  font-size: 1.6em;
   color: #E04000;
 }
 
@@ -8,11 +8,11 @@ h2:after {
 }
 
 h3 {
-  font-size: 1.5em;
+  font-size: 1.4em;
 }
 
 h4 {
-  font-size: 1.3em;
+  font-size: 1.1em;
 }
 
 #title {
@@ -22,10 +22,7 @@ h4 {
 section.container {
   padding-top: 1em;
   padding-bottom: 2em;
-}
-
-#descripcion .row {
-  padding-left: 1em;
+  padding-left: 4em;
 }
 
 #descripcion img {
@@ -55,15 +52,11 @@ section.container {
 }
 
 #contenidos h3:before {
-  content: counter(tema) ". ";
+  /*content: counter(tema) ". ";*/
 }
 
 #contenidos h4:before {
   content: counter(tema) "." counter(subtema) ". ";
-}
-
-#recursos h3 {
-  font-size: 1.1em;
 }
 
 #recursos a {
