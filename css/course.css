@@ -23,15 +23,15 @@ section.container {
   padding-left: 4em;
 }
 
-#descripcion img {
+img {
   padding-top: 1em;
 }
 
-#descripcion h2 {
+container h2 {
   display: inline-block;
 }
 
-#descripcion h3 {
+container h3 {
   display: inline;
 }
 
@@ -57,8 +57,10 @@ section.container {
   content: counter(tema) "." counter(subtema) ". ";
 }
 
-#recursos a {
+a {
   font-size: 1em;
+  /*font-weight: bold;*/
+  color: #7090A0;
 }
 
 @media (min-width: 768px) {
