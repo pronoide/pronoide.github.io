@@ -23,18 +23,6 @@ section.container {
   padding-left: 4em;
 }
 
-img {
-  padding-top: 1em;
-}
-
-container h2 {
-  display: inline-block;
-}
-
-container h3 {
-  display: inline;
-}
-
 #contenidos h2 {
   counter-reset: tema;
 }
