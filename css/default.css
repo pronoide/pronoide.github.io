@@ -11,6 +11,22 @@ h2 {
   font-weight: 500;
 }
 
+a {
+  color: #e04000;
+}
+
+a:hover {
+  color: #325578;
+}
+
+.panel a {
+  color: #325578;
+}
+
+.panel a:hover {
+  color: #e04000;
+}
+
 p {
   font-size: 1.2em;
 }

@@ -45,12 +45,6 @@ section.container {
   content: counter(tema) "." counter(subtema) ". ";
 }
 
-a {
-  font-size: 1em;
-  /*font-weight: bold;*/
-  color: #7090A0;
-}
-
 @media (min-width: 768px) {
   #contenidos .panel {
     min-height: 550px;

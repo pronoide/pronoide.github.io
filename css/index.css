@@ -26,14 +26,6 @@ section.container {
           box-shadow: none;
 }
 
-a.work {
-  color: #e04000 !important;
-}
-
-a.work:hover {
-  color: #325578 !important;
-}
-
 li {
   font-size: 1.2em;
 }
