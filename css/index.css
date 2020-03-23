@@ -3,8 +3,12 @@ h2,h3 {
 }
 h3 {
 	font-style: italic;
-	font-size:1.15em;
+  font-size:1.15em;
 }
+
+h4 {
+  color: #E04000;
+} 
 
 #que-hacemos, #what-we-do {
   padding-top: 5em;
@@ -28,4 +32,24 @@ section.container {
 
 li {
   font-size: 1.2em;
+}
+
+
+.banner-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.service {
+  height: 20em;
+
+}
+
+.img-slider {
+  width: 100%;
+}
+
+.banner {
+  height: 350px;
 }
