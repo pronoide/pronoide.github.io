@@ -52,4 +52,9 @@ li {
 
 .banner {
   height: 350px;
+  width: 400px;
+}
+
+.course {
+  widows: 21.87rem;
 }
