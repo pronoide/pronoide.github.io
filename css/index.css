@@ -34,27 +34,30 @@ li {
   font-size: 1.2em;
 }
 
-
 .banner-container {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
 
-.service {
+/* .service {
   height: 20em;
 
-}
+}*/
 
-.img-slider {
-  width: 100%;
-}
 
 .banner {
-  height: 350px;
+  height: 400px;
   width: 400px;
 }
 
+
+.course .panel-body a img {
+  width: 100%;
+}
+
+/*
 .course {
   widows: 21.87rem;
-}
+} 
+*/
