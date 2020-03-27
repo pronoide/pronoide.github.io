@@ -45,19 +45,51 @@ li {
 
 }*/
 
-
-.banner {
-  height: 400px;
+/* .banner {
+  height: 350px;
   width: 400px;
-}
+}  */
 
 
 .course .panel-body a img {
   width: 100%;
 }
 
+.profe .panel-body a img {
+  width: 100%;
+}
 /*
 .course {
   widows: 21.87rem;
 } 
 */
+
+.prev, .next, .prev:hover, .next:hover {
+  text-decoration: none;
+
+}
+
+
+
+@media (max-width: 48.625rem) {
+  .panel-curso, .panel-curso {
+    width: 290px;
+  }
+
+  .slideshow-container {
+    margin: 0 20px 0 20px;
+
+  }
+}
+
+@media (min-width: 48.635rem) {
+  .banner {
+    height: 350px;
+    width: 400px;
+  } 
+  .prev, .next, .prev:hover, .next:hover {
+    font-size: 30px;
+    text-decoration: none;
+  
+  }
+}
