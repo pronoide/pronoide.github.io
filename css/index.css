@@ -19,6 +19,10 @@ section.container {
   padding-bottom: 1em;
 }
 
+.logo {
+  display: flex;
+}
+
 .panel {
   margin-top: 2em;
 }
