@@ -1,6 +1,6 @@
 //carousel
 var phoneDevice = false;
-const INTERVALO = 3000;
+const INTERVALO = 6000;
 
 const sliderCourse = new Slider('myCourse');
 const sliderProf = new Slider('myProf');
