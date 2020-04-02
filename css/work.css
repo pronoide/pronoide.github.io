@@ -18,3 +18,9 @@ section.container li {
 .panel {
   margin-top: 2em;
 }
+
+.logo  {
+  display: flex;
+  margin: 2px;
+  
+}
