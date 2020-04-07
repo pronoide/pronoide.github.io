@@ -90,8 +90,7 @@ li {
 
 @media (min-width: 48.635rem) {
   .banner {
-    height: 350px;
-    width: 400px;
+    height: 400px;
   } 
   .prev, .next, .prev:hover, .next:hover {
     font-size: 30px;
