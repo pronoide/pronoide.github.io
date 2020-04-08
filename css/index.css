@@ -92,6 +92,12 @@ li {
   .banner {
     height: 400px;
   } 
+
+  .profes {
+    height: 400px;
+    width: 400px;
+  }
+
   .prev, .next, .prev:hover, .next:hover {
     font-size: 30px;
     text-decoration: none;
