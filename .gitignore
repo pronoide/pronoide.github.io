@@ -1,2 +1,4 @@
 lib/bootstrap-3.2.0-dev/
 .idea
+.DS_Store
+/node_modules
