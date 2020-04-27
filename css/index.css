@@ -70,6 +70,10 @@ li {
 }
 */
 
+.panel-curso > a, .panel-profe > a {
+  text-decoration: none;
+}
+
 .prev, .next, .prev:hover, .next:hover {
   text-decoration: none;
 }
