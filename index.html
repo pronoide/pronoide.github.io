@@ -33,6 +33,15 @@
       <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
       <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
     <![endif]-->
+
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script defer src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script defer src="lib/bootstrap-3.2.0/dist/js/bootstrap.min.js"></script>
+    <script defer src="lib/jquery.easing.1.3/jquery.easing.1.3.min.js" type="text/javascript" ></script>
+
+    <script defer src="js/carrusel.js"></script>
   </head>
 
   <body data-spy="scroll" data-target=".navbar">
@@ -78,14 +87,14 @@
   <h1>¿Qué formación impartimos?</h1>
   <!--banner cursos-->
   <p>Cursos más demandados</p>
+
   <div class="banner-container">
-    <a class="prev" onclick="plusSlides(-1, 'myCourse')">&#10094;</a>
-      <div class="slideshow-container center">
+    <button type="button" class="prev prev-course btn btn-prev-panel-curso">&#10094;</button>
+      <div>
       <!--Devops, Docker, Kubernetes, Python, Elasticsearch, Big Data, Spark y Hadoop, Machine Learning, AWS, Azure, Openshift. Y Spring boot / cloud y scrum-->
         <!--Diapositiva 1-->
-        <div class="row myCourse filaCurso">
+        <div class="panel-curso col-xs-12 col-sm-6 col-md-4 col-lg-3 text-center">
           <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/64290892/DCH-020+Docker">
-          <div class="panel-curso col-xs-12 col-sm-6 col-md-4 col-lg-3 text-center">
             <div class="panel panel-default course">
               <div class="panel-body">
                 <h2>Curso</h2>
@@ -94,49 +103,50 @@
                 <h3>Más de 50 cursos impartidos</h3>
               </div>
             </div>
-          </div>
           </a>
+        </div>
+
+        <div class="panel-curso col-xs-12 col-sm-6 col-md-4 col-lg-3 text-center">
           <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/681050134/DCH-060+Kubernetes">
-            <div class="panel-curso col-xs-12 col-sm-6 col-md-4 col-lg-3 text-center">
-              <div class="panel panel-default course">
-                <div class="panel-body">
-                  <h2>Curso</h2>
-                  <img src="img/banner/cursos/kubernetes.png" alt="Curso de Kubernetes" />
-                  <h2 style="color: #E04000;">Kubernetes</h2>
-                  <h3>Más de 30 cursos impartidos</h3>
-                </div>
+            <div class="panel panel-default course">
+              <div class="panel-body">
+                <h2>Curso</h2>
+                <img src="img/banner/cursos/kubernetes.png" alt="Curso de Kubernetes" />
+                <h2 style="color: #E04000;">Kubernetes</h2>
+                <h3>Más de 30 cursos impartidos</h3>
               </div>
             </div>
           </a>
+        </div>
+
+        <div class="panel-curso col-xs-12 col-sm-6 col-md-4 col-lg-3 text-center">
           <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/1057325088/DCH-130+OpenShift">
-            <div class="panel-curso col-xs-12 col-sm-6 col-md-4 col-lg-3 text-center">
-              <div class="panel panel-default course">
-                <div class="panel-body">
-                  <h2>Curso</h2>
-                  <img src="img/banner/cursos/openshift.png" alt="Curso de Openshift" />
-                  <h2 style="color: #E04000;">Openshift</h2>
-                  <h3>Más de 20 cursos impartidos</h3>
-                </div>
+            <div class="panel panel-default course">
+              <div class="panel-body">
+                <h2>Curso</h2>
+                <img src="img/banner/cursos/openshift.png" alt="Curso de Openshift" />
+                <h2 style="color: #E04000;">Openshift</h2>
+                <h3>Más de 20 cursos impartidos</h3>
               </div>
             </div>
           </a>
-            <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/775749655/DCH-100+Conceptos+b+sicos+de+Azure">
-            <div class="panel-curso col-xs-12 col-sm-6 col-md-4 col-lg-3 text-center">
-              <div class="panel panel-default course">
-                <div class="panel-body">
-                  <h2>Curso</h2>
-                  <img src="img/banner/cursos/azure.png" alt="Curso de Azure" />
-                  <h2 style="color: #E04000;">Azure</h2>
-                  <h3>Más de 20 cursos impartidos</h3>
-                </div>
+        </div>
+
+        <div class="panel-curso col-xs-12 col-sm-6 col-md-4 col-lg-3 text-center">
+          <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/775749655/DCH-100+Conceptos+b+sicos+de+Azure">
+            <div class="panel panel-default course">
+              <div class="panel-body">
+                <h2>Curso</h2>
+                <img src="img/banner/cursos/azure.png" alt="Curso de Azure" />
+                <h2 style="color: #E04000;">Azure</h2>
+                <h3>Más de 20 cursos impartidos</h3>
               </div>
             </div>
-            </a>
-        </div><!--cierre diapositiva 1-->
-        <!--Diapositiva 2-->
-        <div class="row myCourse filaCurso">
+          </a>
+        </div>
+
+        <div class="panel-curso col-xs-12 col-sm-6 col-md-4 col-lg-3 text-center">
           <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/550797451/OTL-020+Python+y+utilidades">
-          <div class="panel-curso col-xs-12 col-sm-6 col-md-4 col-lg-3 text-center">
             <div class="panel panel-default course">
               <div class="panel-body">
                 <h2>Curso</h2>
@@ -145,10 +155,11 @@
                 <h3>Más de 50 cursos impartidos</h3>
               </div>
             </div>
-          </div>
           </a>
+        </div>
+
+        <div class="panel-curso col-xs-12 col-sm-6 col-md-4 col-lg-3 text-center">
           <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/63406137/BDN-070+Machine+Learning">
-          <div class="panel-curso col-xs-12 col-sm-6 col-md-4 col-lg-3 text-center">
             <div class="panel panel-default course">
               <div class="panel-body">
                 <h2>Curso</h2>
@@ -157,10 +168,11 @@
                 <h3>Más de 20 cursos impartidos</h3>
               </div>
             </div>
-          </div>
           </a>
+        </div>
+
+        <div class="panel-curso col-xs-12 col-sm-6 col-md-4 col-lg-3 text-center">
           <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/63406114/BDN-030+Elasticsearch">
-          <div class="panel-curso col-xs-12 col-sm-6 col-md-4 col-lg-3 text-center">
             <div class="panel panel-default course">
               <div class="panel-body">
                 <h2>Curso</h2>
@@ -169,10 +181,11 @@
                 <h3>Más de 20 cursos impartidos</h3>
               </div>
             </div>
-          </div>
           </a>
+        </div>
+
+        <div class="panel-curso col-xs-12 col-sm-6 col-md-4 col-lg-3 text-center">
           <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/856850442/BDN-035+Kibana">
-          <div class="panel-curso col-xs-12 col-sm-6 col-md-4 col-lg-3 text-center">
             <div class="panel panel-default course">
               <div class="panel-body">
                 <h2>Curso</h2>
@@ -181,13 +194,11 @@
                 <h3>Más de 10 cursos impartidos</h3>
               </div>
             </div>
-          </div>
           </a>
-        </div><!--cierre dispositiva 2-->
-        <!--Diapositiva 3-->
-        <div class="row myCourse filaCurso">
+        </div>
+
+        <div class="panel-curso col-xs-12 col-sm-6 col-md-4 col-lg-3 text-center">
           <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/719454218/DCH-070+AWS+Fundamentos+t+cnicos">
-          <div class="panel-curso col-xs-12 col-sm-6 col-md-4 col-lg-3 text-center">
             <div class="panel panel-default course">
               <div class="panel-body">
                 <h2>Curso</h2>
@@ -196,10 +207,11 @@
                 <h3>Más de 20 cursos impartidos</h3>
               </div>
             </div>
-          </div>
           </a>
+        </div>
+
+        <div class="panel-curso col-xs-12 col-sm-6 col-md-4 col-lg-3 text-center">
           <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/63406120/BDN-010+Fundamentos+de+Big+Data">
-          <div class="panel-curso col-xs-12 col-sm-6 col-md-4 col-lg-3 text-center">
             <div class="panel panel-default course">
               <div class="panel-body">
                 <h2>Curso</h2>
@@ -208,10 +220,11 @@
                 <h3>Más de 40 cursos impartidos</h3>
               </div>
             </div>
-          </div>
           </a>
+        </div>
+
+        <div class="panel-curso col-xs-12 col-sm-6 col-md-4 col-lg-3 text-center">
           <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/63406130/BDN-050+Hadoop">
-          <div class="panel-curso col-xs-12 col-sm-6 col-md-4 col-lg-3 text-center">
             <div class="panel panel-default course">
               <div class="panel-body">
                 <h2>Curso</h2>
@@ -220,10 +233,11 @@
                 <h3>Más de 20 cursos impartidos</h3>
               </div>
             </div>
-          </div>
           </a>
+        </div>
+
+        <div class="panel-curso col-xs-12 col-sm-6 col-md-4 col-lg-3 text-center">
           <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/776896522/BDN-080+Spark">
-          <div class="panel-curso col-xs-12 col-sm-6 col-md-4 col-lg-3 text-center">
             <div class="panel panel-default course">
               <div class="panel-body">
                 <h2>Curso</h2>
@@ -232,13 +246,11 @@
                 <h3>Más de 20 cursos impartidos</h3>
               </div>
             </div>
-          </div>
           </a>
-        </div><!--cierre diapositiva 3-->
-        <!--Diapositiva 4-->
-        <div class="row myCourse filaCurso">
+        </div>
+
+        <div class="panel-curso col-xs-12 col-sm-6 col-md-4 col-lg-3 text-center">
           <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/1057390600/DCH-140+Fundamentos+DevOps">
-          <div class="panel-curso col-xs-12 col-sm-6 col-md-4 col-lg-3 text-center">
             <div class="panel panel-default course">
               <div class="panel-body">
                 <h2>Curso</h2>
@@ -247,10 +259,11 @@
                 <h3>Más de 30 cursos impartidos</h3>
               </div>
             </div>
-          </div>
           </a>
+        </div>
+
+        <div class="panel-curso col-xs-12 col-sm-6 col-md-4 col-lg-3 text-center">
           <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/629571610/SPR-050+Spring+Boot">
-            <div class="panel-curso col-xs-12 col-sm-6 col-md-4 col-lg-3 text-center">
               <div class="panel panel-default course">
                 <div class="panel-body">
                   <h2>Curso</h2>
@@ -259,10 +272,11 @@
                   <h3>Más de 60 cursos impartidos</h3>
                 </div>
               </div>
-            </div>
-          </a>
-          <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/629735454/SPR-060+Spring+Cloud">
-            <div class="panel-curso col-xs-12 col-sm-6 col-md-4 col-lg-3 text-center">
+            </a>
+          </div>
+
+          <div class="panel-curso col-xs-12 col-sm-6 col-md-4 col-lg-3 text-center">
+            <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/629735454/SPR-060+Spring+Cloud">
               <div class="panel panel-default course">
                 <div class="panel-body">
                   <h2>Curso</h2>
@@ -271,24 +285,27 @@
                   <h3>Más de 60 cursos impartidos</h3>
                 </div>
               </div>
-            </div>
             </a>
+          </div>
+
+          <div class="panel-curso col-xs-12 col-sm-6 col-md-4 col-lg-3 text-center">
             <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/550731830/MGP-010+Scrum">
-              <div class="panel-curso col-xs-12 col-sm-6 col-md-4 col-lg-3 text-center">
-                <div class="panel panel-default course">
-                  <div class="panel-body">
-                    <h2>Curso</h2>
-                    <img src="img/banner/cursos/scrum.png" alt="Curso de Scrum" />
-                    <h2 style="color: #E04000;">Scrum</h2>
-                    <h3>Más de 40 cursos impartidos</h3>
-                  </div>
+              <div class="panel panel-default course">
+                <div class="panel-body">
+                  <h2>Curso</h2>
+                  <img src="img/banner/cursos/scrum.png" alt="Curso de Scrum" />
+                  <h2 style="color: #E04000;">Scrum</h2>
+                  <h3>Más de 40 cursos impartidos</h3>
                 </div>
               </div>
             </a>
-        </div><!--cierre diapositiva 4-->
-      </div><!--todas las diapositivas-->
-    <a class="next" onclick="plusSlides(1, 'myCourse')">&#10095;</a>
+          </div>
+
+      </div>
+    <button type="button" class="next next-course btn btn-next-panel-curso">&#10095;</button>
   </div><!--cierre container-->
+
+
 <!--pie del banner-->
 <!--<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 text-center">
   Ofrecemos servicios online
@@ -667,65 +684,77 @@ Referencia de color: #325578-->
   <p>Nuestros formadores (<a href="nuestro-equipo.html" style="text-decoration: none;">ver equipo completo</a>)</p>
 <!--banner profes-->
   <div class="banner-container">
-    <a class="prev" onclick="plusSlides(-1, 'myProf')">&#10094;</a>
-      <div class="slideshow-container center">
-        <!--nuestros profes 1-->
-        <a href="nuestro-equipo.html">
-        <div class="row filaProf myProf">
-          <div class="panel-prof col-xs-12 col-sm-6 col-md-4 col-lg-3 text-center">
-            <div class="panel panel-default profe">
-              <div class="panel-body profes">
-                <h2 style="color: #E04000;">Ángel Villalba Fernández</h2>
-                <br/>
-                <img src="img/team/angel-villalba-fernandez-paniagua.jpg" alt="Ángel Villalba Fernández" />
-                <br/><br/>
-                <h3>Más de
-                <b style="color: #E04000;">2.000 horas</b> de experiencia</h3>
-              </div>
+    <!-- <a class="prev prev-prof">&#10094;</a> -->
+    <button type="button" class="prev prev-profe btn btn-prev-panel-profe">&#10094;</button>
+    <div class="slideshow-container center">
+
+
+    <!--nuestros profes 1-->
+    <!-- <a href="nuestro-equipo.html"> -->
+
+
+        <div class="panel-profe col-xs-12 col-sm-6 col-md-4 col-lg-3 text-center">
+          <div class="panel panel-default profe">
+            <div class="panel-body profes">
+              <h2 style="color: #E04000;">Ángel Villalba Fernández</h2>
+              <br/>
+              <img src="img/team/angel-villalba-fernandez-paniagua.jpg" alt="Ángel Villalba Fernández" />
+              <br/><br/>
+              <h3>Más de
+              <b style="color: #E04000;">2.000 horas</b> de experiencia</h3>
             </div>
           </div>
-          <div class="panel-prof col-xs-12 col-sm-6 col-md-4 col-lg-3 text-center">
-            <div class="panel panel-default profe">
-              <div class="panel-body profes">
-                <h2 style="color: #E04000;">Luis Ramón Álvarez</h2>
-                <br/>
-                <img src="img/team/luis-ramon-alvarez-gonzalez.jpg" alt="Luis Ramón Álvarez" />
-                <br/><br/>
-                <h3>Más de
-                  <b style="color: #E04000;">10.000 horas</b>
-                  de experiencia</h3>
-              </div>
+        </div>
+
+        <div class="panel-profe col-xs-12 col-sm-6 col-md-4 col-lg-3 text-center">
+          <div class="panel panel-default profe">
+            <div class="panel-body profes">
+              <h2 style="color: #E04000;">Luis Ramón Álvarez</h2>
+              <br/>
+              <img src="img/team/luis-ramon-alvarez-gonzalez.jpg" alt="Luis Ramón Álvarez" />
+              <br/><br/>
+              <h3>Más de
+                <b style="color: #E04000;">10.000 horas</b>
+                de experiencia</h3>
             </div>
           </div>
-            <div class="panel-prof col-xs-12 col-sm-6 col-md-4 col-lg-3 text-center">
-              <div class="panel panel-default profe">
-                <div class="panel-body profes">
-                  <h2 style="color: #E04000;">Rubén Gómez García</h2>
-                  <br/>
-                  <img src="img/team/ruben-gomez-garcia.jpg" alt="Rubén Gómez García" />
-                  <br/><br/>
-                  <h3>Más de
-                  <b style="color: #E04000;">7.000 horas</b> de experiencia</h3>
-              </div>
-              </div>
+        </div>
+
+        <div class="panel-profe col-xs-12 col-sm-6 col-md-4 col-lg-3 text-center">
+          <div class="panel panel-default profe">
+            <div class="panel-body profes">
+              <h2 style="color: #E04000;">Rubén Gómez García</h2>
+              <br/>
+              <img src="img/team/ruben-gomez-garcia.jpg" alt="Rubén Gómez García" />
+              <br/><br/>
+              <h3>Más de
+              <b style="color: #E04000;">7.000 horas</b> de experiencia</h3>
             </div>
-              <div class="panel-prof col-xs-12 col-sm-6 col-md-4 col-lg-3 text-center">
-                <div class="panel panel-default profe">
-                  <div class="panel-body profes">
-                    <h2 style="color: #E04000;">Ramón Rubio Hortelano</h2>
-                    <br/>
-                    <img src="img/team/ramon-rubio-hortelano.jpg" alt="Ramón Rubio Hortelano" />
-                    <br/><br/>
-                    <h3>Más de
-                    <b style="color: #E04000;">2.000 horas</b> de experiencia</h3>
-                </div>
-                </div>
-              </div></a>
-        </div><!--cierre profes 1-->
+          </div>
+        </div>
+
+        <div class="panel-profe col-xs-12 col-sm-6 col-md-4 col-lg-3 text-center">
+          <div class="panel panel-default profe">
+            <div class="panel-body profes">
+              <h2 style="color: #E04000;">Ramón Rubio Hortelano</h2>
+              <br/>
+              <img src="img/team/ramon-rubio-hortelano.jpg" alt="Ramón Rubio Hortelano" />
+              <br/><br/>
+              <h3>Más de
+              <b style="color: #E04000;">2.000 horas</b> de experiencia</h3>
+            </div>
+          </div>
+        </div>
+
+      <!-- </a> -->
+
+
+
         <!--nuestros profes 2-->
-        <div class="row filaProf myProf">
-        <a href="nuestro-equipo.html">
-        <div class="panel-prof col-xs-12 col-sm-6 col-md-4 col-lg-3 text-center">
+        <!-- <a href="nuestro-equipo.html"> -->
+
+
+        <div class="panel-profe col-xs-12 col-sm-6 col-md-4 col-lg-3 text-center">
           <div class="panel panel-default profe">
             <div class="panel-body profes">
               <h2 style="color: #E04000;">Silvano Gil Pérez</h2>
@@ -737,47 +766,53 @@ Referencia de color: #325578-->
             </div>
           </div>
         </div>
-          <div class="panel-prof col-xs-12 col-sm-6 col-md-4 col-lg-3 text-center">
-            <div class="panel panel-default profe">
-              <div class="panel-body profes">
-                <h2 style="color: #E04000;">Manuel Tomás Ortega</h2>
-                <br/>
-                <img src="img/team/manuel-tomas-ortega.jpg" alt="Manuel Tomás Ortega" />
-                <br/><br/>
-                <h3>Más de
-                <b style="color: #E04000;">2.000 horas</b> de experiencia</h3>
-            </div>
-            </div>
-          </div>
-          <div class="panel-prof col-xs-12 col-sm-6 col-md-4 col-lg-3 text-center">
-            <div class="panel panel-default profe">
-              <div class="panel-body profes">
-                <h2 style="color: #E04000;">Plutarco Naranjo</h2>
-                <br/>
-                <img src="img/team/plutarco-naranjo.jpg" alt="Plutarco Naranjo" />
-                <br/><br/>
-                <h3>Más de
-                <b style="color: #E04000;">1.000 horas</b> de experiencia</h3>
-            </div>
+
+        <div class="panel-profe col-xs-12 col-sm-6 col-md-4 col-lg-3 text-center">
+          <div class="panel panel-default profe">
+            <div class="panel-body profes">
+              <h2 style="color: #E04000;">Manuel Tomás Ortega</h2>
+              <br/>
+              <img src="img/team/manuel-tomas-ortega.jpg" alt="Manuel Tomás Ortega" />
+              <br/><br/>
+              <h3>Más de
+              <b style="color: #E04000;">2.000 horas</b> de experiencia</h3>
             </div>
           </div>
-            <div class="panel-prof col-xs-12 col-sm-6 col-md-4 col-lg-3 text-center">
-              <div class="panel panel-default profe">
-                <div class="panel-body profes">
-                  <h2 style="color: #E04000;">Félix de Pablo Lobo</h2>
-                  <br/>
-                  <img src="img/team/felix-de-pablo-lobo.jpg" alt="Félix de Pablo Lobo" />
-                  <br/><br/>
-                  <h3>Más de
-                  <b style="color: #E04000;">5.000 horas</b> de experiencia</h3>
-              </div>
-              </div>
-            </div></a>
-        </div><!--cierre profes 2-->
+        </div>
+
+        <div class="panel-profe col-xs-12 col-sm-6 col-md-4 col-lg-3 text-center">
+          <div class="panel panel-default profe">
+            <div class="panel-body profes">
+              <h2 style="color: #E04000;">Plutarco Naranjo</h2>
+              <br/>
+              <img src="img/team/plutarco-naranjo.jpg" alt="Plutarco Naranjo" />
+              <br/><br/>
+              <h3>Más de
+              <b style="color: #E04000;">1.000 horas</b> de experiencia</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel-profe col-xs-12 col-sm-6 col-md-4 col-lg-3 text-center">
+          <div class="panel panel-default profe">
+            <div class="panel-body profes">
+              <h2 style="color: #E04000;">Félix de Pablo Lobo</h2>
+              <br/>
+              <img src="img/team/felix-de-pablo-lobo.jpg" alt="Félix de Pablo Lobo" />
+              <br/><br/>
+              <h3>Más de
+              <b style="color: #E04000;">5.000 horas</b> de experiencia</h3>
+            </div>
+          </div>
+        </div>
+
+      <!-- </a> -->
+
+
         <!--nuestros profes 3-->
-        <div class="row filaProf myProf">
-        <a href="nuestro-equipo.html">
-        <div class="panel-prof col-xs-12 col-sm-6 col-md-4 col-lg-3 text-center">
+
+        <!-- <a href="nuestro-equipo.html"> -->
+        <div class="panel-profe col-xs-12 col-sm-6 col-md-4 col-lg-3 text-center">
           <div class="panel panel-default profe">
             <div class="panel-body profes">
               <h2 style="color: #E04000;">Germán Caballero</h2>
@@ -789,45 +824,50 @@ Referencia de color: #325578-->
             </div>
           </div>
         </div>
-          <div class="panel-prof col-xs-12 col-sm-6 col-md-4 col-lg-3 text-center">
-            <div class="panel panel-default profe">
-              <div class="panel-body profes">
-                <h2 style="color: #E04000;">Pedro Hernández</h2>
-                <br/>
-                <img src="img/team/pedro-hernandez.jpg" alt="Pedro Hernández" />
-                <br/><br/>
-                <h3>Más de
-                <b style="color: #E04000;">1.000 horas</b> de experiencia</h3>
-            </div>
-            </div>
-          </div>
-          <div class="panel-prof col-xs-12 col-sm-6 col-md-4 col-lg-3 text-center">
-            <div class="panel panel-default profe">
-              <div class="panel-body profes">
-                <h2 style="color: #E04000;">Daniel Rojo</h2>
-                <br/>
-                <img src="img/team/daniel-rojo-perez.jpg" alt="Daniel Rojo" />
-                <br/><br/>
-                <h3>Más de
-                <b style="color: #E04000;">3.000 horas</b> de experiencia</h3>
-            </div>
+
+        <div class="panel-profe col-xs-12 col-sm-6 col-md-4 col-lg-3 text-center">
+          <div class="panel panel-default profe">
+            <div class="panel-body profes">
+              <h2 style="color: #E04000;">Pedro Hernández</h2>
+              <br/>
+              <img src="img/team/pedro-hernandez.jpg" alt="Pedro Hernández" />
+              <br/><br/>
+              <h3>Más de
+              <b style="color: #E04000;">1.000 horas</b> de experiencia</h3>
             </div>
           </div>
-            <div class="panel-prof col-xs-12 col-sm-6 col-md-4 col-lg-3 text-center">
-              <div class="panel panel-default profe">
-                <div class="panel-body profes">
-                  <h2 style="color: #E04000;">Jorge Arévalo</h2>
-                  <br/>
-                  <img src="img/team/jorge-arevalo.jpg" alt="Jorge Arévalo" />
-                  <br/><br/>
-                  <h3>Más de
-                  <b style="color: #E04000;">1.000 horas</b> de experiencia</h3>
-              </div>
-              </div>
-            </div></a>
-        </div><!--cierre profes 3-->
-      </div>
-    <a class="next" onclick="plusSlides(1, 'myProf')">&#10095;</a>
+        </div>
+
+        <div class="panel-profe col-xs-12 col-sm-6 col-md-4 col-lg-3 text-center">
+          <div class="panel panel-default profe">
+            <div class="panel-body profes">
+              <h2 style="color: #E04000;">Daniel Rojo</h2>
+              <br/>
+              <img src="img/team/daniel-rojo-perez.jpg" alt="Daniel Rojo" />
+              <br/><br/>
+              <h3>Más de
+              <b style="color: #E04000;">3.000 horas</b> de experiencia</h3>
+            </div>
+          </div>
+        </div>
+
+        <div class="panel-profe col-xs-12 col-sm-6 col-md-4 col-lg-3 text-center">
+          <div class="panel panel-default profe">
+            <div class="panel-body profes">
+              <h2 style="color: #E04000;">Jorge Arévalo</h2>
+              <br/>
+              <img src="img/team/jorge-arevalo.jpg" alt="Jorge Arévalo" />
+              <br/><br/>
+              <h3>Más de
+              <b style="color: #E04000;">1.000 horas</b> de experiencia</h3>
+            </div>
+          </div>
+        </div>
+      <!-- </a> -->
+
+
+    </div>
+    <button type="button" class="next next-prof btn btn-next-panel-profe">&#10095;</button>
   </div><!--cierre banner-->
 <br/><br/>
   </div>
@@ -997,16 +1037,8 @@ Referencia de color: #325578-->
       <br/>
       </footer>
 
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <!-- Placed at the end of the document so the pages load faster -->
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-    <script src="lib/bootstrap-3.2.0/dist/js/bootstrap.min.js"></script>
-    <script src="lib/jquery.easing.1.3/jquery.easing.1.3.min.js" type="text/javascript" ></script>
-
     <script>
-    $(document).ready(function(){
+    window.onload = function(){
 
         var scrollValue, speed = 2000;
 
@@ -1028,7 +1060,7 @@ Referencia de color: #325578-->
             e.preventDefault();
         }
 
-        $(document).on('scroll', parallax);
+        document.addEventListener('scroll', parallax);
 
         function parallax() {
             scrollValue = $('html').scrollTop() || $('body').scrollTop();
@@ -1039,12 +1071,8 @@ Referencia de color: #325578-->
             });
         }
 
-    });
+    }
 </script>
-
-<script src="js/slider.js"></script>
-<script src="js/carrusel.js"></script>
-
 
 </body>
 </html>

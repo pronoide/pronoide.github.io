@@ -8,7 +8,7 @@ h3 {
 
 h4 {
   color: #E04000;
-} 
+}
 
 #que-hacemos, #what-we-do {
   padding-top: 5em;
@@ -22,7 +22,7 @@ section.container {
 .logo  {
   display: flex;
   margin: 2px;
-  
+
 }
 
 .panel {
@@ -67,12 +67,37 @@ li {
 /*
 .course {
   widows: 21.87rem;
-} 
+}
 */
 
 .prev, .next, .prev:hover, .next:hover {
   text-decoration: none;
+}
 
+.btn.prev, .btn.next {
+  font-size: 1.5rem;
+  width: 3rem;
+  height: 3rem;
+  color: #E04000;
+  background-color: transparent;
+  border: 1px solid#E04000;
+  border-radius: 50%;
+  text-align: center;
+  padding: 0;
+  /* position: absolute; */
+  z-index: 1;
+}
+
+.btn.next {
+  right: 15px;
+}
+
+.btn.prev {
+  left: 15px;
+}
+
+.btn.prev:hover, .btn.next:hover {
+  background-color: rgba(0,0,0,0.2);
 }
 
 
@@ -91,7 +116,7 @@ li {
 @media (min-width: 48.635rem) {
   .banner {
     height: 400px;
-  } 
+  }
 
   .profes {
     height: 400px;
@@ -100,6 +125,11 @@ li {
   .prev, .next, .prev:hover, .next:hover {
     font-size: 30px;
     text-decoration: none;
-  
+  }
+
+  .btn.prev, .btn.next, .btn.prev:hover, .btn.next:hover {
+    font-size: 30px;
+    width: 50px;
+    height: 50px;
   }
 }
