@@ -1,7 +1,7 @@
 var carruselCursos, carruselProfes;
 
 class Carrousel {
-  constructor(className, numSlidesToShow = 4, intervalMs = 6000) {
+  constructor(className, numSlidesToShow = 4, intervalMs = 20000) {
     this.className = className;
     this.numSlidesToShow = numSlidesToShow;
     this.slides = document.querySelectorAll(`.${this.className}`);
