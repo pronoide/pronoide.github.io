@@ -70,25 +70,69 @@
         </div>/.nav-collapse --> 
       </div>
     </nav>
+    
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>Curso</th>
+          <th>Estado</th>
+          <th>Modalidad</th>
+          <th>Duración</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>...</td>
+          <td>...</td>
+          <td>...</td>
+        </tr>
+      </tbody>
+    </table>
+  </div>
 
-    <!-- quienes-somos -->
-    <section id="quienes-somos" class="container dark">
+    <section id="cursos" class="container dark">
       <h1>Cursos públicos</h1>
       <p>Cursos planificados en el calendario para un grupo de alumnos que provienen de distintas empresas o se inscriben como particulares.</p>
-
+     
       <div class="row">
         <div class="text-center col-xs-12 col-sm-12 col-md-12 col-lg-12">
           <div class="panel panel-default">
             <div class="panel-heading">
-              <!--enlaces a cv-->
-              <h2>Seguridad Web</h2>
+              <h2>Cursos</h2>
             </div>
-            <div class="panel-body">
-                <img src="img\banner\cursos\Promociones\owasp2.png"
-                  alt="Seguridad Web" />
-            </div>
-            <div class="panel-footer">
-          <!-- Load Stripe.js on your website. -->
+            <table class="table table-bordered">
+              <thead>
+                <tr>
+                  <th>Curso</th>
+                  <th>Estado</th>
+                  <th>Modalidad</th>
+                  <th>Duración</th>
+                  <th>Fechas</th>
+                  <th>Horario CEST</th>
+                  <th>Requisitos mínimos</th>
+                  <th>Formador</th>
+                  <th>Reservar</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td><img src="img\banner\cursos\iconos-48\owasp.png" alt="owasp"/><br/>
+                    Seguridad Web</td>
+                  <td>Abierto para reservas</td>
+                  <td>Virtual</td>
+                  <td>24 horas</td>
+                  <td>Lunes a jueves<br/>
+                    22/06/2020
+                    al
+                    02/07/2020</td>
+                  <td>10:00 - 13:00<br/>
+                  o<br/>
+                  15:30 - 18:30</td>
+                  <td>4GB de Ram y<br/>
+                    10GB de HD</td>
+                  <td>Luis Ramón</td>
+                  <td>
+                    <!-- Load Stripe.js on your website. -->
 <script src="https://js.stripe.com/v3"></script>
 <!-- Create a button that your customers click to complete their purchase. Customize the styling to suit your branding. -->
 <button
@@ -127,7 +171,30 @@
     });
   });
 })();
-</script>
+</script> 
+              </tr>
+              <tr>
+                  </td>
+                  <td><img src="img\banner\cursos\iconos-48\react.png" alt="React"/><br/>
+                    React</td>
+                  <td>Curso cerrado</td>
+                  <td>Virtual</td>
+                  <td>24 horas</td>
+                  <td>Lunes a viernes<br/>
+                    25/05/2020
+                    al
+                    05/06/2020</td>
+                  <td>10:00 - 13:00</td>
+                  <td>4GB de Ram<br/>
+                    (8GB recomendables)<br/>
+                    y 20GB de HD</td>
+                  <td>Ángel Villalba</td>
+                  <td></td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+           
             </div>
           </div>
         </div>
