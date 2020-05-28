@@ -101,15 +101,15 @@
       // a successful payment.
       // Instead use one of the strategies described in
       // https://stripe.com/docs/payments/checkout/fulfillment
-      successUrl: 'http://www.pronoide.com/success',
-      cancelUrl: 'http://www.pronoide.com/canceled',
+      successUrl: 'http://www.pronoide.com/success.html',
+      cancelUrl: 'http://www.pronoide.com/canceled.html',
     })
     .then(function (result) {
       if (result.error) {
         // If `redirectToCheckout` fails due to a browser or network
         // error, display the localized error message to your customer.
         var displayError = document.getElementById('error-message');
-        displayError.textContent = result.error.message;
+        displayError.textContent = result.error.message; 
       }
     });
   });
