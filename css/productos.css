@@ -29,7 +29,10 @@ body {
   
   a:hover {
     color: #325578;
+    text-decoration: none;
   }
+
+
   
   .panel a {
     color: #325578;
