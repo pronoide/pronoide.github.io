@@ -24,8 +24,9 @@
     <!-- CSS -->
     <link href="lib/bootstrap-3.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="lib/bootstrap-3.2.0/dist/css/bootstrap-theme.min.css" rel="stylesheet">
-    <link href="css/default.css" rel="stylesheet">
-    <link href="css/index.css" rel="stylesheet">
+    <!-- <link href="css/default.css" rel="stylesheet"> -->
+    <link href="css/productos.css" rel="stylesheet">
+  
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -96,92 +97,308 @@
                 </tr>
               </thead>
               <tbody>
-                <tr>
-                  <td><img src="img\banner\cursos\iconos-48\owasp.png" alt="owasp"/><br/>
-                    Seguridad Web</td>
-                  <td>Abierto para reservas</td>
-                  <td>Virtual</td>
-                  <td>24 horas</td>
-                  <td>Lunes a jueves<br/>
-                    22/06/2020
-                    al
-                    02/07/2020</td>
-                  <td>10:00 - 13:00<br/>
-                  o<br/>
-                  15:30 - 18:30</td>
-                  <td>4GB de Ram y<br/>
-                    10GB de HD</td>
-                  <td><a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/1168408662/Luis+Ram+n+lvarez+Gonz+lez">Luis Ramón</a></td>
-                  <td>
-                    <!-- Load Stripe.js on your website. -->
-<script src="https://js.stripe.com/v3"></script>
-<!-- Create a button that your customers click to complete their purchase. Customize the styling to suit your branding. -->
-<button
-  style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em"
-  id="checkout-button-price_HMVTfF1JAJ29vZ"
-  role="link"
->
-  Checkout
-</button>
-<div id="error-message"></div>
-<script>
-(function() {
-  var stripe = Stripe('pk_test_mKH7OwG8T5FcqYlsuibgDXqr00JEnmNFgH');
-  var checkoutButton = document.getElementById('checkout-button-price_HMVTfF1JAJ29vZ');
-  checkoutButton.addEventListener('click', function () {
-    // When the customer clicks on the button, redirect
-    // them to Checkout.
-    stripe.redirectToCheckout({
-      lineItems: [{price: 'price_HMVTfF1JAJ29vZ', quantity: 1}],
-      mode: 'payment',
-      // Do not rely on the redirect to the successUrl for fulfilling
-      // purchases, customers may not always reach the success_url after
-      // a successful payment.
-      // Instead use one of the strategies described in
-      // https://stripe.com/docs/payments/checkout/fulfillment
-      successUrl: 'http://www.pronoide.com/success.html',
-      cancelUrl: 'http://www.pronoide.com/canceled.html',
-    })
-    .then(function (result) {
-      if (result.error) {
-        // If `redirectToCheckout` fails due to a browser or network
-        // error, display the localized error message to your customer.
-        var displayError = document.getElementById('error-message');
-        displayError.textContent = result.error.message; 
-      }
-    });
-  });
-})();
-</script> 
-              </tr>
+               
               <tr>
                   </td>
                   <td><img src="img\banner\cursos\iconos-48\react.png" alt="React"/><br/>
                     React</td>
                   <td>Curso cerrado</td>
                   <td>Virtual</td>
-                  <td>24 horas</td>
-                  <td>Lunes a viernes<br/>
-                    25/05/2020
-                    al
+                  <td>30 horas</td>
+                  <td>Lunes a viernes<br/><br/>
+                    25/05/2020<br/>
+                    al<br/>
                     05/06/2020</td>
                   <td>10:00 - 13:00</td>
                   <td>4GB de Ram<br/>
                     (8GB recomendables)<br/>
                     y 20GB de HD</td>
                   <td><a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/1144193151/ngel+Villalba+Fern+ndez">Ángel Villalba</a></td>
-                  <td></td>
+                  <td>Cerrado</td>
                 </tr>
-              </tbody>
-            </table>
-          </div>
+
+                <tr>
+                </td>
+                <td><a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/629571610/SPR-050+Spring+Boot"><img src="img\banner\cursos\iconos-48\spring-boot.png" alt="Spring Boot"/><br/>
+                  Spring Boot</a></td>
+                <td>Abierto para reservas</td>
+                <td>Virtual</td>
+                <td>24 horas</td>
+                <td>Lunes a jueves<br/><br/>
+                  25/05/2020<br/>
+                  al<br/>
+                  05/06/2020</td>
+                <td>10:00 - 13:00<br/>
+                  ---<br/>
+                  15:30 - 18:30</td>
+                <td>4GB de Ram<br/>
+                  y 20GB de HD</td>
+                <td><a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/1168408662/Luis+Ram+n+lvarez+Gonz+lez">Luis Ramón Álvarez</a></td>
+                <td> 
+                  <!-- <button
+                    style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em"
+                    id="checkout-button-price_HMVTfF1JAJ29vZ"
+                    role="link"
+                  >
+                    Reservar
+                  </button>
+                  <br/> -->
+                </td>
+              </tr>
+
+              <tr>
+              </td>
+              <td><a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/64290892/DCH-020+Docker"><img src="img\banner\cursos\iconos-48\docker.png" alt="Docker"/><br/>
+                Docker</a></td>
+              <td>Abierto para reservas</td>
+              <td>Virtual</td>
+              <td>24 horas</td>
+              <td>Lunes a jueves<br/><br/>
+                25/05/2020<br/>
+                al<br/>
+                05/06/2020</td>
+              <td>10:00 - 13:00<br/>
+                ---<br/>
+                15:30 - 18:30</td>
+              <td>8GB de Ram<br/>
+                y 40GB de HD</td>
+              <td><a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/1168408867/Manuel+Tom+s+Ortega+S+nchez">Manuel Tomás Ortega</a></td>
+              <td>
+                <!-- <button
+                style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em"
+                id="checkout-button-price_HMVTfF1JAJ29vZ"
+                role="link"
+              >
+                Reservar
+              </button>
+              <br/> -->
+              </td>
+            </tr>
+
+            <tr>
+              <td><a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/62226505/TWB-200+Programaci+n+Web+Segura+OWASP"><img src="img\banner\cursos\iconos-48\owasp.png" alt="owasp"/><br/>
+                Seguridad Web</a></td>
+              <td>Abierto para reservas</td>
+              <td>Virtual</td>
+              <td>24 horas</td>
+              <td>Lunes a jueves<br/><br/>
+                22/06/2020<br/>
+                al<br/>
+                02/07/2020</td>
+              <td>10:00 - 13:00<br/>
+              ---<br/>
+              15:30 - 18:30</td>
+              <td>4GB de Ram y<br/>
+                10GB de HD</td>
+              <td><a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/1168408662/Luis+Ram+n+lvarez+Gonz+lez">Luis Ramón Álvarez</a></td>
+              <td>
+                <!-- Load Stripe.js on your website. -->
+                <script src="https://js.stripe.com/v3"></script>
+                <!-- Create a button that your customers click to complete their purchase. Customize the styling to suit your branding. -->
+                <button
+                  style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em"
+                  id="checkout-button-price_HMVTfF1JAJ29vZ"
+                  role="link"
+                >
+                  Reservar
+                </button>
+                <br/>
+
+                <!-- Load Stripe.js on your website. -->
+                  <script src="https://js.stripe.com/v3"></script>
+                  <!-- Create a button that your customers click to complete their purchase. Customize the styling to suit your branding. -->
+                  <button
+                    style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em"
+                    id="checkout-button-price_HMI0640ea6nh2D"
+                    role="link"
+                  >
+                    Comprar
+                  </button>
+                  <div id="error-message"></div>
+                  <script>
+                  (function() {
+                    var stripe = Stripe('pk_test_mKH7OwG8T5FcqYlsuibgDXqr00JEnmNFgH');
+                    var checkoutButton = document.getElementById('checkout-button-price_HMI0640ea6nh2D');
+                    checkoutButton.addEventListener('click', function () {
+                      // When the customer clicks on the button, redirect
+                      // them to Checkout.
+                      stripe.redirectToCheckout({
+                        lineItems: [{price: 'price_HMI0640ea6nh2D', quantity: 1}],
+                        mode: 'payment',
+                        // Do not rely on the redirect to the successUrl for fulfilling
+                        // purchases, customers may not always reach the success_url after
+                        // a successful payment.
+                        // Instead use one of the strategies described in
+                        // https://stripe.com/docs/payments/checkout/fulfillment
+                        successUrl: 'http://www.pronoide.com/success',
+                        cancelUrl: 'http://www.pronoide.com/canceled',
+                      })
+                      .then(function (result) {
+                        if (result.error) {
+                          // If `redirectToCheckout` fails due to a browser or network
+                          // error, display the localized error message to your customer.
+                          var displayError = document.getElementById('error-message');
+                          displayError.textContent = result.error.message;
+                        }
+                      });
+                    });
+                  })();
+                  </script>
+
+                                    <!-- Load Stripe.js on your website. -->
+                  <script src="https://js.stripe.com/v3"></script>
+                  <!-- Create a button that your customers click to complete their purchase. Customize the styling to suit your branding. -->
+                  <button
+                    style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em"
+                    id="checkout-button-price_HMI0640ea6nh2D"
+                    role="link"
+                  >
+                    Compra (Tarifa Social)
+                  </button>
+                  <div id="error-message"></div>
+                  <script>
+                  (function() {
+                    var stripe = Stripe('pk_test_mKH7OwG8T5FcqYlsuibgDXqr00JEnmNFgH');
+                    var checkoutButton = document.getElementById('checkout-button-price_HMI0640ea6nh2D');
+                    checkoutButton.addEventListener('click', function () {
+                      // When the customer clicks on the button, redirect
+                      // them to Checkout.
+                      stripe.redirectToCheckout({
+                        lineItems: [{price: 'price_HMI0640ea6nh2D', quantity: 1}],
+                        mode: 'payment',
+                        // Do not rely on the redirect to the successUrl for fulfilling
+                        // purchases, customers may not always reach the success_url after
+                        // a successful payment.
+                        // Instead use one of the strategies described in
+                        // https://stripe.com/docs/payments/checkout/fulfillment
+                        successUrl: 'http://www.pronoide.com/success',
+                        cancelUrl: 'http://www.pronoide.com/canceled',
+                      })
+                      .then(function (result) {
+                        if (result.error) {
+                          // If `redirectToCheckout` fails due to a browser or network
+                          // error, display the localized error message to your customer.
+                          var displayError = document.getElementById('error-message');
+                          displayError.textContent = result.error.message;
+                        }
+                      });
+                    });
+                  })();
+                  </script>
+
+                <div id="error-message"></div>
+          </tr>
+
+            <tr>
+            </td>
+            <td><a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/550731830/MGP-010+Scrum"><img src="img\banner\cursos\iconos-48\scrum.png" alt="Scrum"/><br/>
+              Scrum</a></td>
+            <td>Abierto para reservas</td>
+            <td>Virtual</td>
+            <td>15 horas</td>
+            <td>Lunes a jueves<br/><br/>
+              25/05/2020<br/>
+              al<br/>
+              05/06/2020</td>
+            <td>10:00 - 13:00<br/>
+              ---<br/>
+              15:30 - 18:30</td>           
+            <td>4GB de Ram<br/>
+              y 10GB de HD</td>
+            <td><a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/1144225992/Silvano+Gil+P+rez">Silvano Gil</a></td>
+            <td>
+              <!-- <button
+              style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em"
+              id="checkout-button-price_HMVTfF1JAJ29vZ"
+              role="link"
+            >
+              Reservar
+            </button>
+            <br/> -->
+            </td>
+          </tr>
+
+          <tr>
+          </td>
+          <td><a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/629735454/SPR-060+Spring+Cloud"><img src="img\banner\cursos\iconos-48\spring-cloud.png" alt="Spring Cloud"/><br/>
+            Spring Cloud</a></td>
+          <td>Abierto para reservas</td>
+          <td>Virtual</td>
+          <td>24 horas</td>
+          <td>Lunes a jueves<br/><br/>
+            25/05/2020<br/>
+            al<br/>
+            05/06/2020</td>
+          <td>10:00 - 13:00<br/>
+            ---<br/>
+            15:30 - 18:30</td>
+          <td>8GB de Ram<br/>
+            y 10GB de HD</td>
+          <td><a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/1168408662/Luis+Ram+n+lvarez+Gonz+lez">Luis Ramón Álvarez</a></td>
+          <td>
+            <!-- <button
+            style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em"
+            id="checkout-button-price_HMVTfF1JAJ29vZ"
+            role="link"
+          >
+            Reservar
+          </button>
+          <br/> -->
+          </td>
+        </tr>
+
+        <tr>
+        </td>
+        <td><a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/776896522/BDN-080+Spark"><img src="img\banner\cursos\iconos-48\spark.png" alt="Spark"/><br/>
+          Spark</a></td>
+        <td>Abierto para reservas</td>
+        <td>Virtual</td>
+        <td>24 horas</td>
+        <td>Lunes a jueves<br/><br/>
+          25/05/2020<br/>
+          al<br/>
+          05/06/2020</td>
+        <td>10:00 - 13:00<br/>
+          ---<br/>
+          15:30 - 18:30</td>
+        <td>8GB de Ram<br/>
+          y 40GB de HD</td>
+        <td><a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/1168343187/Ram+n+Rubio+Hortelano">Ramón Rubio</a></td>
+        <td>
+          <!-- <button
+          style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em"
+          id="checkout-button-price_HMVTfF1JAJ29vZ"
+          role="link"
+        >
+          Reservar
+        </button>
+        <br/> -->
+        </td>
+      </tr>
+
+      </tbody>
+     </table>
+   </div>
            
             </div>
           </div>
-        </div>
-    
+        </div>   
   
     </section><!-- /.container -->
+
+    <section id="info" class="container dark">
+      <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/1102315529/TRS+Tarifas+Servicios+de+Formaci+n">
+        <h1>Ver tarifas</h1></a>
+      <ul>
+        <li>
+          Se abonará un 30% en concepto de reserva de plaza reembolsable.
+        </li>
+        <li>Una semana antes del curso se confirmará su impartición.</li>
+      </ul>
+      <br/>
+      <br/>
+
+    </section>
     
     <footer id="contacto">
       <p>
@@ -211,6 +428,70 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="lib/bootstrap-3.2.0/dist/js/bootstrap.min.js"></script>
     <script src="lib/jquery.easing.1.3/jquery.easing.1.3.js" type="text/javascript" ></script>
+
+    <!--aqui esta el codigo del botton comprar-->
+    <!-- <script>
+      (function() {
+        var stripe = Stripe('pk_test_mKH7OwG8T5FcqYlsuibgDXqr00JEnmNFgH');
+        var checkoutButton = document.getElementById('checkout-button-price_HMVTfF1JAJ29vZ');
+        checkoutButton.addEventListener('click', function () {
+          // When the customer clicks on the button, redirect
+          // them to Checkout.
+          stripe.redirectToCheckout({
+            lineItems: [{price: 'price_HMVTfF1JAJ29vZ', quantity: 1}],
+            mode: 'payment',
+            // Do not rely on the redirect to the successUrl for fulfilling
+            // purchases, customers may not always reach the success_url after
+            // a successful payment.
+            // Instead use one of the strategies described in
+            // https://stripe.com/docs/payments/checkout/fulfillment
+            successUrl: 'http://www.pronoide.com/success.html',
+            cancelUrl: 'http://www.pronoide.com/canceled.html',
+          })
+          .then(function (result) {
+            if (result.error) {
+              // If `redirectToCheckout` fails due to a browser or network
+              // error, display the localized error message to your customer.
+              var displayError = document.getElementById('error-message');
+              displayError.textContent = result.error.message; 
+            }
+          });
+        });
+      })();
+      </script>  -->
+
+<!-- y del de estudiantes -->
+<!-- <script>
+(function() {
+  var stripe = Stripe('pk_test_mKH7OwG8T5FcqYlsuibgDXqr00JEnmNFgH');
+  var checkoutButton = document.getElementById('checkout-button-price_HMI0640ea6nh2D');
+  checkoutButton.addEventListener('click', function () {
+    // When the customer clicks on the button, redirect
+    // them to Checkout.
+    stripe.redirectToCheckout({
+      lineItems: [{price: 'price_HMI0640ea6nh2D', quantity: 1}],
+      mode: 'payment',
+      // Do not rely on the redirect to the successUrl for fulfilling
+      // purchases, customers may not always reach the success_url after
+      // a successful payment.
+      // Instead use one of the strategies described in
+      // https://stripe.com/docs/payments/checkout/fulfillment
+      successUrl: 'http://www.pronoide.com/success',
+      cancelUrl: 'http://www.pronoide.com/canceled',
+    })
+    .then(function (result) {
+      if (result.error) {
+        // If `redirectToCheckout` fails due to a browser or network
+        // error, display the localized error message to your customer.
+        var displayError = document.getElementById('error-message');
+        displayError.textContent = result.error.message;
+      }
+    });
+  });
+})();
+</script> -->
+
+
 
     <script>
     $(document).ready(function(){
