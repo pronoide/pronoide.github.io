@@ -30,6 +30,12 @@ body {
   a:hover {
     color: #325578;
     text-decoration: none;
+/*** aquí va la sombra ***/
+-webkit-box-shadow: 0 0 5px #999;
+-moz-box-shadow: 0 0 5px #999;
+-ms-box-shadow: 0 0 5px #999;
+box-shadow: 0 0 5px #999;
+ 
   }
 
 
