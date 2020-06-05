@@ -33,6 +33,10 @@ body {
     font-size: 20px;
   }
 
+  a.tarifas {
+    font-size: 1.2em;
+  }
+
   tr:hover {
     background-color: rgba(200, 214, 134, 0.5)
   }
@@ -57,13 +61,6 @@ body {
       max-width: 100%;
   }
   
-  blockquote {
-    color: #325578;
-    font-size: 1.6em;
-    font-weight: 500;
-    font-style: italic;
-  }
-  
   .container {
     width: 100%;
     padding-left: 2em;
@@ -82,21 +79,7 @@ body {
   .navbar .nav > .active > a {
     box-shadow: 0px -3px 0px rgba(50, 50, 50, 0.6) inset;
   }
-  
-  .img-border-radius {
-    display: inline-block;
-    border-radius: 20px;
-    overflow: hidden;
-    border: 1px solid #325578;
-    max-width: 100%;
-  }
-  
-  .img-rounded {
-    display: inline-block;
-    border-radius: 50%;
-    overflow: hidden;
-    border: 1px solid #325578;
-  }
+ 
   
   footer {
     font-size: 1.3em;
