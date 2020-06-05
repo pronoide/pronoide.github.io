@@ -38,7 +38,7 @@ body {
   }
 
   tr:hover {
-    background-color: rgba(200, 214, 134, 0.5)
+    background-color: #d3e0e6;
   }
   
   .panel a {
