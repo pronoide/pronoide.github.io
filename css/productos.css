@@ -30,15 +30,12 @@ body {
   a:hover {
     color: #325578;
     text-decoration: none;
-/*** aquí va la sombra ***/
--webkit-box-shadow: 0 0 5px #999;
--moz-box-shadow: 0 0 5px #999;
--ms-box-shadow: 0 0 5px #999;
-box-shadow: 0 0 5px #999;
- 
+    font-size: 20px;
   }
 
-
+  tr:hover {
+    background-color: rgba(200, 214, 134, 0.5)
+  }
   
   .panel a {
     color: #325578;
