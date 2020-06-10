@@ -100,71 +100,273 @@
               </thead>
               <tbody>
                
+                <tr>
+                  <td rowspan="2"><br/><br/>
+                    <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/62226505/TWB-200+Programaci+n+Web+Segura+OWASP">
+                      <img src="img\productos\owasp.png" alt="owasp"/><br/>
+                    Seguridad Web</a></td>
+    
+                  <td rowspan="2"><br/><br/><br/><img src="img\productos\icons-48\abierto.png" alt="Abierto" /><br/><br/>
+                    Abierto para reservas</td>
+    
+                  <td rowspan="2"><br/><br/><img src="img\icons\48\development.png" alt="Virtual" /><br/><br/>
+                    Virtual</td>
+    
+                  <td rowspan="2"><br/><br/><br/><br/><br/>
+                    24 horas</td>
+    
+                  <td rowspan="2"><br/>
+                    Lunes a jueves<br/><br/>
+                    06/07/2020<br/>
+                    al<br/>
+                    16/07/2020</td>
+                    
+                  <td style="background-color:#e0dede;"><br/>10:00 - 13:00<br/></td>
+    
+                  <td rowspan="2"><br/><br/><br/><br/>
+                    4GB de Ram<br/>
+                    y 10GB de HD</td>
+    
+                  <td rowspan="2"><br/><br/><br/><br/><br/>
+                    <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/1168408662/Luis+Ram+n+lvarez+Gonz+lez">
+                      Luis Ramón Álvarez</a></td>
+                  <td rowspan="2">
+    
+                  <!-- Load Stripe.js on your website. -->
+                  <script src="https://js.stripe.com/v3"></script>
+                  <!-- Create a button that your customers click to complete their purchase. Customize the styling to suit your branding. -->
+                  <button
+                    style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em"
+                    id="Reservar"
+                    role="link"
+                  >
+                    Reservar
+                  </button>
+                  <br/>
+                  <br/>
+    
+                   <div id="error-message"></div>
+    
+                      <script>
+                        (function() {
+                          var stripe = Stripe('pk_test_mKH7OwG8T5FcqYlsuibgDXqr00JEnmNFgH');
+                          var checkoutButton = document.getElementById('Reservar');
+                          checkoutButton.addEventListener('click', function () {
+                            // When the customer clicks on the button, redirect
+                            // them to Checkout.
+                            stripe.redirectToCheckout({
+                              lineItems: [{price: 'price_HMVTfF1JAJ29vZ', quantity: 1}],
+                              mode: 'payment',
+                              // Do not rely on the redirect to the successUrl for fulfilling
+                              // purchases, customers may not always reach the success_url after
+                              // a successful payment.
+                              // Instead use one of the strategies described in
+                              // https://stripe.com/docs/payments/checkout/fulfillment
+                              successUrl: 'http://www.pronoide.com/success',
+                              cancelUrl: 'http://www.pronoide.com/canceled',
+                            })
+                            .then(function (result) {
+                              if (result.error) {
+                                // If `redirectToCheckout` fails due to a browser or network
+                                // error, display the localized error message to your customer.
+                                var displayError = document.getElementById('error-message');
+                                displayError.textContent = result.error.message;
+                              }
+                            });
+                          });
+                        })();
+                        </script>
+    
+                      <button
+                        style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em"
+                        id="Comprar"
+                        role="link"
+                      >
+                        Comprar
+                      </button>
+                      <div id="error-message"></div>
+                      <br/>
+                      <script>
+                        (function() {
+                          var stripe = Stripe('pk_test_mKH7OwG8T5FcqYlsuibgDXqr00JEnmNFgH');
+                          var checkoutButton = document.getElementById('Comprar');
+                          checkoutButton.addEventListener('click', function () {
+                            // When the customer clicks on the button, redirect
+                            // them to Checkout.
+                            stripe.redirectToCheckout({
+                              lineItems: [{price: 'price_HMI0640ea6nh2D', quantity: 1}],
+                              mode: 'payment',
+                              // Do not rely on the redirect to the successUrl for fulfilling
+                              // purchases, customers may not always reach the success_url after
+                              // a successful payment.
+                              // Instead use one of the strategies described in
+                              // https://stripe.com/docs/payments/checkout/fulfillment
+                              successUrl: 'http://www.pronoide.com/success',
+                              cancelUrl: 'http://www.pronoide.com/canceled',
+                            })
+                            .then(function (result) {
+                              if (result.error) {
+                                // If `redirectToCheckout` fails due to a browser or network
+                                // error, display the localized error message to your customer.
+                                var displayError = document.getElementById('error-message');
+                                displayError.textContent = result.error.message;
+                              }
+                            });
+                          });
+                        })();
+                        </script>
+                                   
+                      <button
+                        style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em"
+                        id="Compra (Tarifa Social)"
+                        role="link"
+                      >
+                        Compra (Tarifa Social)
+                      </button>
+                      <div id="error-message"></div>
+                      <script>
+                        (function() {
+                          var stripe = Stripe('pk_test_mKH7OwG8T5FcqYlsuibgDXqr00JEnmNFgH');
+                          var checkoutButton = document.getElementById('Compra (Tarifa Social)');
+                          checkoutButton.addEventListener('click', function () {
+                            // When the customer clicks on the button, redirect
+                            // them to Checkout.
+                            stripe.redirectToCheckout({
+                              lineItems: [{price: 'price_HMI0sCpZp5CVKR', quantity: 1}],
+                              mode: 'payment',
+                              // Do not rely on the redirect to the successUrl for fulfilling
+                              // purchases, customers may not always reach the success_url after
+                              // a successful payment.
+                              // Instead use one of the strategies described in
+                              // https://stripe.com/docs/payments/checkout/fulfillment
+                              successUrl: 'http://www.pronoide.com/success',
+                              cancelUrl: 'http://www.pronoide.com/canceled',
+                            })
+                            .then(function (result) {
+                              if (result.error) {
+                                // If `redirectToCheckout` fails due to a browser or network
+                                // error, display the localized error message to your customer.
+                                var displayError = document.getElementById('error-message');
+                                displayError.textContent = result.error.message;
+                              }
+                            });
+                          });
+                        })();
+                        </script>
+              </tr>
+    
+              <tr>
+                <td style="background-color: #fffebd;"><br/>15:30 - 18:30<br/></td>
+              </tr>
+
+              <tr>
+                <td><br/><br/>
+                  <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/629735454/SPR-060+Spring+Cloud">
+                    <img src="img\productos\springcloud.png" alt="Spring Cloud"/><br/>
+                  Spring Cloud</a></td>
+      
+                <td><br/><br/><img src="img\productos\icons-48\abierto.png" alt="Abierto" /><br/><br/>
+                  Abierto para reservas</td>
+      
+                <td><br/><img src="img\icons\48\development.png" alt="Virtual" /><br/><br/>
+                  Virtual</td>
+      
+                <td><br/><br/><br/><br/>
+                  24 horas</td>
+      
+                <td><br/>Lunes a jueves<br/><br/>
+                  06/07/2020<br/>
+                  al<br/>
+                  16/07/2020</td>
+      
+                <td style="background-color: #fffebd;"><br/><br/><br/><br/>15:30 - 18:30<br/></td>
+      
+                <td><br/><br/><br/><br/>
+                  8GB de Ram<br/>
+                  y 10GB de HD</td>
+      
+                <td><br/><br/><br/><br/><br/>
+                  <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/1168408662/Luis+Ram+n+lvarez+Gonz+lez">
+                  Luis Ramón Álvarez</a></td>
+      
+                <td>
+                  
+                </td>
+              </tr>
+ 
+              <tr>
+                <td rowspan="2"><br/><br/>
+                  <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/776896522/BDN-080+Spark">
+                    <img src="img\productos\spark.png" alt="Spark"/><br/>
+                  Spark</a></td>
+        
+                <td rowspan="2"><br/><br/><img src="img\productos\icons-48\abierto.png" alt="Abierto" /><br/><br/>
+                  Abierto para reservas</td>
+        
+                <td rowspan="2"><br/><img src="img\icons\48\development.png" alt="Virtual" /><br/><br/>
+                  Virtual</td>
+        
+                <td rowspan="2"><br/><br/><br/><br/>
+                  24 horas</td>
+        
+                <td rowspan="2"><br/>Lunes a jueves<br/><br/>
+                  06/07/2020<br/>
+                  al<br/>
+                  16/07/2020</td>
+        
+                <td style="background-color:#e0dede;"><br/>10:00 - 13:00<br/></td>
+        
+        
+                <td rowspan="2"><br/><br/><br/><br/>
+                  8GB de Ram<br/>
+                  y 40GB de HD</td>
+        
+                <td rowspan="2"><br/><br/><br/><br/><br/>
+                  <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/1168343187/Ram+n+Rubio+Hortelano">
+                    Ramón Rubio</a></td>
+        
+                <td rowspan="2">
+            
+                </td>
+              </tr>
+        
+              <tr>
+                <td style="background-color: #fffebd;"><br/>15:30 - 18:30<br/></td>
+              </tr>
+                      
+
               <tr>
                   </td>
-                  <td><br/><br/><a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/776929286/TWB-170+React">
+                  <td rowspan="2" style="color: orangered;"><br/><br/><a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/776929286/TWB-170+React">
                     <img src="img\productos\react.png" alt="React"/><br/>
-                    React</a></td>
-                  <td><br/><br/><img src="img\productos\icons-48\en-imparticion.png" alt="Virtual" /><br/><br/>
-                    Curso impartido</td>
-                  <td><br/><img src="img\icons\48\development.png" alt="Virtual" /><br/><br/>
+                    React</a> <b>Nueva edición</b></td>
+                  <td rowspan="2"><br/><br/><img src="img\productos\icons-48\abierto.png" alt="Virtual" /><br/><br/>
+                    Abierto para reservas</td>
+                  <td rowspan="2"><br/><img src="img\icons\48\development.png" alt="Virtual" /><br/><br/>
                     Virtual</td>
-                  <td><br/><br/><br/><br/>
+                  <td rowspan="2"><br/><br/><br/><br/>
                     30 horas</td>
-                  <td><br/>Lunes a viernes<br/><br/>
-                    25/05/2020<br/>
+                  <td rowspan="2"><br/>Lunes a viernes<br/><br/>
+                    06/07/2020<br/>
                     al<br/>
-                    05/06/2020</td>
-                  <td style="background-color:#fffebd"><br/><br/><br/><br/>
+                    17/07/2020</td>
+                  <td style="background-color:#e0dede;"><br/>
                     10:00 - 13:00</td>
-                  <td><br/><br/>
+                  <td rowspan="2"><br/><br/>
                     4GB de Ram<br/>
                     (8GB recomendables)<br/>
                     y 20GB de HD</td>
-                  <td><br/><br/><br/><br/>
+                  <td rowspan="2"><br/><br/><br/><br/>
                     <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/1144193151/ngel+Villalba+Fern+ndez">
                       Ángel Villalba</a></td>
-                  <td><br/><br/><br/><br/>
-                    Cerrado</td>
-                </tr>
-
+                  <td rowspan="2">
+                    
+                  </td>
+                </tr>    
+                
                 <tr>
-                <td rowspan="2"><br/><br/>
-                  <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/629571610/SPR-050+Spring+Boot">
-                    <img src="img\productos\springboot.png" alt="Spring Boot"/><br/>
-                  Spring Boot</a></td>
-
-                <td rowspan="2"><br/><br/><img src="img\productos\icons-48\abierto.png" alt="Abierto" /><br/><br/>              
-                  Abierto para reservas</td>
-
-                <td rowspan="2"><br/><img src="img\icons\48\development.png" alt="Virtual" /><br/><br/>
-                  Virtual</td>
-
-                <td rowspan="2"><br/><br/><br/><br/><br/>
-                  24 horas</td>
-
-                <td rowspan="2"><br/>Lunes a jueves<br/><br/>
-                  08/06/2020<br/>
-                  al<br/>
-                  14/06/2020</td>
-
-                <td style="background-color:#fffebd"><br/>10:00 - 13:00<br/></td>
-
-                <td rowspan="2"><br/><br/><br/><br/>
-                  4GB de Ram<br/>
-                  y 20GB de HD</td>
-
-                <td rowspan="2"><br/><br/><br/><br/><br/>
-                  <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/1168408662/Luis+Ram+n+lvarez+Gonz+lez">
-                    Luis Ramón Álvarez</a></td>
-                <td rowspan="2"> 
-               
-                </td>
-              </tr>
-
-              <tr>
-                <td style="background-color: #e0dede;"><br/>15:30 - 18:30<br/></td>
-              </tr>
+                  <td style="background-color: #fffebd;"><br/>15:30 - 18:30<br/></td>
+                </tr>
 
               <tr>
               <td rowspan="2"><br/><br/>
@@ -178,15 +380,15 @@
               <td rowspan="2"><br/><img src="img\icons\48\development.png" alt="Virtual" /><br/><br/>
                 Virtual</td>
 
-              <td rowspan="2"><br/><br/><br/><br/><br/>
-                24 horas</td>
+              <td rowspan="2"><br/><br/><br/><br/>
+                16 horas</td>
 
               <td rowspan="2"><br/>Lunes a jueves<br/><br/>
-                22/06/2020<br/>
+                13/07/2020<br/>
                 al<br/>
-                02/07/2020</td>
+                16/07/2020</td>
 
-              <td style="background-color:#fffebd"><br/>10:00 - 13:00<br/></td>
+              <td style="background-color:#e0dede;"><br/>10:00 - 13:00<br/></td>
 
               <td rowspan="2"><br/><br/><br/><br/>
                 8GB de Ram<br/>
@@ -201,173 +403,203 @@
             </tr>
 
             <tr>
-              <td style="background-color: #e0dede;"><br/>15:30 - 18:30<br/></td>
+              <td style="background-color: #fffebd;"><br/>15:30 - 18:30<br/></td>
+            </tr>
+ 
+            <tr>
+              <td rowspan="2" style="color: orangered;"><br/><br/>
+                <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/632651821/TWB-220+Vue.js">
+                  <img src="img\productos\vue.png" alt="VUE"/><br/>
+                VUE.js</a> <b>¡Nuevo!</b></td>
+
+              <td rowspan="2"><br/><br/><img src="img\productos\icons-48\abierto.png" alt="Abierto" /><br/><br/>              
+                Abierto para reservas</td>
+
+              <td rowspan="2"><br/><img src="img\icons\48\development.png" alt="Virtual" /><br/><br/>
+                Virtual</td>
+
+              <td rowspan="2"><br/><br/><br/><br/>
+                16 horas</td>
+
+              <td rowspan="2"><br/>Lunes a jueves<br/><br/>
+                20/07/2020<br/>
+                al<br/>
+                23/07/2020</td>
+
+              <td style="background-color:#e0dede;"><br/>10:00 - 13:00<br/></td>
+
+              <td rowspan="2"><br/><br/><br/>
+                4GB de Ram<br/>
+                (8GB recomendables)<br/>
+                y 20GB de HD</td>
+
+              <td rowspan="2"><br/><br/><br/><br/>
+                <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/1144193151/ngel+Villalba+Fern+ndez">
+                  Ángel Villalba</a></td>
+              <td rowspan="2"> 
+             
+              </td>
             </tr>
 
             <tr>
-              <td rowspan="2"><br/><br/>
-                <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/62226505/TWB-200+Programaci+n+Web+Segura+OWASP">
-                  <img src="img\productos\owasp.png" alt="owasp"/><br/>
-                Seguridad Web</a></td>
+              <td style="background-color: #fffebd;"><br/>15:30 - 18:30<br/></td>
+            </tr>           
 
-              <td rowspan="2"><br/><br/><img src="img\productos\icons-48\abierto.png" alt="Abierto" /><br/><br/>
+            <tr>
+              <td rowspan="2" style="color: orangered;"><br/><br/>
+                <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/774111233/MAD-060+Patrones+de+Arquitectura">
+                  <img src="img\productos\patrones.jpg" alt="Patrones de arquitectura"/><br/>
+                Patrones de arquitectura</a> <b>¡Nuevo!</b></td>
+
+              <td rowspan="2"><br/><br/><img src="img\productos\icons-48\abierto.png" alt="Abierto" /><br/><br/>              
                 Abierto para reservas</td>
 
-              <td rowspan="2"><br/><br/><img src="img\icons\48\development.png" alt="Virtual" /><br/><br/>
+              <td rowspan="2"><br/><img src="img\icons\48\development.png" alt="Virtual" /><br/><br/>
                 Virtual</td>
 
-              <td rowspan="2"><br/><br/><br/><br/><br/>
-                24 horas</td>
-
-              <td rowspan="2"><br/>
-                Lunes a jueves<br/><br/>
-                22/06/2020<br/>
-                al<br/>
-                02/07/2020</td>
-                
-              <td style="background-color:#fffebd"><br/>10:00 - 13:00<br/></td>
-
               <td rowspan="2"><br/><br/><br/><br/>
+                16 horas</td>
+
+              <td rowspan="2"><br/>Lunes a jueves<br/><br/>
+                20/07/2020<br/>
+                al<br/>
+                23/07/2020</td>
+
+              <td style="background-color:#e0dede;"><br/>10:00 - 13:00<br/></td>
+
+              <td rowspan="2"><br/><br/><br/>
                 4GB de Ram<br/>
                 y 10GB de HD</td>
 
-              <td rowspan="2"><br/><br/><br/><br/><br/>
-                <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/1168408662/Luis+Ram+n+lvarez+Gonz+lez">
-                  Luis Ramón Álvarez</a></td>
-              <td rowspan="2">
-
-              <!-- Load Stripe.js on your website. -->
-              <script src="https://js.stripe.com/v3"></script>
-              <!-- Create a button that your customers click to complete their purchase. Customize the styling to suit your branding. -->
-              <button
-                style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em"
-                id="Reservar"
-                role="link"
-              >
-                Reservar
-              </button>
-              <br/>
-              <br/>
-
-               <div id="error-message"></div>
-
-                  <script>
-                    (function() {
-                      var stripe = Stripe('pk_test_mKH7OwG8T5FcqYlsuibgDXqr00JEnmNFgH');
-                      var checkoutButton = document.getElementById('Reservar');
-                      checkoutButton.addEventListener('click', function () {
-                        // When the customer clicks on the button, redirect
-                        // them to Checkout.
-                        stripe.redirectToCheckout({
-                          lineItems: [{price: 'price_HMVTfF1JAJ29vZ', quantity: 1}],
-                          mode: 'payment',
-                          // Do not rely on the redirect to the successUrl for fulfilling
-                          // purchases, customers may not always reach the success_url after
-                          // a successful payment.
-                          // Instead use one of the strategies described in
-                          // https://stripe.com/docs/payments/checkout/fulfillment
-                          successUrl: 'http://www.pronoide.com/success',
-                          cancelUrl: 'http://www.pronoide.com/canceled',
-                        })
-                        .then(function (result) {
-                          if (result.error) {
-                            // If `redirectToCheckout` fails due to a browser or network
-                            // error, display the localized error message to your customer.
-                            var displayError = document.getElementById('error-message');
-                            displayError.textContent = result.error.message;
-                          }
-                        });
-                      });
-                    })();
-                    </script>
-
-                  <button
-                    style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em"
-                    id="Comprar"
-                    role="link"
-                  >
-                    Comprar
-                  </button>
-                  <div id="error-message"></div>
-                  <br/>
-                  <script>
-                    (function() {
-                      var stripe = Stripe('pk_test_mKH7OwG8T5FcqYlsuibgDXqr00JEnmNFgH');
-                      var checkoutButton = document.getElementById('Comprar');
-                      checkoutButton.addEventListener('click', function () {
-                        // When the customer clicks on the button, redirect
-                        // them to Checkout.
-                        stripe.redirectToCheckout({
-                          lineItems: [{price: 'price_HMI0640ea6nh2D', quantity: 1}],
-                          mode: 'payment',
-                          // Do not rely on the redirect to the successUrl for fulfilling
-                          // purchases, customers may not always reach the success_url after
-                          // a successful payment.
-                          // Instead use one of the strategies described in
-                          // https://stripe.com/docs/payments/checkout/fulfillment
-                          successUrl: 'http://www.pronoide.com/success',
-                          cancelUrl: 'http://www.pronoide.com/canceled',
-                        })
-                        .then(function (result) {
-                          if (result.error) {
-                            // If `redirectToCheckout` fails due to a browser or network
-                            // error, display the localized error message to your customer.
-                            var displayError = document.getElementById('error-message');
-                            displayError.textContent = result.error.message;
-                          }
-                        });
-                      });
-                    })();
-                    </script>
-                               
-                  <button
-                    style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em"
-                    id="Compra (Tarifa Social)"
-                    role="link"
-                  >
-                    Compra (Tarifa Social)
-                  </button>
-                  <div id="error-message"></div>
-                  <script>
-                    (function() {
-                      var stripe = Stripe('pk_test_mKH7OwG8T5FcqYlsuibgDXqr00JEnmNFgH');
-                      var checkoutButton = document.getElementById('Compra (Tarifa Social)');
-                      checkoutButton.addEventListener('click', function () {
-                        // When the customer clicks on the button, redirect
-                        // them to Checkout.
-                        stripe.redirectToCheckout({
-                          lineItems: [{price: 'price_HMI0sCpZp5CVKR', quantity: 1}],
-                          mode: 'payment',
-                          // Do not rely on the redirect to the successUrl for fulfilling
-                          // purchases, customers may not always reach the success_url after
-                          // a successful payment.
-                          // Instead use one of the strategies described in
-                          // https://stripe.com/docs/payments/checkout/fulfillment
-                          successUrl: 'http://www.pronoide.com/success',
-                          cancelUrl: 'http://www.pronoide.com/canceled',
-                        })
-                        .then(function (result) {
-                          if (result.error) {
-                            // If `redirectToCheckout` fails due to a browser or network
-                            // error, display the localized error message to your customer.
-                            var displayError = document.getElementById('error-message');
-                            displayError.textContent = result.error.message;
-                          }
-                        });
-                      });
-                    })();
-                    </script>
-          </tr>
-
-          <tr>
-            <td style="background-color: #e0dede;"><br/>15:30 - 18:30<br/></td>
-          </tr>
+              <td rowspan="2"><br/><br/><br/><br/>
+                <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/1144225992/Silvano+Gil+P+rez">
+                  Silvano Gil</a></td>
+              <td rowspan="2"> 
+             
+              </td>
+            </tr>
 
             <tr>
-            <td rowspan="2"><br/><br/>
-              <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/550731830/MGP-010+Scrum">
-                <img src="img\productos\scrum.png" alt="Scrum"/><br/>
-              Scrum</a></td>
+              <td style="background-color: #fffebd;"><br/>15:30 - 18:30<br/></td>
+            </tr>  
+
+            <tr>
+              <td rowspan="2" style="color: orangered;"><br/><br/>
+                <a href="https://pronoide.atlassian.net/wiki/spaces/RET/pages/26771653/BDN-010+Fundamentos+de+Big+Data">
+                  <img src="img\productos\bigdata.png" alt="Fundamentos Big Data"/><br/>
+                Fundamentos Big Data</a> <b>¡Nuevo!</b></td>
+
+              <td rowspan="2"><br/><br/><img src="img\productos\icons-48\abierto.png" alt="Abierto" /><br/><br/>              
+                Abierto para reservas</td>
+
+              <td rowspan="2"><br/><img src="img\icons\48\development.png" alt="Virtual" /><br/><br/>
+                Virtual</td>
+
+              <td rowspan="2"><br/><br/><br/><br/>
+                24 horas</td>
+
+              <td rowspan="2"><br/>Lunes a jueves<br/><br/>
+                20/07/2020<br/>
+                al<br/>
+                30/07/2020</td>
+
+              <td style="background-color:#e0dede;"><br/>10:00 - 13:00<br/></td>
+
+              <td rowspan="2"><br/><br/><br/>
+                8GB de Ram<br/>
+                (12Gb recomendables)<br/>
+                y 50GB de HD</td>
+
+              <td rowspan="2"><br/><br/><br/><br/>
+                <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/1168343187/Ram+n+Rubio+Hortelano">
+                  Ramón Rubio</a></td>
+              <td rowspan="2"> 
+             
+              </td>
+            </tr>
+
+            <tr>
+              <td style="background-color: #fffebd;"><br/>15:30 - 18:30<br/></td>
+            </tr>
+            
+            <tr>
+              <td><br/><br/>
+                <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/629571610/SPR-050+Spring+Boot">
+                  <img src="img\productos\springboot.png" alt="Spring Boot"/><br/>
+                Spring Boot</a></td>
+
+              <td><br/><br/><img src="img\productos\icons-48\abierto.png" alt="Abierto" /><br/><br/>              
+                Abierto para reservas</td>
+
+              <td><br/><img src="img\icons\48\development.png" alt="Virtual" /><br/><br/>
+                Virtual</td>
+
+              <td><br/><br/><br/><br/>
+                24 horas</td>
+
+              <td><br/>Lunes a jueves<br/><br/>
+                20/07/2020<br/>
+                al<br/>
+                30/07/2020</td>
+
+              <td style="background-color:#fffebd"><br/><br/><br/><br/>15:30 - 18:50<br/></td>
+
+              <td><br/><br/><br/><br/>
+                4GB de Ram<br/>
+                y 20GB de HD</td>
+
+              <td><br/><br/><br/><br/><br/>
+                <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/1168408662/Luis+Ram+n+lvarez+Gonz+lez">
+                  Luis Ramón Álvarez</a></td>
+              <td> 
+             
+              </td>
+            </tr>
+
+            <tr>
+              <td rowspan="2" style="color: orangered;"><br/><br/>
+                <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/1057325088/DCH-130+OpenShift">
+                  <img src="img\productos\kubernetes.png" alt="Kubernetes"/><br/>
+                Kubernetes</a> <b>¡Nuevo!</b></td>
+  
+              <td rowspan="2"><br/><br/><img src="img\productos\icons-48\abierto.png" alt="Abierto" /><br/><br/>
+                Abierto para reservas</td>
+  
+              <td rowspan="2"><br/><img src="img\icons\48\development.png" alt="Virtual" /><br/><br/>
+                Virtual</td>
+  
+              <td rowspan="2"><br/><br/><br/><br/>
+                16 horas</td>
+  
+              <td rowspan="2"><br/>Lunes a jueves<br/><br/>
+                20/07/2020<br/>
+                al<br/>
+                23/07/2020</td>
+  
+              <td style="background-color: #e0dede;"><br/>10:00 - 13:00<br/></td>  
+  
+              <td rowspan="2"><br/><br/><br/><br/>
+                8GB de Ram<br/>
+                (16GB recomendables)<br/>
+                y 100GB de HD</td>
+  
+              <td rowspan="2"><br/><br/><br/><br/><br/>
+                <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/1168408867/Manuel+Tom+s+Ortega+S+nchez">
+                  Manuel Tomás Ortega</a></td>
+              <td rowspan="2">
+               
+              </td>
+            </tr>
+  
+            <tr>
+              <td style="background-color: #fffebd;"><br/>15:30 - 18:30<br/></td>
+            </tr>            
+
+            <tr>
+            <td rowspan="2" style="color: orangered;"><br/><br/>
+              <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/1057325088/DCH-130+OpenShift">
+                <img src="img\productos\openshift.png" alt="OpenShift"/><br/>
+              OpenShift</a> <b>¡Nuevo!</b></td>
 
             <td rowspan="2"><br/><br/><img src="img\productos\icons-48\abierto.png" alt="Abierto" /><br/><br/>
               Abierto para reservas</td>
@@ -375,112 +607,34 @@
             <td rowspan="2"><br/><img src="img\icons\48\development.png" alt="Virtual" /><br/><br/>
               Virtual</td>
 
-            <td rowspan="2"><br/><br/><br/><br/><br/>
-              15 horas</td>
+            <td rowspan="2"><br/><br/><br/><br/>
+              16 horas</td>
 
             <td rowspan="2"><br/>Lunes a jueves<br/><br/>
-              22/06/2020<br/>
+              27/07/2020<br/>
               al<br/>
-              02/07/2020</td>
+              30/07/2020</td>
 
-            <td style="background-color:#fffebd"><br/>10:00 - 13:00<br/></td>  
+            <td style="background-color: #e0dede;"><br/>10:00 - 13:00<br/></td>  
 
             <td rowspan="2"><br/><br/><br/><br/>
-              4GB de Ram<br/>
-              y 10GB de HD</td>
+              16GB de Ram<br/>
+              y 150GB de HD</td>
 
             <td rowspan="2"><br/><br/><br/><br/><br/>
-              <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/1144225992/Silvano+Gil+P+rez">
-                Silvano Gil</a></td>
-
+              <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/1168408867/Manuel+Tom+s+Ortega+S+nchez">
+                Manuel Tomás Ortega</a></td>
             <td rowspan="2">
              
             </td>
           </tr>
 
           <tr>
-            <td style="background-color: #e0dede;"><br/>15:30 - 18:30<br/></td>
+            <td style="background-color: #fffebd;"><br/>15:30 - 18:30<br/></td>
           </tr>
 
-          <tr>
-          <td rowspan="2"><br/><br/>
-            <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/629735454/SPR-060+Spring+Cloud">
-              <img src="img\productos\springcloud.png" alt="Spring Cloud"/><br/>
-            Spring Cloud</a></td>
-
-          <td rowspan="2"><br/><br/><img src="img\productos\icons-48\abierto.png" alt="Abierto" /><br/><br/>
-            Abierto para reservas</td>
-
-          <td rowspan="2"><br/><img src="img\icons\48\development.png" alt="Virtual" /><br/><br/>
-            Virtual</td>
-
-          <td rowspan="2"><br/><br/><br/><br/><br/>
-            24 horas</td>
-
-          <td rowspan="2"><br/>Lunes a jueves<br/><br/>
-            06/07/2020<br/>
-            al<br/>
-            16/07/2020</td>
-
-          <td style="background-color:#fffebd"><br/>10:00 - 13:00<br/></td>
-
-          <td rowspan="2"><br/><br/><br/><br/>
-            8GB de Ram<br/>
-            y 10GB de HD</td>
-
-          <td rowspan="2"><br/><br/><br/><br/><br/>
-            <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/1168408662/Luis+Ram+n+lvarez+Gonz+lez">
-            Luis Ramón Álvarez</a></td>
-
-          <td rowspan="2">
-            
-          </td>
-        </tr>
-
-        <tr>
-          <td style="background-color: #e0dede;"><br/>15:30 - 18:30<br/></td>
-        </tr>
-
-        <tr>
-        <td rowspan="2"><br/><br/>
-          <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/776896522/BDN-080+Spark">
-            <img src="img\productos\spark.png" alt="Spark"/><br/>
-          Spark</a></td>
-
-        <td rowspan="2"><br/><br/><img src="img\productos\icons-48\abierto.png" alt="Abierto" /><br/><br/>
-          Abierto para reservas</td>
-
-        <td rowspan="2"><br/><img src="img\icons\48\development.png" alt="Virtual" /><br/><br/>
-          Virtual</td>
-
-        <td rowspan="2"><br/><br/><br/><br/><br/>
-          24 horas</td>
-
-        <td rowspan="2"><br/>Lunes a jueves<br/><br/>
-          06/07/2020<br/>
-          al<br/>
-          16/07/2020</td>
-
-        <td style="background-color:#fffebd"><br/>10:00 - 13:00<br/></td>
-
-
-        <td rowspan="2"><br/><br/><br/><br/>
-          8GB de Ram<br/>
-          y 40GB de HD</td>
-
-        <td rowspan="2"><br/><br/><br/><br/><br/>
-          <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/1168343187/Ram+n+Rubio+Hortelano">
-            Ramón Rubio</a></td>
-
-        <td rowspan="2">
-    
-        </td>
-      </tr>
-
-      <tr>
-        <td style="background-color: #e0dede;"><br/>15:30 - 18:30<br/></td>
-      </tr>
-
+        
+       
               </tbody>
             </table>
           </div>         
