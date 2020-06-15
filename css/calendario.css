@@ -40,6 +40,13 @@ body {
     text-decoration: underline;
   }
 
+  /* 
+  horario alterno:
+  #dce8ee; oscuro
+  #f1f8fb; claro
+  */
+
+
   /* tr:hover {
     background-color: #f9ffe0;
   }   */
@@ -48,10 +55,10 @@ body {
   background-color: #f9ffe0;
   } */
 
-  tbody tr:active {
+   /* tbody tr:active {
     background-color: #f9ffe0
     
-  }
+  }  */
 
   table {
     background-color: #fff;
@@ -62,13 +69,21 @@ body {
     color: #FFF;
   }
 
+  tbody {
+    vertical-align: baseline;
+  }
+
   .cabecera {
     font-weight: normal;
   }
 
-  .procedimiento {
-    border: #325578;
+  table {
+    overflow: hidden;
   }
+
+  /* .procedimiento {
+    border: #325578;
+  } */
 
   p {
     font-size: 1.2em;
