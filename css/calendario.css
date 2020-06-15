@@ -42,7 +42,16 @@ body {
 
   /* tr:hover {
     background-color: #f9ffe0;
-  }  */
+  }   */
+
+  /* tbody tr.selected {
+  background-color: #f9ffe0;
+  } */
+
+  tbody tr:active {
+    background-color: #f9ffe0
+    
+  }
 
   table {
     background-color: #fff;
@@ -51,6 +60,10 @@ body {
   thead {
     background-color:	#325578;
     color: #FFF;
+  }
+
+  .cabecera {
+    font-weight: normal;
   }
 
   .procedimiento {
