@@ -81,7 +81,7 @@
       <div class="row">
         <div class="text-center col-xs-12 col-sm-12 col-md-auto col-lg-9">   
           <div class="table-responsive">
-            <table class="table table-bordered">
+            <table id="calendario" class="table table-bordered">
               <thead>
                 <tr>
                   <th colspan="9" class="cabecera">
@@ -137,7 +137,7 @@
                   <td rowspan="2">
     
                   <button  
-                  style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em">
+                  style="background-color:#E04000;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em">
                     <a href="mailto:formacion@pronoide.es?subject=Curso%20Seguridad%20Web" 
                     style="text-decoration: none; color: #FFF; font-size: inherit;">
                     Pedir info</a>
@@ -150,7 +150,7 @@
                   <script src="https://js.stripe.com/v3"></script>
                   <!-- Create a button that your customers click to complete their purchase. Customize the styling to suit your branding. -->
                   <button
-                    style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em"
+                    style="background-color:#E04000;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em"
                     id="Reservar"
                     role="link"
                   >
@@ -192,7 +192,7 @@
                         </script>
     
                       <button
-                        style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em"
+                        style="background-color:#E04000;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em"
                         id="Comprar"
                         role="link"
                       >
@@ -231,7 +231,7 @@
                         </script>
                                    
                       <button
-                        style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em"
+                        style="background-color:#E04000;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em"
                         id="Compra (Tarifa Social)"
                         role="link"
                       >
@@ -303,8 +303,15 @@
                   <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/1168408662/Luis+Ram+n+lvarez+Gonz+lez">
                   Luis Ramón Álvarez</a></td>
       
-                <td>
-
+                <td><br/><br/>
+                  <button  
+                  style="background-color:#6772E5;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em">
+                    <a href="mailto:formacion@pronoide.es?subject=Curso%20Spring%20Cloud" 
+                    style="text-decoration: none; color: #FFF; font-size: inherit;">
+                    Pedir info</a>
+                  </button>
+                  <br/>
+                  <br/>
                 </td>
               </tr>
  
@@ -660,6 +667,18 @@
           <br/>
 
           <div class="table-responsive">
+            <table class="table table-bordered text-center">
+              <tr>
+                <td>
+            <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/1102315529/TRS+Tarifas+Servicios+de+Formaci+n" class="tarifas">
+              <img src="img/productos/tarifas.png" alt="tarifas" /> 
+              <h2>Ver tarifas</h2></a>
+                </td>
+              </tr>
+            </table>
+          </div>
+
+          <div class="table-responsive">
             <table class="table ofertas">
               <tr>
                 <td style="background-color: #E04000;"><br/><br/><br/>
@@ -675,18 +694,6 @@
                 </td>
               </tr>
           </table>
-          </div>
-
-          <div class="table-responsive">
-            <table class="table table-bordered text-center">
-              <tr>
-                <td>
-            <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/1102315529/TRS+Tarifas+Servicios+de+Formaci+n" class="tarifas">
-              <img src="img/productos/tarifas.png" alt="tarifas" /> 
-              <h2>Ver tarifas</h2></a>
-                </td>
-              </tr>
-            </table>
           </div>
 
           <div class="table-responsive">
@@ -709,29 +716,8 @@
 
         </div>
       </div>   
-
-<!-- <div class="row">
-  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-    <h1><a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/1102315529/TRS+Tarifas+Servicios+de+Formaci+n" class="tarifas">
-      <img src="img/productos/tarifas.png" alt="tarifas" />  Ver tarifas</a></h1>
-      <ul>
-        <li>
-          Se abonará un 30% en concepto de reserva de plaza reembolsable.
-        </li>
-        <li>Una semana antes del curso se confirmará su impartición.</li>
-      </ul>
-  </div>
-  <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
-    <h1><img src="img/productos/descuento.png" alt="Descuento" />
-      ¡Oferta julio!</h1>
-    <ul>
-      <li>Para todos los <b>cursos públicos</b>, durante todo el mes de <b>julio</b>, 
-        se aplicará un <b>35% de descuento</b> sobre la tarifa establecida.</li>
-    </ul>
-  </div>
-</div> -->
-<br/>
-<br/>
+    <br/>
+    <br/>
   
 </section><!-- /.container -->
 
@@ -756,7 +742,7 @@
       <p><h5>© 2020 Pronoide S.L. Todos los derechos reservados |
         <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/1101856864/Notas+legales+y+privacidad"> Notas legales y privacidad</a></h5></p>
       <br/>
-      </footer>
+    </footer>
 
 
     <!-- Bootstrap core JavaScript
@@ -765,7 +751,6 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="lib/bootstrap-3.2.0/dist/js/bootstrap.min.js"></script>
     <script src="lib/jquery.easing.1.3/jquery.easing.1.3.js" type="text/javascript" ></script>
-
 
     <script>
     $(document).ready(function(){
