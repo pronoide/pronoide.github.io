@@ -215,7 +215,7 @@
                 <td style="background-color: #dce8ee;"><br/>15:30 - 18:30
                   <br/>
                   <!-- Load Stripe.js on your website. -->
-                  <script src="https://js.stripe.com/v3"></script>
+                  <!-- <script src="https://js.stripe.com/v3"></script> -->
                   <button
                     style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;"
                     id="Reservar-SW-tar"
@@ -298,12 +298,36 @@
                   <br/>
                   <button
                     style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;"
-                    id="Reservar"
+                    id="Reservar-SC"
                     role="link"
                   >
                   <img src="img\productos\icons-24\libros.png" alt="Libros" />
                     Reservar
                   </button>
+
+                  <div id="error-message"></div>
+
+                  <script>
+                    (function() {
+                      var stripe = Stripe('pk_test_mKH7OwG8T5FcqYlsuibgDXqr00JEnmNFgH');
+                      var checkoutButton = document.getElementById('Reservar-SC');
+                      checkoutButton.addEventListener('click', function () {
+                        stripe.redirectToCheckout({
+                          lineItems: [{price: 'price_HMVTfF1JAJ29vZ', quantity: 1}],
+                          mode: 'payment',
+                          successUrl: 'http://www.pronoide.com/success',
+                          cancelUrl: 'http://www.pronoide.com/canceled',
+                        })
+                        .then(function (result) {
+                          if (result.error) {
+                            var displayError = document.getElementById('error-message');
+                            displayError.textContent = result.error.message;
+                          }
+                        });
+                      });
+                    })();
+                    </script> 
+
                 </td>
       
                 <td><br/><br/><br/><br/>
@@ -355,12 +379,35 @@
                   <br/>
                     <button
                     style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;"
-                    id="Reservar"
+                    id="Reservar-Spark-ma"
                     role="link"
                   >
                   <img src="img\productos\icons-24\libros.png" alt="Libros" />
                   Reservar
                   </button>
+
+                  <div id="error-message"></div>
+
+                  <script>
+                    (function() {
+                      var stripe = Stripe('pk_test_mKH7OwG8T5FcqYlsuibgDXqr00JEnmNFgH');
+                      var checkoutButton = document.getElementById('Reservar-Spark-ma');
+                      checkoutButton.addEventListener('click', function () {
+                        stripe.redirectToCheckout({
+                          lineItems: [{price: 'price_HMVTfF1JAJ29vZ', quantity: 1}],
+                          mode: 'payment',
+                          successUrl: 'http://www.pronoide.com/success',
+                          cancelUrl: 'http://www.pronoide.com/canceled',
+                        })
+                        .then(function (result) {
+                          if (result.error) {
+                            var displayError = document.getElementById('error-message');
+                            displayError.textContent = result.error.message;
+                          }
+                        });
+                      });
+                    })();
+                    </script> 
                 </td>
         
         
@@ -379,12 +426,35 @@
                 <br/>
                   <button
                     style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;"
-                    id="Reservar"
+                    id="Reservar-Spark-tar"
                     role="link"
                   >
                   <img src="img\productos\icons-24\libros.png" alt="Libros" />
                   Reservar
                   </button>
+
+                  <div id="error-message"></div>
+
+                  <script>
+                    (function() {
+                      var stripe = Stripe('pk_test_mKH7OwG8T5FcqYlsuibgDXqr00JEnmNFgH');
+                      var checkoutButton = document.getElementById('Reservar-Spark-tar');
+                      checkoutButton.addEventListener('click', function () {
+                        stripe.redirectToCheckout({
+                          lineItems: [{price: 'price_HMVTfF1JAJ29vZ', quantity: 1}],
+                          mode: 'payment',
+                          successUrl: 'http://www.pronoide.com/success',
+                          cancelUrl: 'http://www.pronoide.com/canceled',
+                        })
+                        .then(function (result) {
+                          if (result.error) {
+                            var displayError = document.getElementById('error-message');
+                            displayError.textContent = result.error.message;
+                          }
+                        });
+                      });
+                    })();
+                    </script> 
                 </td>
               </tr>
                       
@@ -428,12 +498,35 @@
                     <br/>
                   <button
                     style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;"
-                    id="Reservar"
+                    id="Reservar-React-ma"
                     role="link"
                   >
                   <img src="img\productos\icons-24\libros.png" alt="Libros" />
                     Reservar
                   </button>
+
+                  <div id="error-message"></div>
+
+                  <script>
+                    (function() {
+                      var stripe = Stripe('pk_test_mKH7OwG8T5FcqYlsuibgDXqr00JEnmNFgH');
+                      var checkoutButton = document.getElementById('Reservar-React-ma');
+                      checkoutButton.addEventListener('click', function () {
+                        stripe.redirectToCheckout({
+                          lineItems: [{price: 'price_HMVTfF1JAJ29vZ', quantity: 1}],
+                          mode: 'payment',
+                          successUrl: 'http://www.pronoide.com/success',
+                          cancelUrl: 'http://www.pronoide.com/canceled',
+                        })
+                        .then(function (result) {
+                          if (result.error) {
+                            var displayError = document.getElementById('error-message');
+                            displayError.textContent = result.error.message;
+                          }
+                        });
+                      });
+                    })();
+                    </script> 
                   </td>
 
                   <td rowspan="2"><br/><br/><br/><br/>
@@ -451,12 +544,35 @@
                     <br/>
                   <button
                     style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;"
-                    id="Reservar"
+                    id="Reservar-React-tar"
                     role="link"
                   >
                   <img src="img\productos\icons-24\libros.png" alt="Libros" />
                     Reservar
                   </button>
+
+                  <div id="error-message"></div>
+
+                  <script>
+                    (function() {
+                      var stripe = Stripe('pk_test_mKH7OwG8T5FcqYlsuibgDXqr00JEnmNFgH');
+                      var checkoutButton = document.getElementById('Reservar-React-tar');
+                      checkoutButton.addEventListener('click', function () {
+                        stripe.redirectToCheckout({
+                          lineItems: [{price: 'price_HMVTfF1JAJ29vZ', quantity: 1}],
+                          mode: 'payment',
+                          successUrl: 'http://www.pronoide.com/success',
+                          cancelUrl: 'http://www.pronoide.com/canceled',
+                        })
+                        .then(function (result) {
+                          if (result.error) {
+                            var displayError = document.getElementById('error-message');
+                            displayError.textContent = result.error.message;
+                          }
+                        });
+                      });
+                    })();
+                    </script> 
                   </td>
                 </tr>
 
