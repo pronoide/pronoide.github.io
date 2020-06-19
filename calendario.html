@@ -154,7 +154,7 @@
                     al<br/>
                     16/07/2020</td>
                     
-                  <td style="background-color:#f1f8fb;"><br/>10:00 - 13:00
+                  <td style="background-color:#dce8ee;"><br/>10:00 - 13:00
                   <br/>
                   <!-- Load Stripe.js on your website. -->
                   <script src="https://js.stripe.com/v3"></script>
@@ -213,7 +213,7 @@
               </tr>
 
               <tr>
-                <td style="background-color: #dce8ee;"><br/>15:30 - 18:30
+                <td style="background-color: #f1f8fb;"><br/>15:30 - 18:30
                   <br/>
                   <!-- les falta el tooltip de ayuda-->
                   <button
@@ -284,7 +284,7 @@
                   al<br/>
                   16/07/2020</td>
       
-                <td style="background-color: #f1f8fb;"><br/><br/><br/>
+                <td style="background-color: #dce8ee;"><br/><br/><br/>
                   15:30 - 18:30<br/>
                   <br/>
                   <button
@@ -345,7 +345,7 @@
                   al<br/>
                   16/07/2020</td>
         
-                <td style="background-color:#dce8ee;">
+                <td style="background-color:#f1f8fb;">
                   <br/>
                   10:00 - 13:00
                   <br/>
@@ -375,7 +375,7 @@
               </tr>
         
               <tr>
-                <td style="background-color: #f1f8fb;"><br/>
+                <td style="background-color: #dce8ee;"><br/>
                   15:30 - 18:30
                 <br/>
                   <button
@@ -429,7 +429,7 @@
                     al<br/>
                     17/07/2020</td>
 
-                  <td style="background-color:#dce8ee;"><br/>
+                  <td style="background-color:#f1f8fb;"><br/>
                     10:00 - 13:00
                     <br/>
                   <button
@@ -458,7 +458,7 @@
                 </tr>    
                 
                 <tr>
-                  <td style="background-color: #f1f8fb;"><br/>15:30 - 18:30
+                  <td style="background-color: #dce8ee;"><br/>15:30 - 18:30
                     <br/>
                   <button
                     style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;"
@@ -475,6 +475,65 @@
                   
                   </td>
                 </tr>
+
+                <tr>
+                  <td style="color: orangered;"><br/><br/>
+                    <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/1208877396/OTL-020+Python">
+                      <img src="img\productos\python.png" alt="Python"/><br/>
+                    Python</a> <b>¡Nuevo!</b></td>
+    
+                  <td><br/>
+                    <img src="img\productos\icons-48\abierto.png" alt="Abierto" /><br/><br/>              
+                    Abierto para reservas
+                      <br/>
+                      <br/>
+                      <button  
+                      style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;">
+                        <a href="mailto:formacion@pronoide.com?subject=Curso%20Python.%20Tardes" 
+                        style="text-decoration: none; color: #FFF; font-size: inherit;">
+                        <img src="img\productos\icons-24\info.png" alt="Información" />
+                        Pedir Info</a>
+                      </button>
+                  </td>
+    
+                  <td><br/><br/>
+                    <img src="img\icons\48\development.png" alt="Virtual" /><br/><br/>
+                    Virtual</td>
+    
+                  <td><br/><br/><br/><br/><br/>
+                    30 horas</td>
+    
+                  <td><br/>
+                    Lunes a viernes<br/><br/>
+                    13/07/2020<br/>
+                    al<br/>
+                    24/07/2020</td>
+    
+                  <td style="background-color:#f1f8fb;"><br/><br/>
+                    15:00 - 18:00<br/>
+                    <br/>
+                      <button
+                        style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;"
+                        id="Reservar-Python"
+                        role="link"
+                      >
+                      <img src="img\productos\icons-24\libros.png" alt="Libros" />
+                        Reservar
+                      </button>
+    
+                      <div id="error-message"></div>
+                      
+                      <!--script-->
+                  </td>
+    
+                  <td><br/><br/><br/><br/>
+                    4GB de Ram<br/>
+                    y 10GB de HD</td>
+    
+                  <td><br/><br/><br/><br/><br/>
+                    <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/1267007503/Plutarco+Naranjo">
+                      Plutarco Naranjo</a></td>
+                </tr>           
 
               <tr>
               <td rowspan="2" style="color: orangered;"><br/><br/>
@@ -1004,7 +1063,6 @@
             <onclick="fnselect()" />
 
             <script>
-
               var table = document.getElementById('calendario'),
               selected = table.getElementsByClassName('selected');
               table.onclick = highlight;
@@ -1012,7 +1070,6 @@
                   if (selected[0]) selected[0].className = '';
                   e.target.parentNode.className = 'selected';
               }
-             
             </script>
           </div>
         </div>
@@ -1036,6 +1093,7 @@
                   <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/1102315529/TRS+Tarifas+Servicios+de+Formaci+n"
                    class="tarifas">
                     <h2>Ver tarifas</h2></a>  
+                    <div class="help-tip"><p>Ver tarifas en detalle</p></div>
                     <p>General, estudiantes, desempleados, empresas y distribuidores</p>
                 </td>
               </tr>
