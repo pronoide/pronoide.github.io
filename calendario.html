@@ -138,6 +138,7 @@
                     <img src="img\productos\icons-24\info.png" alt="Información" />
                     Pedir Info</a>
                   </button>
+
                   </td>
     
                   <td rowspan="2"><br/><br/<br/><br/>
@@ -214,6 +215,7 @@
               <tr>
                 <td style="background-color: #dce8ee;"><br/>15:30 - 18:30
                   <br/>
+                  <!-- les falta el tooltip de ayuda-->
                   <button
                     style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;"
                     id="Reservar-SW-tar"
@@ -998,6 +1000,20 @@
 
               </tbody>
             </table>
+
+            <onclick="fnselect()" />
+
+            <script>
+
+              var table = document.getElementById('calendario'),
+              selected = table.getElementsByClassName('selected');
+              table.onclick = highlight;
+              function highlight(e) {
+                  if (selected[0]) selected[0].className = '';
+                  e.target.parentNode.className = 'selected';
+              }
+             
+            </script>
           </div>
         </div>
    

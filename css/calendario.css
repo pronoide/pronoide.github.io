@@ -40,25 +40,18 @@ body {
     text-decoration: underline;
   }
 
-  /* 
-  horario alterno:
-  #dce8ee; oscuro
-  #f1f8fb; claro
-  */
-
 
   /* tr:hover {
     background-color: #f9ffe0;
   }   */
 
-  /* tbody tr.selected {
-  background-color: #f9ffe0;
-  } */
+  td {border: 1px #DDD solid; padding: 5px; cursor: pointer;}
 
-   /* tbody tr:active {
-    background-color: #f9ffe0
-    
-  }  */
+  .selected {
+      background-color: #f3fab8;
+      color: #233b54;
+  }
+
 
   table {
     background-color: #fff;
