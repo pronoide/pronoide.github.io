@@ -24,9 +24,7 @@
     <!-- CSS -->
     <link href="lib/bootstrap-3.2.0/dist/css/bootstrap.min.css" rel="stylesheet">
     <link href="lib/bootstrap-3.2.0/dist/css/bootstrap-theme.min.css" rel="stylesheet">
-    <!-- <link href="css/default.css" rel="stylesheet"> -->
     <link href="css/calendario.css" rel="stylesheet">
-  
 
     <!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!--[if lt IE 9]>
@@ -42,10 +40,12 @@
         <div class="navbar-header">
           <button type="button" class="navbar-toggle"
             data-toggle="collapse" data-target=".navbar-collapse">
+            <a class="logo" href="index.html">
+              <img src="img/productos/icons-48/volver.png" alt="volver" /></a>
             <span class="sr-only">Navegación</span>
+            <!-- <span class="icon-bar"></span>
             <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
-            <span class="icon-bar"></span>
+            <span class="icon-bar"></span> -->
           </button>
           <div class="logo">
             <a class="logo" href="index.html"><img src="img/logo/pronoide-1-90.png" alt="logo"/></a>
@@ -54,23 +54,6 @@
         <div class="collapse navbar-collapse navbar-right">
           <a class="logo" href="index.html">
           <img src="img/productos/icons-48/volver.png" alt="volver" /></a>
-          <!--<ul class="nav navbar-nav">
-            <!--li><a href="#que-hacemos">¿Qué?</a></li>
-            <li><a href="#como-lo-hacemos">¿Cómo?</a></li>
-            <li><a href="#donde-estamos">¿Dónde?</a></li>
-            <li><a href="#a-donde-vamos">Futuro</a></li>
-            <li><a href="#quienes-somos">¿Quienes?</a></li-->            
-            <!-- <li><a href="#que-impartimos">Catálogo</a></li>   
-            <li><a href="#servicios-pronoide">Servicios</a></li>                   
-            <li><a href="#quienes-somos">Equipo</a></li>
-            <li><a href="#nosotros">Nosotros</a></li>
-            <!--<li><a href="#nuestro-ideario">Ideario</a></li>-->
-            <!-- <li><a href="#trabajo">Trabajo</a></li> -->
-            <!--li><a href="#cursos-de-verano">SummerCamps</a></li-->
-            <!-- <li><a href="#contacto">Contacto</a></li>
-            <li><a href="./en/">English</a></li>
-          </ul>
-        </div>/.nav-collapse-->
       </div>
     </nav>
 
@@ -79,8 +62,8 @@
       <br/>
 
       <div class="row">
-        <div class="text-center col-xs-12 col-sm-12 col-md-auto col-lg-9">   
-          <div class="table-responsive">
+        <div class="text-center col-xs-12 col-sm-12 col-md-9 col-lg-9">   
+          <div class="table-responsive-xs-12-sm-12-md-9-lg-9" style="overflow-y: hidden;">
             <table class="table ofertas text-left">
               <tr>
                 <td style="background-color: #E04000;"><br/>
@@ -96,7 +79,8 @@
                 </td>
               </tr>
             </table>
-            <table id="calendario" class="table table-bordered">
+            <br/>
+            <table id="calendario" class="table table-bordered table-responsive" style="overflow-x: scroll; overflow-y: hidden;">
               <thead>
                 <tr>
                   <th colspan="8" class="cabecera">
@@ -121,12 +105,12 @@
               <tbody>
                
                 <tr>
-                  <td rowspan="2"><br/><br/>
+                  <td rowspan="2">
                     <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/62226505/TWB-200+Programaci+n+Web+Segura+OWASP">
                       <img src="img\productos\owasp.png" alt="owasp"/><br/>
                     Seguridad Web</a></td>
     
-                  <td rowspan="2"><br/>
+                  <td rowspan="2">
                     <img src="img\productos\icons-48\abierto.png" alt="Abierto" /><br/><br/>
                     Abierto para reservas
                   <br/>
@@ -141,14 +125,14 @@
 
                   </td>
     
-                  <td rowspan="2"><br/><br/<br/><br/>
+                  <td rowspan="2">
                     <img src="img\icons\48\development.png" alt="Virtual" /><br/><br/>
                     Virtual</td>
     
-                  <td rowspan="2"><br/><br/><br/><br/><br/><br/>
+                  <td rowspan="2">
                     24 horas</td>
     
-                  <td rowspan="2"><br/><br/>
+                  <td rowspan="2">
                     Lunes a jueves<br/><br/>
                     06/07/2020<br/>
                     al<br/>
@@ -202,11 +186,11 @@
                   
                   </td>
     
-                  <td rowspan="2"><br/><br/><br/><br/><br/>
+                  <td rowspan="2">
                     4GB de Ram<br/>
                     y 10GB de HD</td>
     
-                  <td rowspan="2"><br/><br/><br/><br/><br/><br/>
+                  <td rowspan="2">
                     <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/1144225992/Silvano+Gil+P+rez">
                       Silvano Gil</a>
                     </td>
@@ -252,7 +236,7 @@
               </tr>
 
               <tr>
-                <td><br/><br/>
+                <td><br/>
                   <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/629735454/SPR-060+Spring+Cloud">
                     <img src="img\productos\springcloud.png" alt="Spring Cloud"/><br/>
                   Spring Cloud</a></td>
@@ -271,11 +255,11 @@
                   </button>
                 </td>
       
-                <td><br/><br/>
+                <td><br/>
                   <img src="img\icons\48\development.png" alt="Virtual" /><br/><br/>
                   Virtual</td>
       
-                <td><br/><br/><br/><br/><br/>
+                <td><br/>
                   24 horas</td>
       
                 <td><br/>
@@ -284,7 +268,7 @@
                   al<br/>
                   16/07/2020</td>
       
-                <td style="background-color: #dce8ee;"><br/><br/><br/>
+                <td style="background-color: #dce8ee;"><br/>
                   15:30 - 18:30<br/>
                   <br/>
                   <button
@@ -302,17 +286,17 @@
 
                 </td>
       
-                <td><br/><br/><br/><br/>
+                <td><br/>
                   8GB de Ram<br/>
                   y 10GB de HD</td>
       
-                <td><br/><br/><br/><br/><br/>
+                <td><br/>
                   <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/1168408662/Luis+Ram+n+lvarez+Gonz+lez">
                   Luis Ramón Álvarez</a></td>
               </tr>
  
               <tr>
-                <td rowspan="2"><br/><br/><br/>
+                <td rowspan="2"><br/>
                   <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/776896522/BDN-080+Spark">
                     <img src="img\productos\spark.png" alt="Spark"/><br/>
                   Spark</a></td>
@@ -331,15 +315,15 @@
                   </button> 
                 </td>
         
-                <td rowspan="2"><br/><br/><br/>
+                <td rowspan="2"><br/>
                   <img src="img\icons\48\development.png" alt="Virtual" /><br/><br/>
                   Virtual</td>
         
-                <td rowspan="2"><br/><br/><br/><br/><br/><br/>
+                <td rowspan="2"><br/>
                   24 horas
                 </td>
         
-                <td rowspan="2"><br/><br/>
+                <td rowspan="2"><br/>
                   Lunes a jueves<br/><br/>
                   06/07/2020<br/>
                   al<br/>
@@ -364,12 +348,11 @@
                   
                 </td>
         
-        
-                <td rowspan="2"><br/><br/><br/><br/><br/>
+                <td rowspan="2"><br/>
                   8GB de Ram<br/>
                   y 40GB de HD</td>
         
-                <td rowspan="2"><br/><br/><br/><br/><br/><br/>
+                <td rowspan="2"><br/>
                   <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/1168343187/Ram+n+Rubio+Hortelano">
                     Ramón Rubio</a></td>
               </tr>
@@ -397,7 +380,7 @@
 
               <tr>
                   </td>
-                  <td rowspan="2" style="color: orangered;"><br/><br/><br/>
+                  <td rowspan="2" style="color: orangered;"><br/>
                     <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/776929286/TWB-170+React">
                     <img src="img\productos\react.png" alt="React"/><br/>
                     React</a> <b>Nueva edición</b></td>
@@ -416,14 +399,14 @@
                   </button>
                   </td>
 
-                  <td rowspan="2"><br/><br/><br/>
+                  <td rowspan="2"><br/>
                     <img src="img\icons\48\development.png" alt="Virtual" /><br/><br/>
                     Virtual</td>
 
-                  <td rowspan="2"><br/><br/><br/><br/><br/><br/>
+                  <td rowspan="2"><br/>
                     30 horas</td>
 
-                  <td rowspan="2"><br/><br/>
+                  <td rowspan="2"><br/>
                     Lunes a viernes<br/><br/>
                     06/07/2020<br/>
                     al<br/>
@@ -447,18 +430,20 @@
 
                   </td>
 
-                  <td rowspan="2"><br/><br/><br/><br/>
+                  <td rowspan="2"><br/>
                     4GB de Ram<br/>
                     (8GB recomendables)<br/>
                     y 20GB de HD</td>
 
-                  <td rowspan="2"><br/><br/><br/><br/><br/><br/>
+                  <td rowspan="2"><br/>
                     <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/1144193151/ngel+Villalba+Fern+ndez">
                       Ángel Villalba</a></td>
                 </tr>    
                 
                 <tr>
-                  <td style="background-color: #dce8ee;"><br/>15:30 - 18:30
+                  <td style="background-color: #dce8ee;">
+                    <br/>
+                    15:30 - 18:30
                     <br/>
                   <button
                     style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;"
@@ -477,7 +462,7 @@
                 </tr>
 
                 <tr>
-                  <td style="color: orangered;"><br/><br/>
+                  <td style="color: orangered;"><br/>
                     <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/1208877396/OTL-020+Python">
                       <img src="img\productos\python.png" alt="Python"/><br/>
                     Python</a> <b>¡Nuevo!</b></td>
@@ -496,11 +481,11 @@
                       </button>
                   </td>
     
-                  <td><br/><br/>
+                  <td><br/>
                     <img src="img\icons\48\development.png" alt="Virtual" /><br/><br/>
                     Virtual</td>
     
-                  <td><br/><br/><br/><br/><br/>
+                  <td><br/>
                     30 horas</td>
     
                   <td><br/>
@@ -509,7 +494,8 @@
                     al<br/>
                     24/07/2020</td>
     
-                  <td style="background-color:#f1f8fb;"><br/><br/>
+                  <td style="background-color:#f1f8fb;">
+                    <br/>
                     15:00 - 18:00<br/>
                     <br/>
                       <button
@@ -526,17 +512,17 @@
                       <!--script-->
                   </td>
     
-                  <td><br/><br/><br/><br/>
+                  <td><br/>
                     4GB de Ram<br/>
                     y 10GB de HD</td>
     
-                  <td><br/><br/><br/><br/><br/>
+                  <td><br/>
                     <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/1267007503/Plutarco+Naranjo">
                       Plutarco Naranjo</a></td>
                 </tr>           
 
               <tr>
-              <td rowspan="2" style="color: orangered;"><br/><br/>
+              <td rowspan="2" style="color: orangered;"><br/>
                 <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/64290892/DCH-020+Docker">
                   <img src="img\productos\docker.png" alt="Docker"/><br/>
                 Docker</a> <b>Nueva edición</b></td>
@@ -555,20 +541,22 @@
                   </button>
               </td>
 
-              <td rowspan="2"><br/><br/><br/>
+              <td rowspan="2"><br/>
                 <img src="img\icons\48\development.png" alt="Virtual" /><br/><br/>
                 Virtual</td>
 
-              <td rowspan="2"><br/><br/><br/><br/><br/><br/>
+              <td rowspan="2"><br/>
                 16 horas</td>
 
-              <td rowspan="2"><br/><br/>
+              <td rowspan="2"><br/>
                 Lunes a jueves<br/><br/>
                 13/07/2020<br/>
                 al<br/>
                 16/07/2020</td>
 
-              <td style="background-color:#dce8ee;"><br/>10:00 - 13:00
+              <td style="background-color:#dce8ee;">
+                <br/>
+                10:00 - 13:00
                 <br/>
                   <button
                     style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;"
@@ -585,17 +573,19 @@
 
               </td>
 
-              <td rowspan="2"><br/><br/><br/><br/><br/>
+              <td rowspan="2"><br/>
                 8GB de Ram<br/>
                 y 40GB de HD</td>
 
-              <td rowspan="2"><br/><br/><br/><br/><br/><br/>
+              <td rowspan="2"><br/>
                 <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/1168408753/Rub+n+Garc+a+G+mez">
                   Rubén Gómez</a></td>          
             </tr>
 
             <tr>
-              <td style="background-color: #f1f8fb;"><br/>15:30 - 18:30
+              <td style="background-color: #f1f8fb;">
+                <br/>
+                15:30 - 18:30
                 <br/>
                 <button
                   style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;"
@@ -614,7 +604,7 @@
             </tr>
  
             <tr>
-              <td rowspan="2" style="color: orangered;"><br/><br/><br/>
+              <td rowspan="2" style="color: orangered;"><br/>
                 <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/632651821/TWB-220+Vue.js">
                   <img src="img\productos\vue.png" alt="VUE"/><br/>
                 VUE.js</a> <b>¡Nuevo!</b></td>
@@ -633,20 +623,22 @@
                   </button>
               </td>
 
-              <td rowspan="2"><br/><br/><br/>
+              <td rowspan="2"><br/>
                 <img src="img\icons\48\development.png" alt="Virtual" /><br/><br/>
                 Virtual</td>
 
-              <td rowspan="2"><br/><br/><br/><br/><br/><br/>
+              <td rowspan="2"><br/>
                 24 horas</td>
 
-              <td rowspan="2"><br/><br/>
+              <td rowspan="2"><br/>
                 Lunes a jueves<br/><br/>
                 20/07/2020<br/>
                 al<br/>
                 30/07/2020</td>
 
-              <td style="background-color:#dce8ee;"><br/>10:00 - 13:00
+              <td style="background-color:#dce8ee;">
+                <br/>
+                10:00 - 13:00
                 <br/>
                 <button
                   style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;"
@@ -663,12 +655,12 @@
 
               </td>
 
-              <td rowspan="2"><br/><br/><br/><br/>
+              <td rowspan="2"><br/>
                 4GB de Ram<br/>
                 (8GB recomendables)<br/>
                 y 20GB de HD</td>
 
-              <td rowspan="2"><br/><br/><br/><br/><br/><br/>
+              <td rowspan="2"><br/>
                 <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/1144193151/ngel+Villalba+Fern+ndez">
                   Ángel Villalba</a></td>
             </tr>
@@ -693,7 +685,7 @@
             </tr>           
 
             <tr>
-              <td rowspan="2" style="color: orangered;"><br/><br/><br/>
+              <td rowspan="2" style="color: orangered;"><br/>
                 <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/774111233/MAD-060+Patrones+de+Arquitectura">
                   <img src="img\productos\patrones.jpg" alt="Patrones de arquitectura"/><br/>
                 Patrones de arquitectura</a> <b>¡Nuevo!</b></td>
@@ -712,20 +704,22 @@
                 </button>         
               </td>
 
-              <td rowspan="2"><br/><br/><br/>
+              <td rowspan="2"><br/>
                 <img src="img\icons\48\development.png" alt="Virtual" /><br/><br/>
                 Virtual</td>
 
-              <td rowspan="2"><br/><br/><br/><br/><br/><br/>
+              <td rowspan="2"><br/>
                 20 horas</td>
 
-              <td rowspan="2"><br/><br/>
+              <td rowspan="2"><br/>
                 Lunes a viernes<br/><br/>
                 20/07/2020<br/>
                 al<br/>
                 24/07/2020</td>
 
-              <td style="background-color:#dce8ee;"><br/>10:00 - 14:00
+              <td style="background-color:#dce8ee;">
+                <br/>
+                10:00 - 14:00
                 <br/>
                 <button
                   style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;"
@@ -741,17 +735,19 @@
                   <!--script-->
               </td>
 
-              <td rowspan="2"><br/><br/><br/><br/><br/>
+              <td rowspan="2"><br/>
                 4GB de Ram<br/>
                 y 10GB de HD</td>
 
-              <td rowspan="2"><br/><br/><br/><br/><br/><br/>
+              <td rowspan="2"><br/>
                 <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/1144225992/Silvano+Gil+P+rez">
                   Silvano Gil</a></td>
             </tr>
 
             <tr>
-              <td style="background-color: #f1f8fb;"><br/>15:30 - 19:30
+              <td style="background-color: #f1f8fb;">
+                <br/>
+                15:30 - 19:30
                 <br/>
                 <button
                   style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;"
@@ -769,7 +765,7 @@
             </tr>  
 
             <tr>
-              <td rowspan="2" style="color: orangered;"><br/><br/><br/>
+              <td rowspan="2" style="color: orangered;"><br/>
                 <a href="https://pronoide.atlassian.net/wiki/spaces/RET/pages/26771653/BDN-010+Fundamentos+de+Big+Data">
                   <img src="img\productos\bigdata.png" alt="Fundamentos Big Data"/><br/>
                 Fundamentos Big Data</a> <b>¡Nuevo!</b></td>
@@ -788,20 +784,22 @@
                   </button>
               </td>
 
-              <td rowspan="2"><br/><br/><br/>
+              <td rowspan="2"><br/>
                 <img src="img\icons\48\development.png" alt="Virtual" /><br/><br/>
                 Virtual</td>
 
-              <td rowspan="2"><br/><br/><br/><br/><br/><br/>
+              <td rowspan="2"><br/>
                 24 horas</td>
 
-              <td rowspan="2"><br/><br/>
+              <td rowspan="2"><br/>
                 Lunes a jueves<br/><br/>
                 20/07/2020<br/>
                 al<br/>
                 30/07/2020</td>
 
-              <td style="background-color:#dce8ee;"><br/>10:00 - 13:00
+              <td style="background-color:#dce8ee;">
+                <br/>
+                10:00 - 13:00
                 <br/>
                 <button
                   style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;"
@@ -817,18 +815,20 @@
                   <!--script-->
               </td>
 
-              <td rowspan="2"><br/><br/><br/><br/>
+              <td rowspan="2"><br/>
                 8GB de Ram<br/>
                 (12Gb recomendables)<br/>
                 y 50GB de HD</td>
 
-              <td rowspan="2"><br/><br/><br/><br/><br/><br/>
+              <td rowspan="2"><br/>
                 <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/1168343187/Ram+n+Rubio+Hortelano">
                   Ramón Rubio</a></td>
             </tr>
 
             <tr>
-              <td style="background-color: #f1f8fb;"><br/>15:30 - 18:30
+              <td style="background-color: #f1f8fb;">
+                <br/>
+                15:30 - 18:30
                 <br/>
                 <button
                   style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;"
@@ -846,7 +846,7 @@
             </tr>
             
             <tr>
-              <td style="color: orangered;"><br/><br/>
+              <td style="color: orangered;"><br/>
                 <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/629571610/SPR-050+Spring+Boot">
                   <img src="img\productos\springboot.png" alt="Spring Boot"/><br/>
                 Spring Boot</a> <b>Nueva edición</b></td>
@@ -865,12 +865,11 @@
                   </button>
               </td>
 
-              <td><br/><br/>
+              <td><br/>
                 <img src="img\icons\48\development.png" alt="Virtual" /><br/><br/>
                 Virtual</td>
 
-              <td><br/><br/><br/><br/><br/>
-                24 horas</td>
+              <td><br/>24 horas</td>
 
               <td><br/>
                 Lunes a jueves<br/><br/>
@@ -878,8 +877,9 @@
                 al<br/>
                 30/07/2020</td>
 
-              <td style="background-color:#dce8ee;"><br/><br/>
-                15:30 - 18:50<br/>
+              <td style="background-color:#dce8ee;">
+                <br/>
+                15:30 - 18:50
                 <br/>
                   <button
                     style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;"
@@ -895,17 +895,18 @@
                   <!--script-->
               </td>
 
-              <td><br/><br/><br/><br/>
+              <td>
+              <br/>
                 4GB de Ram<br/>
                 y 20GB de HD</td>
 
-              <td><br/><br/><br/><br/><br/>
+              <td><br/>
                 <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/1168408662/Luis+Ram+n+lvarez+Gonz+lez">
                   Luis Ramón Álvarez</a></td>
             </tr>
 
             <tr>
-              <td rowspan="2" style="color: orangered;"><br/><br/><br/>
+              <td rowspan="2" style="color: orangered;"><br/>
                 <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/1057325088/DCH-130+OpenShift">
                   <img src="img\productos\kubernetes.png" alt="Kubernetes"/><br/>
                 Kubernetes</a> <b>¡Nuevo!</b></td>
@@ -924,20 +925,22 @@
                   </button>
               </td>
   
-              <td rowspan="2"><br/><br/><br/>
+              <td rowspan="2"><br/>
                 <img src="img\icons\48\development.png" alt="Virtual" /><br/><br/>
                 Virtual</td>
   
-              <td rowspan="2"><br/><br/><br/><br/><br/><br/>
+              <td rowspan="2"><br/>
                 16 horas</td>
   
-              <td rowspan="2"><br/><br/>
+              <td rowspan="2"><br/>
                 Lunes a jueves<br/><br/>
                 20/07/2020<br/>
                 al<br/>
                 23/07/2020</td>
   
-              <td style="background-color: #f1f8fb;"><br/>10:00 - 13:00
+              <td style="background-color: #f1f8fb;">
+                <br/>
+                10:00 - 13:00
                   <br/>
                   <button
                     style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;"
@@ -953,18 +956,20 @@
                   <!--script-->
               </td>  
   
-              <td rowspan="2"><br/><br/><br/><br/>
+              <td rowspan="2"><br/>
                 8GB de Ram<br/>
                 (16GB recomendables)<br/>
                 y 100GB de HD</td>
   
-              <td rowspan="2"><br/><br/><br/><br/><br/><br/>
+              <td rowspan="2"><br/>
                 <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/1168408867/Manuel+Tom+s+Ortega+S+nchez">
                   Manuel Tomás Ortega</a></td>
             </tr>
   
             <tr>
-              <td style="background-color: #dce8ee;"><br/>15:30 - 18:30
+              <td style="background-color: #dce8ee;">
+                <br/>
+                15:30 - 18:30
                 <br/>
                   <button
                     style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;"
@@ -982,7 +987,7 @@
             </tr>            
 
             <tr>
-            <td rowspan="2" style="color: orangered;"><br/><br/><br/>
+            <td rowspan="2" style="color: orangered;"><br/>
               <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/1057325088/DCH-130+OpenShift">
                 <img src="img\productos\openshift.png" alt="OpenShift"/><br/>
               OpenShift</a> <b>¡Nuevo!</b></td>
@@ -1001,20 +1006,22 @@
                   </button>
             </td>
 
-            <td rowspan="2"><br/><br/><br/>
+            <td rowspan="2"><br/>
               <img src="img\icons\48\development.png" alt="Virtual" /><br/><br/>
               Virtual</td>
 
-            <td rowspan="2"><br/><br/><br/><br/><br/><br/>
+            <td rowspan="2"><br/>
               16 horas</td>
 
-            <td rowspan="2"><br/><br/>
+            <td rowspan="2"><br/>
               Lunes a jueves<br/><br/>
               27/07/2020<br/>
               al<br/>
               30/07/2020</td>
 
-            <td style="background-color: #f1f8fb;"><br/>10:00 - 13:00
+            <td style="background-color: #f1f8fb;">
+              <br/>       
+              10:00 - 13:00
               <br/>
                   <button
                     style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;"
@@ -1030,17 +1037,19 @@
                   <!--script-->
             </td>  
 
-            <td rowspan="2"><br/><br/><br/><br/><br/>
+            <td rowspan="2"><br/>
               16GB de Ram<br/>
               y 150GB de HD</td>
 
-            <td rowspan="2"><br/><br/><br/><br/><br/><br/>
+            <td rowspan="2"><br/>
               <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/1168408867/Manuel+Tom+s+Ortega+S+nchez">
                 Manuel Tomás Ortega</a></td>
           </tr>
 
           <tr>
-            <td style="background-color: #dce8ee;"><br/>15:30 - 18:30
+            <td style="background-color: #dce8ee;">
+              <br/>
+              15:30 - 18:30
               <br/>
                   <button
                     style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;"
@@ -1060,7 +1069,7 @@
               </tbody>
             </table>
 
-            <onclick="fnselect()" />
+            <onclick />
 
             <script>
               var table = document.getElementById('calendario'),
@@ -1080,7 +1089,7 @@
           </div>
           <br/>
 
-          <div id="tarifas" class="table-responsive">
+          <div id="tarifas" class="table-responsive-xs-12-sm-12-md-9-lg-9">
             <table class="table text-center">
 
               <tr>
@@ -1101,7 +1110,7 @@
             </table>
           </div>
 
-          <div class="table-responsive">
+          <div class="table-responsive-xs-12-sm-12-md-9-lg-9">
             <table class="table procedimiento">
               <tr>
                 <td style="background-color: #7090A0;"><br/><br/><br/><br/>

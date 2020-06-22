@@ -40,12 +40,16 @@ body {
     text-decoration: underline;
   }
 
-
   /* tr:hover {
     background-color: #f9ffe0;
   }   */
 
-  td {border: 1px #DDD solid; padding: 5px; cursor: pointer;}
+  #calendario td {
+    border: 1px #DDD solid; 
+    padding: 5px; 
+    cursor: pointer;
+    vertical-align: bottom !important;
+  }
 
   .selected {
       background-color: #f3fab8;
