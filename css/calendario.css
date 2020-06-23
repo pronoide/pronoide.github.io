@@ -51,6 +51,13 @@ body {
     vertical-align: bottom !important;
   }
 
+  #phone td {
+    border: 1px #DDD solid; 
+    padding: 5px; 
+    cursor: pointer;
+    vertical-align: bottom !important;
+  }
+
   .selected {
       background-color: #f3fab8;
       color: #233b54;
@@ -71,7 +78,6 @@ body {
     line-height: 26px;
     cursor: default;
 }
-
 
  .help-tip:before{
   content:'?';
@@ -197,8 +203,23 @@ body {
     bottom: -35px;
   }
   
+@media (min-width: 48.635rem) {
+  /* #calendario {
+    display: block;
+  } */
+  #phone {
+    display: none;
+  }
+}
 
-
+@media (max-width: 48.635rem) {
+  #calendario {
+    display: none;
+  }
+  /* #phone {
+    display: block;
+  } */
+}
 
 
 

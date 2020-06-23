@@ -78,7 +78,7 @@
         </div>
         <br/>
         <div class="text-center col-xs-12 col-sm-12 col-md-auto col-lg-9">
-          <div class="table-responsive-xs-12-sm-12-md-9-lg-9" style="overflow-y: hidden;">
+          <div class="table-responsive-xs-12-sm-12-md-auto-lg-9" style="overflow-y: hidden;">
             <table id="calendario" class="table table-bordered table-responsive" style="overflow-x: scroll; overflow-y: hidden;">
               <thead>
                 <tr>
@@ -1067,10 +1067,534 @@
 
               </tbody>
             </table>
+          
+        <!--Versión Móvil-->
+        <table id="phone" class="table table-bordered table-responsive" style="overflow-x: scroll; overflow-y: hidden;">
+              <thead>
+                <tr>
+                  <th colspan="3" class="cabecera">
+                    <img src="img/productos/carrito.png" alt="Carrito" />
+                    &nbsp; <strong>Cursos Públicos.</strong><br/>
+                    Cursos planificados en el calendario para un grupo de alumnos que provienen de distintas empresas o se inscriben como particulares
+                  </th>
+                </tr>
 
-            <onclick />
+                <tr>
+                  <th class="text-center">Curso</th>
+                  <th class="text-center">Fechas</th>
+                  <th class="text-center">Horario CEST</th>
+                </tr>
 
-            <script>
+              </thead>
+
+              <tbody>
+
+                <tr>
+                  <td rowspan="2">
+                    <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/62226505/TWB-200+Programaci+n+Web+Segura+OWASP">
+                      <img src="img\productos\owasp.png" alt="owasp"/><br/>
+                    Seguridad Web</a>
+                  </td>
+
+                  <td rowspan="2">
+                    Lunes a jueves<br/><br/>
+                    06/07/2020<br/>
+                    al<br/>
+                    16/07/2020</td>
+
+                  <td style="background-color:#dce8ee;">
+                    <br/>
+                    10:00 - 13:00
+                    <br/>
+
+                  <script src="https://js.stripe.com/v3"></script>
+                  <button
+                    style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;"
+                    id="Reservar-SW-ma"
+                    role="link"
+                  >
+                  <img src="img\productos\icons-24\libros.png" alt="Libros" />
+                    Reservar
+                  </button>
+
+                  <div id="error-message"></div>
+
+                  <script>
+                    (function() {
+                      var stripe = Stripe('pk_test_mKH7OwG8T5FcqYlsuibgDXqr00JEnmNFgH');
+                      var checkoutButton = document.getElementById('Reservar-SW-ma');
+                      checkoutButton.addEventListener('click', function () {
+                        // When the customer clicks on the button, redirect
+                        // them to Checkout.
+                        stripe.redirectToCheckout({
+                          lineItems: [{price: 'price_HMVTfF1JAJ29vZ', quantity: 1}],
+                          mode: 'payment',
+                          // Do not rely on the redirect to the successUrl for fulfilling
+                          // purchases, customers may not always reach the success_url after
+                          // a successful payment.
+                          // Instead use one of the strategies described in
+                          // https://stripe.com/docs/payments/checkout/fulfillment
+                          successUrl: 'http://www.pronoide.com/success',
+                          cancelUrl: 'http://www.pronoide.com/canceled',
+                        })
+                        .then(function (result) {
+                          if (result.error) {
+                            // If `redirectToCheckout` fails due to a browser or network
+                            // error, display the localized error message to your customer.
+                            var displayError = document.getElementById('error-message');
+                            displayError.textContent = result.error.message;
+                          }
+                        });
+                      });
+                    })();
+                    </script>
+
+                  </td>
+              </tr>
+
+              <tr>
+                <td style="background-color: #f1f8fb;">
+                  <br/>
+                  15:30 - 18:30
+                  <br/>
+                  <button
+                    style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;"
+                    id="Reservar-SW-tar"
+                    role="link"
+                  >
+                  <img src="img\productos\icons-24\libros.png" alt="Libros" />
+                    Reservar
+                  </button>
+
+                  <div id="error-message"></div>
+
+                  <script>
+                    (function() {
+                      var stripe = Stripe('pk_test_mKH7OwG8T5FcqYlsuibgDXqr00JEnmNFgH');
+                      var checkoutButton = document.getElementById('Reservar-SW-tar');
+                      checkoutButton.addEventListener('click', function () {
+                        stripe.redirectToCheckout({
+                          lineItems: [{price: 'price_HMVTfF1JAJ29vZ', quantity: 1}],
+                          mode: 'payment',
+                          successUrl: 'http://www.pronoide.com/success',
+                          cancelUrl: 'http://www.pronoide.com/canceled',
+                        })
+                        .then(function (result) {
+                          if (result.error) {
+                            var displayError = document.getElementById('error-message');
+                            displayError.textContent = result.error.message;
+                          }
+                        });
+                      });
+                    })();
+                  </script>
+
+                </td>
+              </tr>
+
+              <tr>
+                <td><br/>
+                  <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/629735454/SPR-060+Spring+Cloud">
+                    <img src="img\productos\springcloud.png" alt="Spring Cloud"/><br/>
+                  Spring Cloud</a></td>
+              
+                <td><br/>
+                  Lunes a jueves<br/><br/>
+                  06/07/2020<br/>
+                  al<br/>
+                  16/07/2020</td>
+
+                <td style="background-color: #dce8ee;">
+                  <br/>
+                  15:30 - 18:30
+                  <br/>
+                  <br/>
+                </td>
+
+                <!-- los 3 botones colapsados-->
+                <tr>
+                  <td colspan="3" style="background-color: #c6f1bd;">
+                    <button style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;">
+                      <a href="mailto:formacion@pronoide.com?subject=Curso%20Seguridad%20Web"
+                      style="text-decoration: none; color: #FFF; font-size: inherit;">
+                      <img src="img\productos\icons-24\info.png" alt="Información" />
+                      Pedir Info</a>
+                    </button>
+                  </td>
+                </tr>
+            
+              <tr>
+                <td rowspan="2"><br/>
+                  <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/776896522/BDN-080+Spark">
+                    <img src="img\productos\spark.png" alt="Spark"/><br/>
+                  Spark</a></td>      
+
+                <td rowspan="2"><br/>
+                  Lunes a jueves<br/><br/>
+                  06/07/2020<br/>
+                  al<br/>
+                  16/07/2020</td>
+
+                <td style="background-color:#f1f8fb;">
+                  <br/>
+                  10:00 - 13:00
+                  <br/>               
+                </td>             
+
+              <tr>
+                <td style="background-color: #dce8ee;"><br/>
+                  15:30 - 18:30
+                <br/>                 
+                </td>
+              </tr>
+
+              <tr>
+                <td colspan="3" style="background-color: #c6f1bd;">
+                  <button style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;">
+                    <a href="mailto:formacion@pronoide.com?subject=Curso%20Seguridad%20Web"
+                    style="text-decoration: none; color: #FFF; font-size: inherit;">
+                    <img src="img\productos\icons-24\info.png" alt="Información" />
+                    Pedir Info</a>
+                  </button>
+                </td>
+              </tr>
+
+              <tr>
+                  </td>
+                  <td rowspan="2" style="color: orangered;"><br/>
+                    <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/776929286/TWB-170+React">
+                    <img src="img\productos\react.png" alt="React"/><br/>
+                    React</a> <b>Nueva edición</b></td>
+                
+                  <td rowspan="2"><br/>
+                    Lunes a viernes<br/><br/>
+                    06/07/2020<br/>
+                    al<br/>
+                    17/07/2020</td>
+
+                  <td style="background-color:#f1f8fb;"><br/>
+                    10:00 - 13:00
+                    <br/>                 
+                  </td>
+               
+                <tr>
+                  <td style="background-color: #dce8ee;">
+                    <br/>
+                    15:30 - 18:30
+                    <br/>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td colspan="3" style="background-color: #c6f1bd;">
+                    <button style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;">
+                      <a href="mailto:formacion@pronoide.com?subject=Curso%20Seguridad%20Web"
+                      style="text-decoration: none; color: #FFF; font-size: inherit;">
+                      <img src="img\productos\icons-24\info.png" alt="Información" />
+                      Pedir Info</a>
+                    </button>
+                  </td>
+                </tr>
+
+                <tr>
+                  <td style="color: orangered;"><br/>
+                    <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/1208877396/OTL-020+Python">
+                      <img src="img\productos\python.png" alt="Python"/><br/>
+                    Python</a> <b>¡Nuevo!</b></td>
+
+                  <td><br/>
+                    Lunes a viernes<br/><br/>
+                    13/07/2020<br/>
+                    al<br/>
+                    24/07/2020</td>
+
+                  <td style="background-color:#f1f8fb;">
+                    <br/>
+                    15:00 - 18:00
+                    <br/>
+                    <br/>               
+                  </td>               
+                </tr>
+
+                <tr>
+                  <td colspan="3" style="background-color: #c6f1bd;">
+                    <button style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;">
+                      <a href="mailto:formacion@pronoide.com?subject=Curso%20Seguridad%20Web"
+                      style="text-decoration: none; color: #FFF; font-size: inherit;">
+                      <img src="img\productos\icons-24\info.png" alt="Información" />
+                      Pedir Info</a>
+                    </button>
+                  </td>
+                </tr>
+
+              <tr>
+              <td rowspan="2" style="color: orangered;"><br/>
+                <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/64290892/DCH-020+Docker">
+                  <img src="img\productos\docker.png" alt="Docker"/><br/>
+                Docker</a> <b>Nueva edición</b></td>
+           
+              <td rowspan="2"><br/>
+                Lunes a jueves<br/><br/>
+                13/07/2020<br/>
+                al<br/>
+                16/07/2020</td>
+
+              <td style="background-color:#dce8ee;">
+                <br/>
+                10:00 - 13:00
+                <br/>                 
+              </td>
+
+            </tr>
+
+            <tr>
+              <td style="background-color: #f1f8fb;">
+                <br/>
+                15:30 - 18:30
+                <br/>              
+              </td>
+            </tr>
+
+            <tr>
+              <td colspan="3" style="background-color: #c6f1bd;">
+                <button style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;">
+                  <a href="mailto:formacion@pronoide.com?subject=Curso%20Seguridad%20Web"
+                  style="text-decoration: none; color: #FFF; font-size: inherit;">
+                  <img src="img\productos\icons-24\info.png" alt="Información" />
+                  Pedir Info</a>
+                </button>
+              </td>
+            </tr>
+
+            <tr>
+              <td rowspan="2" style="color: orangered;"><br/>
+                <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/632651821/TWB-220+Vue.js">
+                  <img src="img\productos\vue.png" alt="VUE"/><br/>
+                VUE.js</a> <b>¡Nuevo!</b></td>
+
+              <td rowspan="2"><br/>
+                Lunes a jueves<br/><br/>
+                20/07/2020<br/>
+                al<br/>
+                30/07/2020</td>
+
+              <td style="background-color:#dce8ee;">
+                <br/>
+                10:00 - 13:00
+                <br/>
+              </td>
+            
+            </tr>
+
+            <tr>
+              <td style="background-color: #f1f8fb;"><br/>15:30 - 18:30
+                <br/>              
+              </td>
+            </tr>
+
+            <tr>
+              <td colspan="3" style="background-color: #c6f1bd;">
+                <button style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;">
+                  <a href="mailto:formacion@pronoide.com?subject=Curso%20Seguridad%20Web"
+                  style="text-decoration: none; color: #FFF; font-size: inherit;">
+                  <img src="img\productos\icons-24\info.png" alt="Información" />
+                  Pedir Info</a>
+                </button>
+              </td>
+            </tr>
+
+            <tr>
+              <td rowspan="2" style="color: orangered;"><br/>
+                <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/774111233/MAD-060+Patrones+de+Arquitectura">
+                  <img src="img\productos\patrones.jpg" alt="Patrones de arquitectura"/><br/>
+                Patrones de arquitectura</a> <b>¡Nuevo!</b></td>
+          
+              <td rowspan="2"><br/>
+                Lunes a viernes<br/><br/>
+                20/07/2020<br/>
+                al<br/>
+                24/07/2020</td>
+
+              <td style="background-color:#dce8ee;">
+                <br/>
+                10:00 - 14:00
+                <br/>
+              </td>           
+            </tr>
+
+            <tr>
+              <td style="background-color: #f1f8fb;">
+                <br/>
+                15:30 - 19:30
+                <br/>           
+              </td>
+            </tr>
+
+            <tr>
+              <td colspan="3" style="background-color: #c6f1bd;">
+                <button style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;">
+                  <a href="mailto:formacion@pronoide.com?subject=Curso%20Seguridad%20Web"
+                  style="text-decoration: none; color: #FFF; font-size: inherit;">
+                  <img src="img\productos\icons-24\info.png" alt="Información" />
+                  Pedir Info</a>
+                </button>
+              </td>
+            </tr>
+
+            <tr>
+              <td rowspan="2" style="color: orangered;"><br/>
+                <a href="https://pronoide.atlassian.net/wiki/spaces/RET/pages/26771653/BDN-010+Fundamentos+de+Big+Data">
+                  <img src="img\productos\bigdata.png" alt="Fundamentos Big Data"/><br/>
+                Fundamentos Big Data</a> <b>¡Nuevo!</b></td>
+
+              <td rowspan="2"><br/>
+                Lunes a jueves<br/><br/>
+                20/07/2020<br/>
+                al<br/>
+                30/07/2020</td>
+
+              <td style="background-color:#dce8ee;">
+                <br/>
+                10:00 - 13:00
+                <br/>               
+              </td>           
+            </tr>
+
+            <tr>
+              <td style="background-color: #f1f8fb;">
+                <br/>
+                15:30 - 18:30
+                <br/>              
+              </td>
+            </tr>
+
+            <tr>
+              <td colspan="3" style="background-color: #c6f1bd;">
+                <button style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;">
+                  <a href="mailto:formacion@pronoide.com?subject=Curso%20Seguridad%20Web"
+                  style="text-decoration: none; color: #FFF; font-size: inherit;">
+                  <img src="img\productos\icons-24\info.png" alt="Información" />
+                  Pedir Info</a>
+                </button>
+              </td>
+            </tr>
+
+            <tr>
+              <td style="color: orangered;"><br/>
+                <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/629571610/SPR-050+Spring+Boot">
+                  <img src="img\productos\springboot.png" alt="Spring Boot"/><br/>
+                Spring Boot</a> <b>Nueva edición</b></td>
+
+              <td><br/>
+                Lunes a jueves<br/><br/>
+                20/07/2020<br/>
+                al<br/>
+                30/07/2020</td>
+
+              <td style="background-color:#dce8ee;">
+                <br/>
+                15:30 - 18:50
+                <br/>
+                <br/>                 
+              </td>
+
+            </tr>
+
+            <tr>
+              <td colspan="3" style="background-color: #c6f1bd;">
+                <button style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;">
+                  <a href="mailto:formacion@pronoide.com?subject=Curso%20Seguridad%20Web"
+                  style="text-decoration: none; color: #FFF; font-size: inherit;">
+                  <img src="img\productos\icons-24\info.png" alt="Información" />
+                  Pedir Info</a>
+                </button>
+              </td>
+            </tr>
+
+            <tr>
+              <td rowspan="2" style="color: orangered;"><br/>
+                <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/1057325088/DCH-130+OpenShift">
+                  <img src="img\productos\kubernetes.png" alt="Kubernetes"/><br/>
+                Kubernetes</a> <b>¡Nuevo!</b></td>
+
+              <td rowspan="2"><br/>
+                Lunes a jueves<br/><br/>
+                20/07/2020<br/>
+                al<br/>
+                23/07/2020</td>
+
+              <td style="background-color: #f1f8fb;">
+                <br/>
+                10:00 - 13:00
+                  <br/>
+              </td>
+
+            </tr>
+
+            <tr>
+              <td style="background-color: #dce8ee;">
+                <br/>
+                15:30 - 18:30
+                <br/>           
+              </td>
+            </tr>
+
+            <tr>
+              <td colspan="3" style="background-color: #c6f1bd;">
+                <button style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;">
+                  <a href="mailto:formacion@pronoide.com?subject=Curso%20Seguridad%20Web"
+                  style="text-decoration: none; color: #FFF; font-size: inherit;">
+                  <img src="img\productos\icons-24\info.png" alt="Información" />
+                  Pedir Info</a>
+                </button>
+              </td>
+            </tr>
+
+            <tr>
+            <td rowspan="2" style="color: orangered;"><br/>
+              <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/1057325088/DCH-130+OpenShift">
+                <img src="img\productos\openshift.png" alt="OpenShift"/><br/>
+              OpenShift</a> <b>¡Nuevo!</b></td>
+
+            <td rowspan="2"><br/>
+              Lunes a jueves<br/><br/>
+              27/07/2020<br/>
+              al<br/>
+              30/07/2020</td>
+
+            <td style="background-color: #f1f8fb;">
+              <br/>
+              10:00 - 13:00
+              <br/>               
+            </td>
+
+          </tr>
+
+          <tr>          
+            <td style="background-color: #dce8ee;">
+              <br/>
+              15:30 - 18:30     
+              <br/>       
+            </td>
+          </tr>
+
+          <tr>
+            <td colspan="3" style="background-color: #c6f1bd;">
+              <button style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;">
+                <a href="mailto:formacion@pronoide.com?subject=Curso%20Seguridad%20Web"
+                style="text-decoration: none; color: #FFF; font-size: inherit;">
+                <img src="img\productos\icons-24\info.png" alt="Información" />
+                Pedir Info</a>
+              </button>
+            </td>
+          </tr>
+
+        </tbody>
+        </table>
+        
+      <onclick />
+
+       <script>
               var table = document.getElementById('calendario'),
               selected = table.getElementsByClassName('selected');
               table.onclick = highlight;
@@ -1078,9 +1602,10 @@
                   if (selected[0]) selected[0].className = '';
                   e.target.parentNode.className = 'selected';
               }
-            </script>
-          </div>
-        </div>
+       </script>
+
+    </div>
+   </div>
 
         <div class="col-xs-12 col-sm-12 col-md-auto col-lg-3">
           <div class="text-center">
