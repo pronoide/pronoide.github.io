@@ -58,7 +58,6 @@ body {
     vertical-align: bottom !important;
   }
 
-
   /* #phone th {
     padding-top: 5px; 
     padding-right: 35px;
@@ -73,7 +72,7 @@ body {
 
   /* config del toolip de ayuda*/
 
-  .help-tip{
+  /* .help-tip{
     position: relative;
     top: 18px;
     right: 18px;
@@ -115,7 +114,7 @@ body {
   color: #fff;
   font-size: 13px;
   line-height: 1.4;
-}
+} */
 
 /* hasta aqui */
 
