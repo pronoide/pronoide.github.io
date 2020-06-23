@@ -52,11 +52,19 @@ body {
   }
 
   #phone td {
-    border: 1px #DDD solid; 
+    border: 1px #7090A0 solid; 
     padding: 5px; 
     cursor: pointer;
     vertical-align: bottom !important;
   }
+
+
+  /* #phone th {
+    padding-top: 5px; 
+    padding-right: 35px;
+    padding-bottom: 5px;
+    padding-left: 35px;
+  } */
 
   .selected {
       background-color: #f3fab8;
@@ -127,6 +135,11 @@ body {
   .cabecera {
     font-weight: normal;
   }
+
+  /* .cabecera p {
+    text-align: center;
+    font-size: 1em;
+  } */
 
   table {
     overflow: hidden;
