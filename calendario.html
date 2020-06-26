@@ -191,7 +191,7 @@
                       var checkoutButton = document.getElementById('Reservar-SW-tar');
                       checkoutButton.addEventListener('click', function () {
                         stripe.redirectToCheckout({
-                          lineItems: [{price: '', quantity: 1}],
+                          lineItems: [{price: 'price_1GyFDQGCyao516pgOjjT8aTM', quantity: 1}],
                           mode: 'payment',
                           successUrl: 'http://www.pronoide.com/pago-confirmado',
                           cancelUrl: 'http://www.pronoide.com/pago-cancelado',
@@ -264,7 +264,7 @@
                       var checkoutButton = document.getElementById('Reservar-SC');
                       checkoutButton.addEventListener('click', function () {
                         stripe.redirectToCheckout({
-                          lineItems: [{price: 'price_1GxAI1GCyao516pgLE7ZG4uQ', quantity: 1}],
+                          lineItems: [{price: 'price_1GyFoYGCyao516pgzDZMkcn2', quantity: 1}],
                           mode: 'payment',
                           successUrl: 'http://www.pronoide.com/pago-confirmado',
                           cancelUrl: 'http://www.pronoide.com/pago-cancelado',
@@ -291,6 +291,7 @@
                 </td>
               </tr>
 
+              <!--Curso de Spark-->
               <tr>
                 <td rowspan="2"><br/>
                   <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/776896522/BDN-080+Spark">
@@ -345,7 +346,7 @@
                       var checkoutButton = document.getElementById('Reservar-Spark-ma');
                       checkoutButton.addEventListener('click', function () {
                         stripe.redirectToCheckout({
-                          lineItems: [{price: 'price_1GxTmnGCyao516pgR2j5diMq', quantity: 1}],
+                          lineItems: [{price: 'price_1GyFrqGCyao516pgDjliI4IG', quantity: 1}],
                           mode: 'payment',
                           successUrl: 'http://www.pronoide.com/pago-confirmado',
                           cancelUrl: 'http://www.pronoide.com/pago-cancelado',
@@ -391,7 +392,7 @@
                       var checkoutButton = document.getElementById('Reservar-Spark-tar');
                       checkoutButton.addEventListener('click', function () {
                         stripe.redirectToCheckout({
-                          lineItems: [{price: 'price_1GxU3BGCyao516pgRUM7hXtt', quantity: 1}],
+                          lineItems: [{price: 'price_1GyFwWGCyao516pg9OL71X6y', quantity: 1}],
                           mode: 'payment',
                           successUrl: 'http://www.pronoide.com/pago-confirmado',
                           cancelUrl: 'http://www.pronoide.com/pago-cancelado',
@@ -460,10 +461,10 @@
                     <script>
                       (function() {
                         var stripe = Stripe('pk_live_RBwBvMH6OGnYaHTv9OqEyGWQ00K56Niu0z');
-                        var checkoutButton = document.getElementById('Reservar-Spark-tar');
+                        var checkoutButton = document.getElementById('Reservar-React-ma');
                         checkoutButton.addEventListener('click', function () {
                           stripe.redirectToCheckout({
-                            lineItems: [{price: 'price_1GxU3BGCyao516pgRUM7hXtt', quantity: 1}],
+                            lineItems: [{price: 'price_1GyG05GCyao516pgLTvSdfdW', quantity: 1}],
                             mode: 'payment',
                             successUrl: 'http://www.pronoide.com/pago-confirmado',
                             cancelUrl: 'http://www.pronoide.com/pago-cancelado',
@@ -506,10 +507,10 @@
                   <script>
                     (function() {
                       var stripe = Stripe('pk_live_RBwBvMH6OGnYaHTv9OqEyGWQ00K56Niu0z');
-                      var checkoutButton = document.getElementById('Reservar-Spark-tar');
+                      var checkoutButton = document.getElementById('Reservar-React-tar');
                       checkoutButton.addEventListener('click', function () {
                         stripe.redirectToCheckout({
-                          lineItems: [{price: 'price_1GxU3BGCyao516pgRUM7hXtt', quantity: 1}],
+                          lineItems: [{price: 'price_1GyG2ZGCyao516pggehyFoYN', quantity: 1}],
                           mode: 'payment',
                           successUrl: 'http://www.pronoide.com/pago-confirmado',
                           cancelUrl: 'http://www.pronoide.com/pago-cancelado',
@@ -571,7 +572,7 @@
                     15:00 - 18:00<br/>
                     <br/>
                       <button style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;"
-                        id="Reservar-Python"
+                        id="Reservar-Python-tar"
                         role="link">
                       <img src="img\productos\icons-24\libros.png" alt="Libros" />
                         Reservar
@@ -580,10 +581,10 @@
                       <script>
                         (function() {
                           var stripe = Stripe('pk_live_RBwBvMH6OGnYaHTv9OqEyGWQ00K56Niu0z');
-                          var checkoutButton = document.getElementById('Reservar-Spark-tar');
+                          var checkoutButton = document.getElementById('Reservar-Python-tar');
                           checkoutButton.addEventListener('click', function () {
                             stripe.redirectToCheckout({
-                              lineItems: [{price: 'price_1GxU3BGCyao516pgRUM7hXtt', quantity: 1}],
+                              lineItems: [{price: 'price_1GyG6TGCyao516pg5x6m4BR5', quantity: 1}],
                               mode: 'payment',
                               successUrl: 'http://www.pronoide.com/pago-confirmado',
                               cancelUrl: 'http://www.pronoide.com/pago-cancelado',
@@ -647,7 +648,7 @@
               </td>
               <td style="background-color:#dce8ee;">
                 <br/>
-                10:00 - 13:00
+                10:00 - 14:00
                 <br/>
                   <button style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;"
                     id="Reservar-Docker-ma"
@@ -659,10 +660,10 @@
                   <script>
                     (function() {
                       var stripe = Stripe('pk_live_RBwBvMH6OGnYaHTv9OqEyGWQ00K56Niu0z');
-                      var checkoutButton = document.getElementById('Reservar-Spark-tar');
+                      var checkoutButton = document.getElementById('Reservar-Docker-ma');
                       checkoutButton.addEventListener('click', function () {
                         stripe.redirectToCheckout({
-                          lineItems: [{price: 'price_1GxU3BGCyao516pgRUM7hXtt', quantity: 1}],
+                          lineItems: [{price: 'price_1GyGOpGCyao516pgu1uGTKsu', quantity: 1}],
                           mode: 'payment',
                           successUrl: 'http://www.pronoide.com/pago-confirmado',
                           cancelUrl: 'http://www.pronoide.com/pago-cancelado',
@@ -691,7 +692,7 @@
             <tr>
               <td style="background-color: #f1f8fb;">
                 <br/>
-                15:30 - 18:30
+                15:30 - 19:30
                 <br/>
                 <button style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;"
                   id="Reservar-Docker-tar"
@@ -703,10 +704,10 @@
                 <script>
                   (function() {
                     var stripe = Stripe('pk_live_RBwBvMH6OGnYaHTv9OqEyGWQ00K56Niu0z');
-                    var checkoutButton = document.getElementById('Reservar-Spark-tar');
+                    var checkoutButton = document.getElementById('Reservar-Docker-tar');
                     checkoutButton.addEventListener('click', function () {
                       stripe.redirectToCheckout({
-                        lineItems: [{price: 'price_1GxU3BGCyao516pgRUM7hXtt', quantity: 1}],
+                        lineItems: [{price: 'price_1GyGSNGCyao516pgWF1iwCqJ', quantity: 1}],
                         mode: 'payment',
                         successUrl: 'http://www.pronoide.com/pago-confirmado',
                         cancelUrl: 'http://www.pronoide.com/pago-cancelado',
@@ -772,10 +773,10 @@
                 <script>
                   (function() {
                     var stripe = Stripe('pk_live_RBwBvMH6OGnYaHTv9OqEyGWQ00K56Niu0z');
-                    var checkoutButton = document.getElementById('Reservar-Spark-tar');
+                    var checkoutButton = document.getElementById('Reservar-VUE-ma');
                     checkoutButton.addEventListener('click', function () {
                       stripe.redirectToCheckout({
-                        lineItems: [{price: 'price_1GxU3BGCyao516pgRUM7hXtt', quantity: 1}],
+                        lineItems: [{price: 'price_1GyGV4GCyao516pgJjMjhstz', quantity: 1}],
                         mode: 'payment',
                         successUrl: 'http://www.pronoide.com/pago-confirmado',
                         cancelUrl: 'http://www.pronoide.com/pago-cancelado',
@@ -816,10 +817,10 @@
                 <script>
                   (function() {
                     var stripe = Stripe('pk_live_RBwBvMH6OGnYaHTv9OqEyGWQ00K56Niu0z');
-                    var checkoutButton = document.getElementById('Reservar-Spark-tar');
+                    var checkoutButton = document.getElementById('Reservar-VUE-tar');
                     checkoutButton.addEventListener('click', function () {
                       stripe.redirectToCheckout({
-                        lineItems: [{price: 'price_1GxU3BGCyao516pgRUM7hXtt', quantity: 1}],
+                        lineItems: [{price: 'price_1GyGXmGCyao516pggihBynbp', quantity: 1}],
                         mode: 'payment',
                         successUrl: 'http://www.pronoide.com/pago-confirmado',
                         cancelUrl: 'http://www.pronoide.com/pago-cancelado',
@@ -885,10 +886,10 @@
                 <script>
                   (function() {
                     var stripe = Stripe('pk_live_RBwBvMH6OGnYaHTv9OqEyGWQ00K56Niu0z');
-                    var checkoutButton = document.getElementById('Reservar-Spark-tar');
+                    var checkoutButton = document.getElementById('Reservar-Patrones-ma');
                     checkoutButton.addEventListener('click', function () {
                       stripe.redirectToCheckout({
-                        lineItems: [{price: 'price_1GxU3BGCyao516pgRUM7hXtt', quantity: 1}],
+                        lineItems: [{price: 'price_1GyGcEGCyao516pgRgjtCUrN', quantity: 1}],
                         mode: 'payment',
                         successUrl: 'http://www.pronoide.com/pago-confirmado',
                         cancelUrl: 'http://www.pronoide.com/pago-cancelado',
@@ -928,10 +929,10 @@
                 <script>
                   (function() {
                     var stripe = Stripe('pk_live_RBwBvMH6OGnYaHTv9OqEyGWQ00K56Niu0z');
-                    var checkoutButton = document.getElementById('Reservar-Spark-tar');
+                    var checkoutButton = document.getElementById('Reservar-Patrones-tar');
                     checkoutButton.addEventListener('click', function () {
                       stripe.redirectToCheckout({
-                        lineItems: [{price: 'price_1GxU3BGCyao516pgRUM7hXtt', quantity: 1}],
+                        lineItems: [{price: 'price_1GyGgDGCyao516pgbBCClwr5', quantity: 1}],
                         mode: 'payment',
                         successUrl: 'http://www.pronoide.com/pago-confirmado',
                         cancelUrl: 'http://www.pronoide.com/pago-cancelado',
@@ -998,10 +999,10 @@
                 <script>
                   (function() {
                     var stripe = Stripe('pk_live_RBwBvMH6OGnYaHTv9OqEyGWQ00K56Niu0z');
-                    var checkoutButton = document.getElementById('Reservar-Spark-tar');
+                    var checkoutButton = document.getElementById('Reservar-BD-ma');
                     checkoutButton.addEventListener('click', function () {
                       stripe.redirectToCheckout({
-                        lineItems: [{price: 'price_1GxU3BGCyao516pgRUM7hXtt', quantity: 1}],
+                        lineItems: [{price: 'price_1GyGsiGCyao516pg5rk8rUN7', quantity: 1}],
                         mode: 'payment',
                         successUrl: 'http://www.pronoide.com/pago-confirmado',
                         cancelUrl: 'http://www.pronoide.com/pago-cancelado',
@@ -1042,10 +1043,10 @@
                 <script>
                   (function() {
                     var stripe = Stripe('pk_live_RBwBvMH6OGnYaHTv9OqEyGWQ00K56Niu0z');
-                    var checkoutButton = document.getElementById('Reservar-Spark-tar');
+                    var checkoutButton = document.getElementById('Reservar-BD-tar');
                     checkoutButton.addEventListener('click', function () {
                       stripe.redirectToCheckout({
-                        lineItems: [{price: 'price_1GxU3BGCyao516pgRUM7hXtt', quantity: 1}],
+                        lineItems: [{price: 'price_1GyGtrGCyao516pgwRARC7Lo', quantity: 1}],
                         mode: 'payment',
                         successUrl: 'http://www.pronoide.com/pago-confirmado',
                         cancelUrl: 'http://www.pronoide.com/pago-cancelado',
@@ -1099,10 +1100,10 @@
               </td>
               <td style="background-color:#dce8ee;">
                 <br/>
-                15:30 - 18:50
+                15:30 - 18:30
                 <br/>
                   <button style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;"
-                    id="Reservar-SB"
+                    id="Reservar-SB-tar"
                     role="link">
                   <img src="img\productos\icons-24\libros.png" alt="Libros" />
                     Reservar
@@ -1111,10 +1112,10 @@
                   <script>
                     (function() {
                       var stripe = Stripe('pk_live_RBwBvMH6OGnYaHTv9OqEyGWQ00K56Niu0z');
-                      var checkoutButton = document.getElementById('Reservar-Spark-tar');
+                      var checkoutButton = document.getElementById('Reservar-SB-tar');
                       checkoutButton.addEventListener('click', function () {
                         stripe.redirectToCheckout({
-                          lineItems: [{price: 'price_1GxU3BGCyao516pgRUM7hXtt', quantity: 1}],
+                          lineItems: [{price: 'price_1GyGxUGCyao516pgC0wuQ1uq', quantity: 1}],
                           mode: 'payment',
                           successUrl: 'http://www.pronoide.com/pago-confirmado',
                           cancelUrl: 'http://www.pronoide.com/pago-cancelado',
@@ -1176,7 +1177,7 @@
               </td>
               <td style="background-color: #f1f8fb;">
                 <br/>
-                10:00 - 13:00
+                10:00 - 14:00
                   <br/>
                   <button style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;"
                     id="Reservar-Kubernetes-ma"
@@ -1188,10 +1189,10 @@
                   <script>
                     (function() {
                       var stripe = Stripe('pk_live_RBwBvMH6OGnYaHTv9OqEyGWQ00K56Niu0z');
-                      var checkoutButton = document.getElementById('Reservar-Spark-tar');
+                      var checkoutButton = document.getElementById('Reservar-Kubernetes-ma');
                       checkoutButton.addEventListener('click', function () {
                         stripe.redirectToCheckout({
-                          lineItems: [{price: 'price_1GxU3BGCyao516pgRUM7hXtt', quantity: 1}],
+                          lineItems: [{price: 'price_1GyH0gGCyao516pg6LB5zKFf', quantity: 1}],
                           mode: 'payment',
                           successUrl: 'http://www.pronoide.com/pago-confirmado',
                           cancelUrl: 'http://www.pronoide.com/pago-cancelado',
@@ -1220,7 +1221,7 @@
             <tr>
               <td style="background-color: #dce8ee;">
                 <br/>
-                15:30 - 18:30
+                15:30 - 19:30
                 <br/>
                   <button style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;"
                     id="Reservar-Kubernetes-tar"
@@ -1232,10 +1233,10 @@
                   <script>
                     (function() {
                       var stripe = Stripe('pk_live_RBwBvMH6OGnYaHTv9OqEyGWQ00K56Niu0z');
-                      var checkoutButton = document.getElementById('Reservar-Spark-tar');
+                      var checkoutButton = document.getElementById('Reservar-Kubernetes-tar');
                       checkoutButton.addEventListener('click', function () {
                         stripe.redirectToCheckout({
-                          lineItems: [{price: 'price_1GxU3BGCyao516pgRUM7hXtt', quantity: 1}],
+                          lineItems: [{price: 'price_1GyH2JGCyao516pgiNAJDCYy', quantity: 1}],
                           mode: 'payment',
                           successUrl: 'http://www.pronoide.com/pago-confirmado',
                           cancelUrl: 'http://www.pronoide.com/pago-cancelado',
@@ -1289,7 +1290,7 @@
             </td>
             <td style="background-color: #f1f8fb;">
               <br/>
-              10:00 - 13:00
+              10:00 - 14:00
               <br/>
                   <button style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;"
                     id="Reservar-Openshift-ma"
@@ -1301,10 +1302,10 @@
                   <script>
                     (function() {
                       var stripe = Stripe('pk_live_RBwBvMH6OGnYaHTv9OqEyGWQ00K56Niu0z');
-                      var checkoutButton = document.getElementById('Reservar-Spark-tar');
+                      var checkoutButton = document.getElementById('Reservar-Openshift-ma');
                       checkoutButton.addEventListener('click', function () {
                         stripe.redirectToCheckout({
-                          lineItems: [{price: 'price_1GxU3BGCyao516pgRUM7hXtt', quantity: 1}],
+                          lineItems: [{price: 'price_1GyH4yGCyao516pg2NU0imao', quantity: 1}],
                           mode: 'payment',
                           successUrl: 'http://www.pronoide.com/pago-confirmado',
                           cancelUrl: 'http://www.pronoide.com/pago-cancelado',
@@ -1332,7 +1333,7 @@
           <tr>
             <td style="background-color: #dce8ee;">
               <br/>
-              15:30 - 18:30
+              15:30 - 19:30
               <br/>
                   <button style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;"
                     id="Reservar-Openshift-tar"
@@ -1344,10 +1345,10 @@
                   <script>
                     (function() {
                       var stripe = Stripe('pk_live_RBwBvMH6OGnYaHTv9OqEyGWQ00K56Niu0z');
-                      var checkoutButton = document.getElementById('Reservar-Spark-tar');
+                      var checkoutButton = document.getElementById('Reservar-Openshift-tar');
                       checkoutButton.addEventListener('click', function () {
                         stripe.redirectToCheckout({
-                          lineItems: [{price: 'price_1GxU3BGCyao516pgRUM7hXtt', quantity: 1}],
+                          lineItems: [{price: 'price_1GyH6OGCyao516pg7EwS6w75', quantity: 1}],
                           mode: 'payment',
                           successUrl: 'http://www.pronoide.com/pago-confirmado',
                           cancelUrl: 'http://www.pronoide.com/pago-cancelado',
@@ -1413,7 +1414,7 @@
                       var checkoutButton = document.getElementById('Reservar-SWMOV-ma');
                       checkoutButton.addEventListener('click', function () {
                         stripe.redirectToCheckout({
-                          lineItems: [{price: 'price_1GxU3BGCyao516pgRUM7hXtt', quantity: 1}],
+                          lineItems: [{price: 'price_1GyF3KGCyao516pgB8B3EW1M', quantity: 1}],
                           mode: 'payment',
                           successUrl: 'http://www.pronoide.com/pago-confirmado',
                           cancelUrl: 'http://www.pronoide.com/pago-cancelado',
@@ -1505,7 +1506,7 @@
                       var checkoutButton = document.getElementById('Reservar-SCMOV-tar');
                       checkoutButton.addEventListener('click', function () {
                         stripe.redirectToCheckout({
-                          lineItems: [{price: 'price_1GxAI1GCyao516pgLE7ZG4uQ', quantity: 1}],
+                          lineItems: [{price: 'price_1GyFoYGCyao516pgzDZMkcn2', quantity: 1}],
                           mode: 'payment',
                           successUrl: 'http://www.pronoide.com/pago-confirmado',
                           cancelUrl: 'http://www.pronoide.com/pago-cancelado',
