@@ -543,7 +543,7 @@
                       <br/>
                       <button
                       style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;">
-                        <a href="mailto:formacion@pronoide.com?subject=Curso%20Python.%20Tardes"
+                        <a href="mailto:formacion@pronoide.com?subject=Curso%20Python"
                         style="text-decoration: none; color: #FFF; font-size: inherit;">
                         <img src="img\productos\icons-24\info.png" alt="Información" />
                         Pedir Info</a>
@@ -1560,7 +1560,6 @@
                       Reservar
                     </button>
                   <div id="error-message"></div>
-                  <!--Prueba-->
                   <script>
                     (function() {
                       var stripe = Stripe('pk_live_RBwBvMH6OGnYaHTv9OqEyGWQ00K56Niu0z');
@@ -1680,7 +1679,7 @@
                   <br/>
                     <button
                       style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;"
-                      id="Reservar-React-tar"
+                      id="Reservar-ReactMOV-tar"
                       role="link">
                     <img src="img\productos\icons-24\libros.png" alt="Libros" />
                       Reservar
@@ -2118,7 +2117,7 @@
                   <script>
                     (function() {
                       var stripe = Stripe('pk_live_RBwBvMH6OGnYaHTv9OqEyGWQ00K56Niu0z');
-                      var checkoutButton = document.getElementById('Reservar-BDMOV-ma');
+                      var checkoutButton = document.getElementById('Reservar-BDMOV-tar');
                       checkoutButton.addEventListener('click', function () {
                         stripe.redirectToCheckout({
                           lineItems: [{price: 'price_1GyGtrGCyao516pgwRARC7Lo', quantity: 1}],
@@ -2392,7 +2391,7 @@
           </tbody>            
           </table>
         
-          <!-- <onclick />
+          <onclick />
           <script>
                   var table = document.getElementById('calendario'),
                   selected = table.getElementsByClassName('selected');
@@ -2401,7 +2400,7 @@
                       if (selected[0]) selected[0].className = '';
                       e.target.parentNode.className = 'selected';
                   }
-          </script> -->
+          </script>
 
           </div>
         </div>
