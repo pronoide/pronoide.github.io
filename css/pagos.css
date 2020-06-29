@@ -40,6 +40,8 @@ body {
   img {
       max-width: 100%;
   }
+
+  /* Menú Navegación */
   
   .container {
     width: 100%;
@@ -60,17 +62,22 @@ body {
     box-shadow: 0px -3px 0px rgba(50, 50, 50, 0.6) inset;
   }
   
+  /* Ajuste pantallas */
+
   @media (min-width: 48.635rem) {
-    .panel-heading {
-      font-size: 100px;;
+    #pago-movil {
+      display: none;
     }
   }
   
   @media (max-width: 48.635rem) {
-
+   #pago-web {
+     display: none;
+   }
   }
  
+  /* @keyframes {
 
-
+  } */
 
 
