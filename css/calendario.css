@@ -65,58 +65,6 @@ body {
     padding-left: 35px;
   } */
 
-  .selected {
-      background-color: #f3fab8;
-      color: #233b54;
-  }
-
-  /* config del toolip de ayuda*/
-
-  /* .help-tip{
-    position: relative;
-    top: 18px;
-    right: 18px;
-    text-align: center;
-    background-color: #BCDBEA;
-    border-radius: 50%;
-    width: 24px;
-    height: 24px;
-    font-size: 14px;
-    line-height: 26px;
-    cursor: default;
-}
-
- .help-tip:before{
-  content:'?';
-  font-weight: bold;
-  color:#fff;
-} 
-
- .help-tip:hover p{
-  display:block;
-  transform-origin: 100% 0%;
-
-  -webkit-animation: fadeIn 0.3s ease-in-out;
-  animation: fadeIn 0.3s ease-in-out;
-
-} 
-
-.help-tip p{   
-  display: none;
-  text-align: left;
-  background-color: #7090A0;;
-  padding: 20px;
-  width: 300px;
-  position: relative;
-  border-radius: 3px;
-  box-shadow: 1px 1px 1px rgba(0, 0, 0, 0.2);
-  right: -4px;
-  color: #fff;
-  font-size: 13px;
-  line-height: 1.4;
-} */
-
-/* hasta aqui */
 
   table {
     background-color: #fff;
