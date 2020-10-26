@@ -104,7 +104,15 @@ li {
   background-color: rgba(0,0,0,0.2);
 }
 
-
+.bg-lineas-diagonales{
+  background: repeating-linear-gradient(
+    45deg,
+    rgba(0, 0, 0, 0) 20px,
+    rgba(0, 0, 0, 0) 40px,
+    #d7e5f5 50px,
+    #bbd4ee 50px
+  );
+}
 
 @media (max-width: 48.625rem) {
   .panel-curso, .panel-curso {
