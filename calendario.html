@@ -84,7 +84,8 @@
                   <th colspan="8" class="cabecera">
                     <img src="img/productos/carrito.png" alt="Carrito" />
                     &nbsp; <strong>Cursos Públicos.</strong>
-                    Cursos planificados en el calendario para un grupo de alumnos que provienen de distintas empresas o se inscriben como particulares
+                    Cursos planificados en el calendario para un grupo de alumnos que provienen 
+                    de distintas empresas o se inscriben como particulares
                   </th>
                 </tr>
 
@@ -100,8 +101,121 @@
                 </tr>
               </thead>
               <tbody>
-                <!--Curso de Seguridad Web-->
-                <!-- <tr>
+
+            <!--Curso de React-->
+             <tr>
+              <td rowspan="2" style="color: orangered;">
+                <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/776929286/TWB-170+React">
+                <img src="img\productos\react.png" alt="Curso de React"/><br/>
+                React</a> 
+              </td>
+              <td rowspan="2">
+                <img src="img\productos\icons-48\abierto.png" alt="Virtual" /><br/><br/>
+                Abierto para reservas
+                <br/> 
+                <br/> 
+                <button style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;">
+                  <a href="mailto:formacion@pronoide.com?subject=Curso%20React"
+                  style="text-decoration: none; color: #FFF; font-size: inherit;">
+                  <img src="img\productos\icons-24\info.png" alt="Información" />
+                  Pedir Info</a>
+                </button>
+              </td>
+              <td rowspan="2">
+                <img src="img\icons\48\development.png" alt="Virtual" />
+                <br/><br/>
+                Virtual
+              </td>
+              <td rowspan="2">
+                30 horas
+              </td>
+              <td rowspan="2">
+                Lunes a viernes
+                <br/><br/>
+                15/02/2021<br/>
+                al<br/>
+                28/02/2021
+              </td>
+              <td style="background-color:#f1f8fb;">
+                <br/>
+                10:00 - 13:00
+                <br/>
+                <button style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;"
+                  id="Reservar-React-ma"
+                  role="link">
+                <img src="img\productos\icons-24\libros.png" alt="Libros" />
+                  Reservar
+                </button>
+                <div id="error-message"></div>
+                <script>
+                  (function() {
+                    var stripe = Stripe('pk_live_RBwBvMH6OGnYaHTv9OqEyGWQ00K56Niu0z');
+                    var checkoutButton = document.getElementById('Reservar-React-ma');
+                    checkoutButton.addEventListener('click', function () {
+                      stripe.redirectToCheckout({
+                        lineItems: [{price: 'price_1GyG05GCyao516pgLTvSdfdW', quantity: 1}],
+                        mode: 'payment',
+                        successUrl: 'http://www.pronoide.com/pago-confirmado',
+                        cancelUrl: 'http://www.pronoide.com/pago-cancelado',
+                      })
+                      .then(function (result) {
+                        if (result.error) {
+                          var displayError = document.getElementById('error-message');
+                          displayError.textContent = result.error.message;
+                        }
+                      });
+                    });
+                  })();
+                  </script>
+              </td>
+              <td rowspan="2">
+                4GB de Ram<br/>
+                (8GB recomendables)<br/>
+                y 20GB de HD
+              </td>
+              <td rowspan="2">
+                <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/1144193151/ngel+Villalba+Fern+ndez">
+                  Ángel Villalba</a>
+              </td>
+            </tr>
+
+            <tr>
+              <td style="background-color: #dce8ee;">
+                <br/>
+                15:30 - 18:30
+                <br/>
+             <button style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;"
+                id="Reservar-React-tar"
+                role="link">
+              <img src="img\productos\icons-24\libros.png" alt="Libros" />
+                Reservar
+              </button>
+              <div id="error-message"></div>          
+              <script>
+                (function() {
+                  var stripe = Stripe('pk_live_RBwBvMH6OGnYaHTv9OqEyGWQ00K56Niu0z');
+                  var checkoutButton = document.getElementById('Reservar-React-tar');
+                  checkoutButton.addEventListener('click', function () {
+                    stripe.redirectToCheckout({
+                      lineItems: [{price: 'price_1GyG2ZGCyao516pggehyFoYN', quantity: 1}],
+                      mode: 'payment',
+                      successUrl: 'http://www.pronoide.com/pago-confirmado',
+                      cancelUrl: 'http://www.pronoide.com/pago-cancelado',
+                    })
+                    .then(function (result) {
+                      if (result.error) {
+                        var displayError = document.getElementById('error-message');
+                        displayError.textContent = result.error.message;
+                      }
+                    });
+                  });
+                })();
+              </script>
+              </td>
+            </tr>
+                
+               <!--  Curso de Seguridad Web-->
+                <tr style="background-color:  #eaf6fb;">
                   <td rowspan="2">
                     <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/62226505/TWB-200+Programaci+n+Web+Segura+OWASP">
                       <img src="img\productos\owasp.png" alt="Curso de Seguridad Web"/><br/>
@@ -128,11 +242,11 @@
                   </td>
                   <td rowspan="2">
                     Lunes a jueves<br/><br/>
-                    31/08/2020<br/>
+                    01/03/2020<br/>
                     al<br/>
-                    10/09/2020
+                    11/03/2020
                   </td>
-                  <td style="background-color:#dce8ee;"><br/>10:00 - 13:00
+                  <td style="background-color: #f1f8fb;"><br/>10:00 - 13:00
                     <br/>
                     <button
                       style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;"
@@ -173,8 +287,8 @@
                     </td>
                 </tr>
 
-              <tr>
-                <td style="background-color: #f1f8fb;"><br/>15:30 - 18:30
+               <tr>
+                <td style="background-color:#dce8ee;""><br/>15:30 - 18:30
                   <br/>
                    <button
                     style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;"
@@ -205,351 +319,8 @@
                     })();
                     </script> 
                 </td>
-              </tr> -->
-
-            <!--Curso de VUE.js-->
-            <tr style="background-color: #eaf6fb;">
-              <td rowspan="2" style="color: orangered;">
-                <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/632651821/TWB-220+Vue.js">
-                  <img src="img\productos\vue.png" alt="Curso de VUE.js"/><br/>
-                VUE.js</a> 
-              </td>
-              <td rowspan="2">
-                <!-- <img src="img\productos\icons-48\abierto.png" alt="Abierto" />
-                <br/><br/>
-                Abierto para reservas
-                  <br/> -->
-                  <br/>
-                  <button style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;">
-                    <a href="mailto:formacion@pronoide.com?subject=Curso%20VUE.js"
-                    style="text-decoration: none; color: #FFF; font-size: inherit;">
-                    <img src="img\productos\icons-24\info.png" alt="Información" />
-                    Pedir Info</a>
-                  </button>
-              </td>
-              <td rowspan="2">
-                <img src="img\icons\48\development.png" alt="Virtual" />
-                <br/><br/>
-                Virtual
-              </td>
-              <td rowspan="2">
-                24 horas
-              </td>
-              <td rowspan="2">
-                Martes a viernes
-                <br/><br/>
-                06/10/2020<br/>
-                al<br/>
-                16/10/2020
-              </td>
-              <td style="background-color:#f1f8fb;">
-                <br/>
-                10:00 - 13:00
-                <!-- <br/>
-                <button style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;"
-                  id="Reservar-VUE-ma"
-                  role="link">
-                <img src="img\productos\icons-24\libros.png" alt="Libros" />
-                  Reservar
-                </button>
-                <div id="error-message"></div>
-                <script>
-                  (function() {
-                    var stripe = Stripe('pk_live_RBwBvMH6OGnYaHTv9OqEyGWQ00K56Niu0z');
-                    var checkoutButton = document.getElementById('Reservar-VUE-ma');
-                    checkoutButton.addEventListener('click', function () {
-                      stripe.redirectToCheckout({
-                        lineItems: [{price: 'price_1GzKrcGCyao516pgi3U3dbWr', quantity: 1}],
-                        mode: 'payment',
-                        successUrl: 'http://www.pronoide.com/pago-confirmado',
-                        cancelUrl: 'http://www.pronoide.com/pago-cancelado',
-                      })
-                      .then(function (result) {
-                        if (result.error) {
-                          var displayError = document.getElementById('error-message');
-                          displayError.textContent = result.error.message;
-                        }
-                      });
-                    });
-                  })();
-                </script> -->
-              </td>
-              <td rowspan="2">
-                4GB de Ram<br/>
-                (8GB recomendables)<br/>
-                y 20GB de HD
-              </td>
-              <td rowspan="2">
-                <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/1144193151/ngel+Villalba+Fern+ndez">
-                  Ángel Villalba</a>
-              </td>
-            </tr>
-
-            <tr>
-              <td style="background-color: #dce8ee;">
-                <br/>
-                15:30 - 18:30
-                <br/>
-                <!--<button style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;"
-                  id="Reservar-VUE-tar"
-                  role="link">
-                <img src="img\productos\icons-24\libros.png" alt="Libros" />
-                  Reservar
-                </button>
-                <div id="error-message"></div>
-                <script>
-                  (function() {
-                    var stripe = Stripe('pk_live_RBwBvMH6OGnYaHTv9OqEyGWQ00K56Niu0z');
-                    var checkoutButton = document.getElementById('Reservar-VUE-tar');
-                    checkoutButton.addEventListener('click', function () {
-                      stripe.redirectToCheckout({
-                        lineItems: [{price: 'price_1GyGXmGCyao516pggihBynbp', quantity: 1}],
-                        mode: 'payment',
-                        successUrl: 'http://www.pronoide.com/pago-confirmado',
-                        cancelUrl: 'http://www.pronoide.com/pago-cancelado',
-                      })
-                      .then(function (result) {
-                        if (result.error) {
-                          var displayError = document.getElementById('error-message');
-                          displayError.textContent = result.error.message;
-                        }
-                      });
-                    });
-                  })();
-                </script> -->
-              </td>
-            </tr> 
-
-             <!--Curso de React-->
-             <tr>
-              <td rowspan="2" style="color: orangered;">
-                <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/776929286/TWB-170+React">
-                <img src="img\productos\react.png" alt="Curso de React"/><br/>
-                React</a> 
-              </td>
-              <td rowspan="2">
-                <!-- <img src="img\productos\icons-48\abierto.png" alt="Virtual" /><br/><br/>
-                Abierto para reservas
-                <br/> -->
-                <br/> 
-                <button style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;">
-                  <a href="mailto:formacion@pronoide.com?subject=Curso%20React"
-                  style="text-decoration: none; color: #FFF; font-size: inherit;">
-                  <img src="img\productos\icons-24\info.png" alt="Información" />
-                  Pedir Info</a>
-                </button>
-              </td>
-              <td rowspan="2">
-                <img src="img\icons\48\development.png" alt="Virtual" />
-                <br/><br/>
-                Virtual
-              </td>
-              <td rowspan="2">
-                30 horas
-              </td>
-              <td rowspan="2">
-                Lunes a viernes
-                <br/><br/>
-                19/10/2020<br/>
-                al<br/>
-                30/10/2020
-              </td>
-              <td style="background-color:#f1f8fb;">
-                <br/>
-                10:00 - 13:00
-                <br/>
-                <!-- <button style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;"
-                  id="Reservar-React-ma"
-                  role="link">
-                <img src="img\productos\icons-24\libros.png" alt="Libros" />
-                  Reservar
-                </button>
-                <div id="error-message"></div>
-                <script>
-                  (function() {
-                    var stripe = Stripe('pk_live_RBwBvMH6OGnYaHTv9OqEyGWQ00K56Niu0z');
-                    var checkoutButton = document.getElementById('Reservar-React-ma');
-                    checkoutButton.addEventListener('click', function () {
-                      stripe.redirectToCheckout({
-                        lineItems: [{price: 'price_1GyG05GCyao516pgLTvSdfdW', quantity: 1}],
-                        mode: 'payment',
-                        successUrl: 'http://www.pronoide.com/pago-confirmado',
-                        cancelUrl: 'http://www.pronoide.com/pago-cancelado',
-                      })
-                      .then(function (result) {
-                        if (result.error) {
-                          var displayError = document.getElementById('error-message');
-                          displayError.textContent = result.error.message;
-                        }
-                      });
-                    });
-                  })();
-                  </script>   -->
-              </td>
-              <td rowspan="2">
-                4GB de Ram<br/>
-                (8GB recomendables)<br/>
-                y 20GB de HD
-              </td>
-              <td rowspan="2">
-                <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/1144193151/ngel+Villalba+Fern+ndez">
-                  Ángel Villalba</a>
-              </td>
-            </tr>
-
-            <tr>
-              <td style="background-color: #dce8ee;">
-                <br/>
-                15:30 - 18:30
-                <br/>
-              <!-- <button style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;"
-                id="Reservar-React-tar"
-                role="link">
-              <img src="img\productos\icons-24\libros.png" alt="Libros" />
-                Reservar
-              </button>
-              <div id="error-message"></div>          
-              <script>
-                (function() {
-                  var stripe = Stripe('pk_live_RBwBvMH6OGnYaHTv9OqEyGWQ00K56Niu0z');
-                  var checkoutButton = document.getElementById('Reservar-React-tar');
-                  checkoutButton.addEventListener('click', function () {
-                    stripe.redirectToCheckout({
-                      lineItems: [{price: 'price_1GyG2ZGCyao516pggehyFoYN', quantity: 1}],
-                      mode: 'payment',
-                      successUrl: 'http://www.pronoide.com/pago-confirmado',
-                      cancelUrl: 'http://www.pronoide.com/pago-cancelado',
-                    })
-                    .then(function (result) {
-                      if (result.error) {
-                        var displayError = document.getElementById('error-message');
-                        displayError.textContent = result.error.message;
-                      }
-                    });
-                  });
-                })();
-              </script>   -->
-              </td>
-            </tr>
-
-
-              <!--Curso de Spark-->
-              <tr style="background-color: #eaf6fb;">
-                <td rowspan="2"><br/>
-                  <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/776896522/BDN-080+Spark">
-                    <img src="img\productos\spark.png" alt="Curso de Spark"/><br/>
-                  Spark</a>
-                </td>
-                <td rowspan="2"> 
-                  <br/>
-                  <!-- <img src="img\productos\icons-48\abierto.png" alt="Abierto" /><br/><br/>
-                  Abierto para reservas
-                  <br/>
-                  <br/>  -->
-                 <button style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;">
-                      <a href="mailto:formacion@pronoide.com?subject=Curso%20Spark"
-                      style="text-decoration: none; color: #FFF; font-size: inherit;">
-                      <img src="img\productos\icons-24\info.png" alt="Información" />
-                      Pedir Info</a>
-                  </button>
-                </td>
-                <td rowspan="2">
-                  <br/>
-                  <img src="img\icons\48\development.png" alt="Virtual" /><br/><br/>
-                  Virtual
-                </td>
-                <td rowspan="2">
-                  <br/>
-                  24 horas
-                </td>           
-                <td rowspan="2">
-                  Martes a viernes
-                  <br/><br/>
-                  03/11/2020<br/>
-                  al<br/>
-                  13/11/2020
-                </td>
-                <td style="background-color:#f1f8fb;">
-                  <br/>
-                  10:00 - 13:00
-                  <br/> 
-                    <!-- <button
-                    style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;"
-                    id="Reservar-Spark-ma"
-                    role="link">
-                  <img src="img\productos\icons-24\libros.png" alt="Libros" />
-                  Reservar
-                  </button>
-                  <div id="error-message"></div>
-                  <script>
-                    (function() {
-                      var stripe = Stripe('pk_live_RBwBvMH6OGnYaHTv9OqEyGWQ00K56Niu0z');
-                      var checkoutButton = document.getElementById('Reservar-Spark-ma');
-                      checkoutButton.addEventListener('click', function () {
-                        stripe.redirectToCheckout({
-                          lineItems: [{price: 'price_1GyFrqGCyao516pgDjliI4IG', quantity: 1}],
-                          mode: 'payment',
-                          successUrl: 'http://www.pronoide.com/pago-confirmado',
-                          cancelUrl: 'http://www.pronoide.com/pago-cancelado',
-                        })
-                        .then(function (result) {
-                          if (result.error) {
-                            var displayError = document.getElementById('error-message');
-                            displayError.textContent = result.error.message;
-                          }
-                        });
-                      });
-                    })();
-                    </script> -->
-                </td>
-                <td rowspan="2">
-                  <br/>
-                  8GB de Ram<br/>
-                  y 40GB de HD
-                </td>
-                <td rowspan="2">
-                  <br/>
-                  <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/1168343187/Ram+n+Rubio+Hortelano">
-                    Ramón Rubio</a>
-                </td>
               </tr> 
-
-              <tr>
-                <td style="background-color: #dce8ee;">
-                  <br/>
-                  15:30 - 18:30
-                <br/> 
-                  <!-- <button
-                    style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;"
-                    id="Reservar-Spark-tar"
-                    role="link">
-                  <img src="img\productos\icons-24\libros.png" alt="Libros" />
-                  Reservar
-                  </button>
-                  <div id="error-message"></div>
-                  <script>
-                    (function() {
-                      var stripe = Stripe('pk_live_RBwBvMH6OGnYaHTv9OqEyGWQ00K56Niu0z');
-                      var checkoutButton = document.getElementById('Reservar-Spark-tar');
-                      checkoutButton.addEventListener('click', function () {
-                        stripe.redirectToCheckout({
-                          lineItems: [{price: 'price_1GyFwWGCyao516pg9OL71X6y', quantity: 1}],
-                          mode: 'payment',
-                          successUrl: 'http://www.pronoide.com/pago-confirmado',
-                          cancelUrl: 'http://www.pronoide.com/pago-cancelado',
-                        })
-                        .then(function (result) {
-                          if (result.error) {
-                            var displayError = document.getElementById('error-message');
-                            displayError.textContent = result.error.message;
-                          }
-                        });
-                      });
-                    })();
-                    </script>  -->
-                </td>
-              </tr> 
-
+          
               <!--Curso de Spring Cloud-->
               <tr>
                 <td><br/>
@@ -558,11 +329,11 @@
                   Spring Cloud</a>
                 </td>
                 <td>
-                  <!-- <br/>
+                  <br/>
                   <br/>
                   <img src="img\productos\icons-48\abierto.png" alt="Abierto" /><br/><br/>
                   Abierto para reservas
-                  <br/> -->
+                  <br/>
                   <br/>
                   <button
                   style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;">
@@ -585,15 +356,15 @@
                 <td>
                   Lunes a jueves
                   <br/><br/>
-                  16/11/2020<br/>
+                  15/03/2021<br/>
                   al<br/>
-                  26/11/2020
+                  25/03/2021
                 </td>
                 <td style="background-color: #f1f8fb;">
                   <br/>
-                  10:00 - 13:00
+                  15:30 - 18:30
                   <br/>
-                 <!-- <button
+                 <button
                     style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;"
                     id="Reservar-SC"
                     role="link">
@@ -620,7 +391,7 @@
                         });
                       });
                     })();
-                    </script>  -->
+                    </script> 
                 </td>
                 <td>
                   <br/>
@@ -634,9 +405,234 @@
                 </td>
               </tr> 
 
-        
-                <!--Curso de Python-->
-                <!-- <tr style="background-color: #eaf6fb;">
+              <!--Curso de Docker-->
+              <tr style="background-color:  #eaf6fb;">
+              <td rowspan="2" style="color: orangered;">
+                <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/64290892/DCH-020+Docker">
+                  <img src="img\productos\docker.png" alt="Curso de Docker"/><br/>
+                Docker</a> 
+              </td>
+              <td rowspan="2">
+                <img src="img\productos\icons-48\abierto.png" alt="Abierto" /><br/><br/>
+                Abierto para reservas
+                  <br/>
+                  <br/>
+                  <button
+                  style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;">
+                    <a href="mailto:formacion@pronoide.com?subject=Curso%20Docker"
+                    style="text-decoration: none; color: #FFF; font-size: inherit;">
+                    <img src="img\productos\icons-24\info.png" alt="Información" />
+                    Pedir Info</a>
+                  </button>
+              </td>
+              <td rowspan="2">
+                <img src="img\icons\48\development.png" alt="Virtual" />
+                <br/><br/>
+                Virtual
+              </td>
+              <td rowspan="2">
+                24 horas
+              </td>
+              <td rowspan="2">
+                Lunes a jueves
+                <br/><br/>
+                12/04/2021<br/>
+                al<br/>
+                22/04/2021
+              </td>
+              <td style="background-color:#dce8ee;">
+                <br/>
+                10:00 - 13:00
+                <br/>
+                  <button style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;"
+                    id="Reservar-Docker-ma"
+                    role="link">
+                  <img src="img\productos\icons-24\libros.png" alt="Libros" />
+                    Reservar
+                  </button>
+                  <div id="error-message"></div>
+                  <script>
+                    (function() {
+                      var stripe = Stripe('pk_live_RBwBvMH6OGnYaHTv9OqEyGWQ00K56Niu0z');
+                      var checkoutButton = document.getElementById('Reservar-Docker-ma');
+                      checkoutButton.addEventListener('click', function () {
+                        stripe.redirectToCheckout({
+                          lineItems: [{price: 'price_1GyGOpGCyao516pgu1uGTKsu', quantity: 1}],
+                          mode: 'payment',
+                          successUrl: 'http://www.pronoide.com/pago-confirmado',
+                          cancelUrl: 'http://www.pronoide.com/pago-cancelado',
+                        })
+                        .then(function (result) {
+                          if (result.error) {
+                            var displayError = document.getElementById('error-message');
+                            displayError.textContent = result.error.message;
+                          }
+                        });
+                      });
+                    })();
+                  </script> 
+              </td>
+              <td rowspan="2">
+                <br/>
+                8GB de Ram<br/>
+                y 40GB de HD
+              </td>
+              <td rowspan="2">
+                <br/>
+                <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/1168408867/Manuel+Tom+s+Ortega+S+nchez">
+                  Manuel Tomás Ortega</a>
+              </td>
+            </tr>
+            <tr>
+              <td style="background-color: #f1f8fb;">
+                <br/>
+                15:30 - 18:30
+                <br/>
+                <button style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;"
+                  id="Reservar-Docker-tar"
+                  role="link">
+                <img src="img\productos\icons-24\libros.png" alt="Libros" />
+                  Reservar
+                </button>
+                <div id="error-message"></div>
+                <script>
+                  (function() {
+                    var stripe = Stripe('pk_live_RBwBvMH6OGnYaHTv9OqEyGWQ00K56Niu0z');
+                    var checkoutButton = document.getElementById('Reservar-Docker-tar');
+                    checkoutButton.addEventListener('click', function () {
+                      stripe.redirectToCheckout({
+                        lineItems: [{price: 'price_1GyGSNGCyao516pgWF1iwCqJ', quantity: 1}],
+                        mode: 'payment',
+                        successUrl: 'http://www.pronoide.com/pago-confirmado',
+                        cancelUrl: 'http://www.pronoide.com/pago-cancelado',
+                      })
+                      .then(function (result) {
+                        if (result.error) {
+                          var displayError = document.getElementById('error-message');
+                          displayError.textContent = result.error.message;
+                        }
+                      });
+                    });
+                  })();
+                </script>
+              </td>
+            </tr> 
+
+            <!--Curso de Kubernetes-->
+            <tr">
+              <td rowspan="2" style="color: orangered;">
+                <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/681050134/DCH-060+Kubernetes">
+                  <img src="img\productos\kubernetes.png" alt="Kubernetes"/><br/>
+                Kubernetes</a> 
+              </td>
+              <td rowspan="2">
+                <img src="img\productos\icons-48\abierto.png" alt="Abierto" />
+                <br/><br/>
+                Abierto para reservas
+                  <br/>
+                  <br/>
+                  <button style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;">
+                    <a href="mailto:formacion@pronoide.com?subject=Curso%20Kubernetes"
+                    style="text-decoration: none; color: #FFF; font-size: inherit;">
+                    <img src="img\productos\icons-24\info.png" alt="Información" />
+                    Pedir Info</a>
+                  </button>
+              </td>
+              <td rowspan="2">
+                <img src="img\icons\48\development.png" alt="Virtual" />
+                <br/><br/>
+                Virtual
+              </td>
+              <td rowspan="2">
+                16 horas
+              </td>
+              <td rowspan="2">
+                Lunes a jueves
+                <br/><br/>
+                26/04/2021<br/>
+                al<br/>
+                06/05/2020
+              </td>
+              <td style="background-color: #dce8ee;">
+                <br/>
+                11:00 - 13:00
+                  <br/>
+                  <button style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;"
+                    id="Reservar-Kubernetes-ma"
+                    role="link">
+                  <img src="img\productos\icons-24\libros.png" alt="Libros" />
+                    Reservar
+                  </button>
+                  <div id="error-message"></div>
+                  <script>
+                    (function() {
+                      var stripe = Stripe('pk_live_RBwBvMH6OGnYaHTv9OqEyGWQ00K56Niu0z');
+                      var checkoutButton = document.getElementById('Reservar-Kubernetes-ma');
+                      checkoutButton.addEventListener('click', function () {
+                        stripe.redirectToCheckout({
+                          lineItems: [{price: 'price_1GyH0gGCyao516pg6LB5zKFf', quantity: 1}],
+                          mode: 'payment',
+                          successUrl: 'http://www.pronoide.com/pago-confirmado',
+                          cancelUrl: 'http://www.pronoide.com/pago-cancelado',
+                        })
+                        .then(function (result) {
+                          if (result.error) {
+                            var displayError = document.getElementById('error-message');
+                            displayError.textContent = result.error.message;
+                          }
+                        });
+                      });
+                    })();
+                  </script>
+              </td>
+              <td rowspan="2">
+                8GB de Ram<br/>
+                (16GB recomendables)<br/>
+                y 100GB de HD
+              </td>
+              <td rowspan="2">
+                <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/1168408867/Manuel+Tom+s+Ortega+S+nchez">
+                  Manuel Tomás Ortega</a>
+              </td>
+            </tr>
+
+            <tr>
+              <td style="background-color: #f1f8fb;">
+                <br/>
+                15:30 - 17:30
+                <br/>
+                  <button style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;"
+                    id="Reservar-Kubernetes-tar"
+                    role="link">
+                  <img src="img\productos\icons-24\libros.png" alt="Libros" />
+                    Reservar
+                  </button>
+                  <div id="error-message"></div>
+                  <script>
+                    (function() {
+                      var stripe = Stripe('pk_live_RBwBvMH6OGnYaHTv9OqEyGWQ00K56Niu0z');
+                      var checkoutButton = document.getElementById('Reservar-Kubernetes-tar');
+                      checkoutButton.addEventListener('click', function () {
+                        stripe.redirectToCheckout({
+                          lineItems: [{price: 'price_1GyH2JGCyao516pgiNAJDCYy', quantity: 1}],
+                          mode: 'payment',
+                          successUrl: 'http://www.pronoide.com/pago-confirmado',
+                          cancelUrl: 'http://www.pronoide.com/pago-cancelado',
+                        })
+                        .then(function (result) {
+                          if (result.error) {
+                            var displayError = document.getElementById('error-message');
+                            displayError.textContent = result.error.message;
+                          }
+                        });
+                      });
+                    })();
+                  </script>
+              </td>
+            </tr>
+            
+           <!--Curso de Python-->
+                <tr style="background-color: #eaf6fb;">
                   <td style="color: orangered;">
                     <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/1208877396/OTL-020+Python">
                       <img src="img\productos\python.png" alt="Curso de Python"/><br/>
@@ -666,11 +662,11 @@
                   <td>
                     Lunes a viernes
                     <br/><br/>
-                    31/08/2020<br/>
+                    10/05/2021<br/>
                     al<br/>
-                    11/09/2020
+                    21/05/2021
                   </td>
-                  <td style="background-color:#f1f8fb;">
+                  <td style="background-color: #dce8ee;">
                     15:00 - 18:00<br/>
                       <button style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;"
                         id="Reservar-Python-tar"
@@ -708,124 +704,10 @@
                     <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/1267007503/Plutarco+Naranjo">
                       Plutarco Naranjo</a>
                   </td>
-                </tr> -->
-
-              <!--Curso de Docker-->
-              <!-- <tr>
-              <td rowspan="2" style="color: orangered;">
-                <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/64290892/DCH-020+Docker">
-                  <img src="img\productos\docker.png" alt="Curso de Docker"/><br/>
-                Docker</a> 
-              </td>
-              <td rowspan="2">
-                <img src="img\productos\icons-48\abierto.png" alt="Abierto" /><br/><br/>
-                Abierto para reservas
-                  <br/>
-                  <br/>
-                  <button
-                  style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;">
-                    <a href="mailto:formacion@pronoide.com?subject=Curso%20Docker"
-                    style="text-decoration: none; color: #FFF; font-size: inherit;">
-                    <img src="img\productos\icons-24\info.png" alt="Información" />
-                    Pedir Info</a>
-                  </button>
-              </td>
-              <td rowspan="2">
-                <img src="img\icons\48\development.png" alt="Virtual" />
-                <br/><br/>
-                Virtual
-              </td>
-              <td rowspan="2">
-                16 horas
-              </td>
-              <td rowspan="2">
-                Lunes a jueves
-                <br/><br/>
-                13/07/2020<br/>
-                al<br/>
-                16/07/2020
-              </td>
-              <td style="background-color:#dce8ee;">
-                <br/>
-                10:00 - 14:00
-                <br/>
-                  <button style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;"
-                    id="Reservar-Docker-ma"
-                    role="link">
-                  <img src="img\productos\icons-24\libros.png" alt="Libros" />
-                    Reservar
-                  </button>
-                  <div id="error-message"></div>
-                  <script>
-                    (function() {
-                      var stripe = Stripe('pk_live_RBwBvMH6OGnYaHTv9OqEyGWQ00K56Niu0z');
-                      var checkoutButton = document.getElementById('Reservar-Docker-ma');
-                      checkoutButton.addEventListener('click', function () {
-                        stripe.redirectToCheckout({
-                          lineItems: [{price: 'price_1GyGOpGCyao516pgu1uGTKsu', quantity: 1}],
-                          mode: 'payment',
-                          successUrl: 'http://www.pronoide.com/pago-confirmado',
-                          cancelUrl: 'http://www.pronoide.com/pago-cancelado',
-                        })
-                        .then(function (result) {
-                          if (result.error) {
-                            var displayError = document.getElementById('error-message');
-                            displayError.textContent = result.error.message;
-                          }
-                        });
-                      });
-                    })();
-                  </script> 
-              </td>
-              <td rowspan="2">
-                <br/>
-                8GB de Ram<br/>
-                y 40GB de HD
-              </td>
-              <td rowspan="2">
-                <br/>
-                <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/1168408753/Rub+n+Garc+a+G+mez">
-                  Rubén Gómez</a>
-              </td>
-            </tr>
-            <tr>
-              <td style="background-color: #f1f8fb;">
-                <br/>
-                15:30 - 19:30
-                <br/>
-                <button style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;"
-                  id="Reservar-Docker-tar"
-                  role="link">
-                <img src="img\productos\icons-24\libros.png" alt="Libros" />
-                  Reservar
-                </button>
-                <div id="error-message"></div>
-                <script>
-                  (function() {
-                    var stripe = Stripe('pk_live_RBwBvMH6OGnYaHTv9OqEyGWQ00K56Niu0z');
-                    var checkoutButton = document.getElementById('Reservar-Docker-tar');
-                    checkoutButton.addEventListener('click', function () {
-                      stripe.redirectToCheckout({
-                        lineItems: [{price: 'price_1GyGSNGCyao516pgWF1iwCqJ', quantity: 1}],
-                        mode: 'payment',
-                        successUrl: 'http://www.pronoide.com/pago-confirmado',
-                        cancelUrl: 'http://www.pronoide.com/pago-cancelado',
-                      })
-                      .then(function (result) {
-                        if (result.error) {
-                          var displayError = document.getElementById('error-message');
-                          displayError.textContent = result.error.message;
-                        }
-                      });
-                    });
-                  })();
-                </script>
-              </td>
-            </tr> -->
-
-            
+                </tr> 
+                        
             <!--Curso de Patrones de Arquitectura-->
-            <!--<tr>
+            <tr>
               <td rowspan="2" style="color: orangered;">
                 <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/774111233/MAD-060+Patrones+de+Arquitectura">
                   <img src="img\productos\patrones.jpg" alt="Curso de Patrones de arquitectura"/><br/>
@@ -855,13 +737,13 @@
               <td rowspan="2">
                 Lunes a viernes
                 <br/><br/>
-                21/09/2020<br/>
+                24/05/2021<br/>
                 al<br/>
-                25/09/2020
+                03/06/2021
               </td>
               <td style="background-color:#f1f8fb;">
                 <br/>
-                10:00 - 14:00
+                11:00 - 13:00
                 <br/>
                 <button style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;"
                   id="Reservar-Patrones-ma"
@@ -904,7 +786,7 @@
             <tr>
               <td style="background-color: #dce8ee;">
                 <br/>
-                15:30 - 19:30
+                15:30 - 17:30
                 <br/>
                 <button style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;"
                   id="Reservar-Patrones-tar"
@@ -934,7 +816,314 @@
                   })();
                 </script> 
               </td>
-            </tr>-->
+            </tr>
+
+             <!--Curso de VUE.js-->
+            <tr style="background-color: #eaf6fb;">
+              <td rowspan="2" style="color: orangered;">
+                <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/632651821/TWB-220+Vue.js">
+                  <img src="img\productos\vue.png" alt="Curso de VUE.js"/><br/>
+                VUE.js</a> 
+              </td>
+              <td rowspan="2">
+                <img src="img\productos\icons-48\abierto.png" alt="Abierto" />
+                <br/><br/>
+                Abierto para reservas
+                  <br/> 
+                  <br/>
+                  <button style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;">
+                    <a href="mailto:formacion@pronoide.com?subject=Curso%20VUE.js"
+                    style="text-decoration: none; color: #FFF; font-size: inherit;">
+                    <img src="img\productos\icons-24\info.png" alt="Información" />
+                    Pedir Info</a>
+                  </button>
+              </td>
+              <td rowspan="2">
+                <img src="img\icons\48\development.png" alt="Virtual" />
+                <br/><br/>
+                Virtual
+              </td>
+              <td rowspan="2">
+                24 horas
+              </td>
+              <td rowspan="2">
+                Lunes a jueves
+                <br/><br/>
+                07/06/2021<br/>
+                al<br/>
+                17/06/2021
+              </td>
+              <td style="background-color:#f1f8fb;">
+                <br/>
+                10:00 - 13:00
+                <br/>
+                <button style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;"
+                  id="Reservar-VUE-ma"
+                  role="link">
+                <img src="img\productos\icons-24\libros.png" alt="Libros" />
+                  Reservar
+                </button>
+                <div id="error-message"></div>
+                <script>
+                  (function() {
+                    var stripe = Stripe('pk_live_RBwBvMH6OGnYaHTv9OqEyGWQ00K56Niu0z');
+                    var checkoutButton = document.getElementById('Reservar-VUE-ma');
+                    checkoutButton.addEventListener('click', function () {
+                      stripe.redirectToCheckout({
+                        lineItems: [{price: 'price_1GzKrcGCyao516pgi3U3dbWr', quantity: 1}],
+                        mode: 'payment',
+                        successUrl: 'http://www.pronoide.com/pago-confirmado',
+                        cancelUrl: 'http://www.pronoide.com/pago-cancelado',
+                      })
+                      .then(function (result) {
+                        if (result.error) {
+                          var displayError = document.getElementById('error-message');
+                          displayError.textContent = result.error.message;
+                        }
+                      });
+                    });
+                  })();
+                </script> 
+              </td>
+              <td rowspan="2">
+                4GB de Ram<br/>
+                (8GB recomendables)<br/>
+                y 20GB de HD
+              </td>
+              <td rowspan="2">
+                <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/1144193151/ngel+Villalba+Fern+ndez">
+                  Ángel Villalba</a>
+              </td>
+            </tr>
+
+            <tr>
+              <td style="background-color: #dce8ee;">
+                <br/>
+                15:30 - 18:30
+                <br/>
+                <button style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;"
+                  id="Reservar-VUE-tar"
+                  role="link">
+                <img src="img\productos\icons-24\libros.png" alt="Libros" />
+                  Reservar
+                </button>
+                <div id="error-message"></div>
+                <script>
+                  (function() {
+                    var stripe = Stripe('pk_live_RBwBvMH6OGnYaHTv9OqEyGWQ00K56Niu0z');
+                    var checkoutButton = document.getElementById('Reservar-VUE-tar');
+                    checkoutButton.addEventListener('click', function () {
+                      stripe.redirectToCheckout({
+                        lineItems: [{price: 'price_1GyGXmGCyao516pggihBynbp', quantity: 1}],
+                        mode: 'payment',
+                        successUrl: 'http://www.pronoide.com/pago-confirmado',
+                        cancelUrl: 'http://www.pronoide.com/pago-cancelado',
+                      })
+                      .then(function (result) {
+                        if (result.error) {
+                          var displayError = document.getElementById('error-message');
+                          displayError.textContent = result.error.message;
+                        }
+                      });
+                    });
+                  })();
+                </script>
+              </td>
+            </tr> 
+
+           <!--Curso de Spring Boot-->
+           <tr>
+              <td style="color: orangered;">
+                <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/629571610/SPR-050+Spring+Boot">
+                  <img src="img\productos\springboot.png" alt="Curso de Spring Boot"/><br/>
+                Spring Boot</a> 
+              </td>
+              <td>
+                <img src="img\productos\icons-48\abierto.png" alt="Abierto" />
+                <br/><br/>
+                Abierto para reservas
+                  <br/>
+                  <br/>
+                  <button
+                  style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;">
+                    <a href="mailto:formacion@pronoide.com?subject=Curso%20Spring%20Boot"
+                    style="text-decoration: none; color: #FFF; font-size: inherit;">
+                    <img src="img\productos\icons-24\info.png" alt="Información" />
+                    Pedir Info</a>
+                  </button>
+              </td>
+              <td>
+                <img src="img\icons\48\development.png" alt="Virtual" />
+                <br/><br/>
+                Virtual</td>
+              <td>
+                24 horas
+              </td>
+              <td>
+                Lunes a jueves
+                <br/><br/>
+                21/06/2020<br/>
+                al<br/>
+                01/07/2020
+              </td>
+              <td style="background-color:#f1f8fb;">
+                <br/>
+                15:30 - 18:30
+                <br/>
+                  <button style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;"
+                    id="Reservar-SB-tar"
+                    role="link">
+                  <img src="img\productos\icons-24\libros.png" alt="Libros" />
+                    Reservar
+                  </button>
+                  <div id="error-message"></div>
+                  <script>
+                    (function() {
+                      var stripe = Stripe('pk_live_RBwBvMH6OGnYaHTv9OqEyGWQ00K56Niu0z');
+                      var checkoutButton = document.getElementById('Reservar-SB-tar');
+                      checkoutButton.addEventListener('click', function () {
+                        stripe.redirectToCheckout({
+                          lineItems: [{price: 'price_1GyGxUGCyao516pgC0wuQ1uq', quantity: 1}],
+                          mode: 'payment',
+                          successUrl: 'http://www.pronoide.com/pago-confirmado',
+                          cancelUrl: 'http://www.pronoide.com/pago-cancelado',
+                        })
+                        .then(function (result) {
+                          if (result.error) {
+                            var displayError = document.getElementById('error-message');
+                            displayError.textContent = result.error.message;
+                          }
+                        });
+                      });
+                    })();
+                  </script>
+              </td>
+              <td>
+                4GB de Ram<br/>
+                y 20GB de HD
+              </td>
+              <td>
+                <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/1168408662/Luis+Ram+n+lvarez+Gonz+lez">
+                  Luis Ramón Álvarez</a>
+              </td>
+            </tr> 
+
+              <!--Curso de Spark-->
+              <!--<tr style="background-color: #eaf6fb;">
+                <td rowspan="2"><br/>
+                  <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/776896522/BDN-080+Spark">
+                    <img src="img\productos\spark.png" alt="Curso de Spark"/><br/>
+                  Spark</a>
+                </td>
+                <td rowspan="2"> 
+                  <br/>
+                  <img src="img\productos\icons-48\abierto.png" alt="Abierto" /><br/><br/>
+                  Abierto para reservas
+                  <br/>
+                  <br/>  
+                 <button style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;">
+                      <a href="mailto:formacion@pronoide.com?subject=Curso%20Spark"
+                      style="text-decoration: none; color: #FFF; font-size: inherit;">
+                      <img src="img\productos\icons-24\info.png" alt="Información" />
+                      Pedir Info</a>
+                  </button>
+                </td>
+                <td rowspan="2">
+                  <br/>
+                  <img src="img\icons\48\development.png" alt="Virtual" /><br/><br/>
+                  Virtual
+                </td>
+                <td rowspan="2">
+                  <br/>
+                  24 horas
+                </td>           
+                <td rowspan="2">
+                  Martes a viernes
+                  <br/><br/>
+                  03/11/2020<br/>
+                  al<br/>
+                  13/11/2020
+                </td>
+                <td style="background-color:#f1f8fb;">
+                  <br/>
+                  10:00 - 13:00
+                  <br/> 
+                    <button
+                    style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;"
+                    id="Reservar-Spark-ma"
+                    role="link">
+                  <img src="img\productos\icons-24\libros.png" alt="Libros" />
+                  Reservar
+                  </button>
+                  <div id="error-message"></div>
+                  <script>
+                    (function() {
+                      var stripe = Stripe('pk_live_RBwBvMH6OGnYaHTv9OqEyGWQ00K56Niu0z');
+                      var checkoutButton = document.getElementById('Reservar-Spark-ma');
+                      checkoutButton.addEventListener('click', function () {
+                        stripe.redirectToCheckout({
+                          lineItems: [{price: 'price_1GyFrqGCyao516pgDjliI4IG', quantity: 1}],
+                          mode: 'payment',
+                          successUrl: 'http://www.pronoide.com/pago-confirmado',
+                          cancelUrl: 'http://www.pronoide.com/pago-cancelado',
+                        })
+                        .then(function (result) {
+                          if (result.error) {
+                            var displayError = document.getElementById('error-message');
+                            displayError.textContent = result.error.message;
+                          }
+                        });
+                      });
+                    })();
+                    </script> 
+                </td>
+                <td rowspan="2">
+                  <br/>
+                  8GB de Ram<br/>
+                  y 40GB de HD
+                </td>
+                <td rowspan="2">
+                  <br/>
+                  <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/1168343187/Ram+n+Rubio+Hortelano">
+                    Ramón Rubio</a>
+                </td>
+              </tr> 
+
+              <tr>
+                <td style="background-color: #dce8ee;">
+                  <br/>
+                  15:30 - 18:30
+                <br/> 
+                  <button
+                    style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;"
+                    id="Reservar-Spark-tar"
+                    role="link">
+                  <img src="img\productos\icons-24\libros.png" alt="Libros" />
+                  Reservar
+                  </button>
+                  <div id="error-message"></div>
+                  <script>
+                    (function() {
+                      var stripe = Stripe('pk_live_RBwBvMH6OGnYaHTv9OqEyGWQ00K56Niu0z');
+                      var checkoutButton = document.getElementById('Reservar-Spark-tar');
+                      checkoutButton.addEventListener('click', function () {
+                        stripe.redirectToCheckout({
+                          lineItems: [{price: 'price_1GyFwWGCyao516pg9OL71X6y', quantity: 1}],
+                          mode: 'payment',
+                          successUrl: 'http://www.pronoide.com/pago-confirmado',
+                          cancelUrl: 'http://www.pronoide.com/pago-cancelado',
+                        })
+                        .then(function (result) {
+                          if (result.error) {
+                            var displayError = document.getElementById('error-message');
+                            displayError.textContent = result.error.message;
+                          }
+                        });
+                      });
+                    })();
+                    </script>  
+                </td>
+              </tr>-->
 
             <!--Curso de Fundamentos Big Data-->
             <!-- <tr style="background-color: #eaf6fb;">
@@ -1050,196 +1239,6 @@
               </td>
             </tr> -->
 
-            <!--Curso de Spring Boot-->
-            <!-- <tr>
-              <td style="color: orangered;">
-                <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/629571610/SPR-050+Spring+Boot">
-                  <img src="img\productos\springboot.png" alt="Curso de Spring Boot"/><br/>
-                Spring Boot</a> 
-              </td>
-              <td>
-                <img src="img\productos\icons-48\abierto.png" alt="Abierto" />
-                <br/><br/>
-                Abierto para reservas
-                  <br/>
-                  <br/>
-                  <button
-                  style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;">
-                    <a href="mailto:formacion@pronoide.com?subject=Curso%20Spring%20Boot"
-                    style="text-decoration: none; color: #FFF; font-size: inherit;">
-                    <img src="img\productos\icons-24\info.png" alt="Información" />
-                    Pedir Info</a>
-                  </button>
-              </td>
-              <td>
-                <img src="img\icons\48\development.png" alt="Virtual" />
-                <br/><br/>
-                Virtual</td>
-              <td>
-                24 horas
-              </td>
-              <td>
-                Lunes a jueves
-                <br/><br/>
-                20/07/2020<br/>
-                al<br/>
-                30/07/2020
-              </td>
-              <td style="background-color:#dce8ee;">
-                <br/>
-                15:30 - 18:30
-                <br/>
-                  <button style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;"
-                    id="Reservar-SB-tar"
-                    role="link">
-                  <img src="img\productos\icons-24\libros.png" alt="Libros" />
-                    Reservar
-                  </button>
-                  <div id="error-message"></div>
-                  <script>
-                    (function() {
-                      var stripe = Stripe('pk_live_RBwBvMH6OGnYaHTv9OqEyGWQ00K56Niu0z');
-                      var checkoutButton = document.getElementById('Reservar-SB-tar');
-                      checkoutButton.addEventListener('click', function () {
-                        stripe.redirectToCheckout({
-                          lineItems: [{price: 'price_1GyGxUGCyao516pgC0wuQ1uq', quantity: 1}],
-                          mode: 'payment',
-                          successUrl: 'http://www.pronoide.com/pago-confirmado',
-                          cancelUrl: 'http://www.pronoide.com/pago-cancelado',
-                        })
-                        .then(function (result) {
-                          if (result.error) {
-                            var displayError = document.getElementById('error-message');
-                            displayError.textContent = result.error.message;
-                          }
-                        });
-                      });
-                    })();
-                  </script>
-              </td>
-              <td>
-                4GB de Ram<br/>
-                y 20GB de HD
-              </td>
-              <td>
-                <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/1168408662/Luis+Ram+n+lvarez+Gonz+lez">
-                  Luis Ramón Álvarez</a>
-              </td>
-            </tr> -->
-
-            <!--Curso de Kubernetes-->
-            <!-- <tr style="background-color: #eaf6fb;">
-              <td rowspan="2" style="color: orangered;">
-                <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/681050134/DCH-060+Kubernetes">
-                  <img src="img\productos\kubernetes.png" alt="Kubernetes"/><br/>
-                Kubernetes</a> 
-              </td>
-              <td rowspan="2">
-                <img src="img\productos\icons-48\abierto.png" alt="Abierto" />
-                <br/><br/>
-                Abierto para reservas
-                  <br/>
-                  <br/>
-                  <button style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;">
-                    <a href="mailto:formacion@pronoide.com?subject=Curso%20Kubernetes"
-                    style="text-decoration: none; color: #FFF; font-size: inherit;">
-                    <img src="img\productos\icons-24\info.png" alt="Información" />
-                    Pedir Info</a>
-                  </button>
-              </td>
-              <td rowspan="2">
-                <img src="img\icons\48\development.png" alt="Virtual" />
-                <br/><br/>
-                Virtual
-              </td>
-              <td rowspan="2">
-                16 horas
-              </td>
-              <td rowspan="2">
-                Lunes a jueves
-                <br/><br/>
-                20/07/2020<br/>
-                al<br/>
-                23/07/2020
-              </td>
-              <td style="background-color: #f1f8fb;">
-                <br/>
-                10:00 - 14:00
-                  <br/>
-                  <button style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;"
-                    id="Reservar-Kubernetes-ma"
-                    role="link">
-                  <img src="img\productos\icons-24\libros.png" alt="Libros" />
-                    Reservar
-                  </button>
-                  <div id="error-message"></div>
-                  <script>
-                    (function() {
-                      var stripe = Stripe('pk_live_RBwBvMH6OGnYaHTv9OqEyGWQ00K56Niu0z');
-                      var checkoutButton = document.getElementById('Reservar-Kubernetes-ma');
-                      checkoutButton.addEventListener('click', function () {
-                        stripe.redirectToCheckout({
-                          lineItems: [{price: 'price_1GyH0gGCyao516pg6LB5zKFf', quantity: 1}],
-                          mode: 'payment',
-                          successUrl: 'http://www.pronoide.com/pago-confirmado',
-                          cancelUrl: 'http://www.pronoide.com/pago-cancelado',
-                        })
-                        .then(function (result) {
-                          if (result.error) {
-                            var displayError = document.getElementById('error-message');
-                            displayError.textContent = result.error.message;
-                          }
-                        });
-                      });
-                    })();
-                  </script>
-              </td>
-              <td rowspan="2">
-                8GB de Ram<br/>
-                (16GB recomendables)<br/>
-                y 100GB de HD
-              </td>
-              <td rowspan="2">
-                <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/1168408867/Manuel+Tom+s+Ortega+S+nchez">
-                  Manuel Tomás Ortega</a>
-              </td>
-            </tr>
-
-            <tr>
-              <td style="background-color: #dce8ee;">
-                <br/>
-                15:30 - 19:30
-                <br/>
-                  <button style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;"
-                    id="Reservar-Kubernetes-tar"
-                    role="link">
-                  <img src="img\productos\icons-24\libros.png" alt="Libros" />
-                    Reservar
-                  </button>
-                  <div id="error-message"></div>
-                  <script>
-                    (function() {
-                      var stripe = Stripe('pk_live_RBwBvMH6OGnYaHTv9OqEyGWQ00K56Niu0z');
-                      var checkoutButton = document.getElementById('Reservar-Kubernetes-tar');
-                      checkoutButton.addEventListener('click', function () {
-                        stripe.redirectToCheckout({
-                          lineItems: [{price: 'price_1GyH2JGCyao516pgiNAJDCYy', quantity: 1}],
-                          mode: 'payment',
-                          successUrl: 'http://www.pronoide.com/pago-confirmado',
-                          cancelUrl: 'http://www.pronoide.com/pago-cancelado',
-                        })
-                        .then(function (result) {
-                          if (result.error) {
-                            var displayError = document.getElementById('error-message');
-                            displayError.textContent = result.error.message;
-                          }
-                        });
-                      });
-                    })();
-                  </script>
-              </td>
-            </tr> -->
-
             <!--Curso de OpenShift-->
             <!-- <tr>
             <td rowspan="2" style="color: orangered;">
@@ -1351,7 +1350,7 @@
                     })();
                   </script>
                   </td>
-                </tr>          -->
+                </tr>  -->
               </tbody>
             </table>
  
@@ -1366,6 +1365,100 @@
               </tr>  
             </thead>
             <tbody>
+              <!--Curso React-->
+              <tr>
+                <td colspan="2" style="background-color: #7090A0; color: orangered;">
+                  <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/776929286/TWB-170+React" 
+                  style="color: #FFF;">
+                    <img src="img\productos\icons-96\react.png" alt="React"/><br/>
+                  React</a>             
+                </td>  
+              </tr>   
+              <tr>          
+                <td colspan="2">
+                  <br/>
+                  Lunes a viernes<br/>
+                  15/02/2021 al 28/02/2021
+                </td>
+              </tr>       
+              <tr>
+                <td>
+                  <br/>
+                  10:00 - 13:00
+                  <br/>
+                    <button
+                      style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;"
+                      id="Reservar-ReactMOV-ma"
+                      role="link">
+                    <img src="img\productos\icons-24\libros.png" alt="Libros" />
+                      Reservar
+                    </button>
+                  <div id="error-message"></div>
+                  <script>
+                    (function() {
+                      var stripe = Stripe('pk_live_RBwBvMH6OGnYaHTv9OqEyGWQ00K56Niu0z');
+                      var checkoutButton = document.getElementById('Reservar-ReactMOV-ma');
+                      checkoutButton.addEventListener('click', function () {
+                        stripe.redirectToCheckout({
+                          lineItems: [{price: 'price_1GyG05GCyao516pgLTvSdfdW', quantity: 1}],
+                          mode: 'payment',
+                          successUrl: 'http://www.pronoide.com/pago-confirmado',
+                          cancelUrl: 'http://www.pronoide.com/pago-cancelado',
+                        })
+                        .then(function (result) {
+                          if (result.error) {
+                            var displayError = document.getElementById('error-message');
+                            displayError.textContent = result.error.message;
+                          }
+                        });
+                      });
+                    })();
+                  </script> 
+                </td>                  
+                <td>
+                  <br/>
+                  15:30 - 18:30
+                  <br/>
+                    <button
+                      style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;"
+                      id="Reservar-ReactMOV-tar"
+                      role="link">
+                    <img src="img\productos\icons-24\libros.png" alt="Libros" />
+                      Reservar
+                    </button>
+                  <div id="error-message"></div>
+                  <script>
+                    (function() {
+                      var stripe = Stripe('pk_live_RBwBvMH6OGnYaHTv9OqEyGWQ00K56Niu0z');
+                      var checkoutButton = document.getElementById('Reservar-ReactMOV-tar');
+                      checkoutButton.addEventListener('click', function () {
+                        stripe.redirectToCheckout({
+                          lineItems: [{price: 'price_1GyG2ZGCyao516pggehyFoYN', quantity: 1}],
+                          mode: 'payment',
+                          successUrl: 'http://www.pronoide.com/pago-confirmado',
+                          cancelUrl: 'http://www.pronoide.com/pago-cancelado',
+                        })
+                        .then(function (result) {
+                          if (result.error) {
+                            var displayError = document.getElementById('error-message');
+                            displayError.textContent = result.error.message;
+                          }
+                        });
+                      });
+                    })();
+                  </script> 
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <button style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;">
+                  <a href="mailto:formacion@pronoide.com?subject=Curso%20React"
+                  style="text-decoration: none; color: #FFF; font-size: inherit;">
+                  <img src="img\productos\icons-24\info.png" alt="Información" />
+                  Pedir Info</a>
+                  </button>
+                </td>
+              </tr>         
               <!--Curso de Seguridad Web-->
               <tr>
                 <td colspan="2" style="background-color: #7090A0; color: #FFF;">
@@ -1377,14 +1470,14 @@
                   <br/>
                 </td>
               </tr>
-              <tr>
+              <tr style="background-color:  #eaf6fb;">
                 <td colspan="2">
                   <br/>
                   Lunes a jueves<br/>
-                  31/08/2020 al 10/09/2020
+                  01/03/2021 al 11/03/2021
                 </td>
               </tr>
-              <tr>
+              <tr style="background-color:  #eaf6fb;">
                 <td>
                   <br/>
                   10:00 - 13:00
@@ -1452,7 +1545,7 @@
                       </script> 
                   </td>
                 </tr>
-                <tr>
+                <tr style="background-color:  #eaf6fb;">
                   <td colspan="2">
                     <button style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;">
                       <a href="mailto:formacion@pronoide.com?subject=Curso%20Seguridad%20Web"
@@ -1471,14 +1564,14 @@
                   Spring Cloud</a>       
                 </td>
               </tr>
-              <tr style="background-color: #eaf6fb;">
+              <tr>
                 <td colspan="2">
                   <br/>
                   Lunes a jueves<br/>
-                  31/08/2020 al 10/09/2020
+                  15/03/2021 al 25/03/2021
                 </td>
               </tr>
-              <tr style="background-color: #eaf6fb;">
+              <tr>
                 <td colspan="2">
                   <br/>
                   15:30 - 18:30<br/>
@@ -1512,7 +1605,7 @@
                   </script> 
                 </td>
               </tr> 
-              <tr style="background-color: #eaf6fb;">
+              <tr>
                 <td colspan="2">
                   <button
                   style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;">
@@ -1521,8 +1614,587 @@
                     <img src="img\productos\icons-24\info.png" alt="Información" />
                     Pedir Info</a>
                 </td>
+              </tr>               
+              <!--Curso Docker-->
+              <tr>
+                <td colspan="2" style="background-color: #7090A0;color: orangered;"><br/>
+                  <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/64290892/DCH-020+Docker" 
+                  style="color: #FFF;">
+                    <img src="img\productos\icons-96\docker.png" alt="Docker"/><br/>
+                  Docker</a> 
+                </td>    
               </tr>
-              <!--Curso de Spark-->
+              <tr style="background-color:  #eaf6fb;">          
+                <td colspan="2">
+                  Lunes a viernes<br/>
+                  12/04/2021 al 22/04/2021
+                </td>
+              </tr>       
+              <tr style="background-color:  #eaf6fb;">
+                <td>
+                  <br/>
+                  10:00 - 13:00
+                  <br/>
+                    <button
+                      style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;"
+                      id="Reservar-DockerMOV-ma"
+                      role="link">
+                    <img src="img\productos\icons-24\libros.png" alt="Libros" />
+                      Reservar
+                    </button>
+                  <div id="error-message"></div>
+                  <script>
+                    (function() {
+                      var stripe = Stripe('pk_live_RBwBvMH6OGnYaHTv9OqEyGWQ00K56Niu0z');
+                      var checkoutButton = document.getElementById('Reservar-DockerMOV-ma');
+                      checkoutButton.addEventListener('click', function () {
+                        stripe.redirectToCheckout({
+                          lineItems: [{price: 'price_1GyGOpGCyao516pgu1uGTKsu', quantity: 1}],
+                          mode: 'payment',
+                          successUrl: 'http://www.pronoide.com/pago-confirmado',
+                          cancelUrl: 'http://www.pronoide.com/pago-cancelado',
+                        })
+                        .then(function (result) {
+                          if (result.error) {
+                            var displayError = document.getElementById('error-message');
+                            displayError.textContent = result.error.message;
+                          }
+                        });
+                      });
+                    })();
+                  </script> 
+                </td>                  
+                <td>
+                  <br/>
+                  15:30 - 18:30
+                  <br/>
+                    <button
+                      style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;"
+                      id="Reservar-DockerMOV-tar"
+                      role="link">
+                    <img src="img\productos\icons-24\libros.png" alt="Libros" />
+                      Reservar
+                    </button>
+                  <div id="error-message"></div>
+                  <script>
+                    (function() {
+                      var stripe = Stripe('pk_live_RBwBvMH6OGnYaHTv9OqEyGWQ00K56Niu0z');
+                      var checkoutButton = document.getElementById('Reservar-DockerMOV-tar');
+                      checkoutButton.addEventListener('click', function () {
+                        stripe.redirectToCheckout({
+                          lineItems: [{price: 'price_1GyGSNGCyao516pgWF1iwCqJ', quantity: 1}],
+                          mode: 'payment',
+                          successUrl: 'http://www.pronoide.com/pago-confirmado',
+                          cancelUrl: 'http://www.pronoide.com/pago-cancelado',
+                        })
+                        .then(function (result) {
+                          if (result.error) {
+                            var displayError = document.getElementById('error-message');
+                            displayError.textContent = result.error.message;
+                          }
+                        });
+                      });
+                    })();
+                  </script> 
+                </td>
+              </tr>
+              <tr style="background-color:  #eaf6fb;">
+                <td colspan="2">
+                  <button style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;">
+                  <a href="mailto:formacion@pronoide.com?subject=Curso%20Docker"
+                  style="text-decoration: none; color: #FFF; font-size: inherit;">
+                  <img src="img\productos\icons-24\info.png" alt="Información" />
+                  Pedir Info</a>
+                  </button>
+                </td>
+              </tr> 
+            <!--Curso Kubernetes-->
+              <tr>
+                <td colspan="2" style="background-color: #7090A0;color: orangered;"><br/>
+                  <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/681050134/DCH-060+Kubernetes" 
+                  style="color: #FFF;">
+                    <img src="img\productos\icons-96\kubernetes.png" alt="Kubernetes"/><br/>
+                  Kubernetes</a>          
+              </tr>
+              <tr>
+                <td colspan="2">
+                  Lunes a jueves<br/>
+                  26/04/2021 al 06/05/2021
+                </td>
+              </tr>
+              <tr>
+                <td>
+                  <br/>
+                  11:00 - 13:00
+                  <br/>
+                    <button
+                      style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;"
+                      id="Reservar-KubernetesMOV-ma"
+                      role="link">
+                    <img src="img\productos\icons-24\libros.png" alt="Libros" />
+                      Reservar
+                    </button>
+                  <div id="error-message"></div>
+                  <script>
+                    (function() {
+                      var stripe = Stripe('pk_live_RBwBvMH6OGnYaHTv9OqEyGWQ00K56Niu0z');
+                      var checkoutButton = document.getElementById('Reservar-KubernetesMOV-ma');
+                      checkoutButton.addEventListener('click', function () {
+                        stripe.redirectToCheckout({
+                          lineItems: [{price: 'price_1GyH0gGCyao516pg6LB5zKFf', quantity: 1}],
+                          mode: 'payment',
+                          successUrl: 'http://www.pronoide.com/pago-confirmado',
+                          cancelUrl: 'http://www.pronoide.com/pago-cancelado',
+                        })
+                        .then(function (result) {
+                          if (result.error) {
+                            var displayError = document.getElementById('error-message');
+                            displayError.textContent = result.error.message;
+                          }
+                        });
+                      });
+                    })();
+                  </script> 
+                </td>                  
+                <td>
+                  <br/>
+                  15:30 - 17:30
+                   <br/>
+                    <button
+                      style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;"
+                      id="Reservar-KubernetesMOV-tar"
+                      role="link">
+                    <img src="img\productos\icons-24\libros.png" alt="Libros" />
+                      Reservar
+                    </button>
+                  <div id="error-message"></div>
+                  <script>
+                    (function() {
+                      var stripe = Stripe('pk_live_RBwBvMH6OGnYaHTv9OqEyGWQ00K56Niu0z');
+                      var checkoutButton = document.getElementById('Reservar-KubernetesMOV-tar');
+                      checkoutButton.addEventListener('click', function () {
+                        stripe.redirectToCheckout({
+                          lineItems: [{price: 'price_1GyH2JGCyao516pgiNAJDCYy', quantity: 1}],
+                          mode: 'payment',
+                          successUrl: 'http://www.pronoide.com/pago-confirmado',
+                          cancelUrl: 'http://www.pronoide.com/pago-cancelado',
+                        })
+                        .then(function (result) {
+                          if (result.error) {
+                            var displayError = document.getElementById('error-message');
+                            displayError.textContent = result.error.message;
+                          }
+                        });
+                      });
+                    })();
+                  </script> 
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <button style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;">
+                    <a href="mailto:formacion@pronoide.com?subject=Curso%20Kubernetes"
+                    style="text-decoration: none; color: #FFF; font-size: inherit;">
+                    <img src="img\productos\icons-24\info.png" alt="Información" />
+                    Pedir Info</a>
+                </td>
+              </tr>  
+              <!--Curso Python-->
+              <tr>
+                <td colspan="2" style="background-color: #7090A0; color: orangered;"><br/>
+                  <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/1208877396/OTL-020+Python" 
+                  style="color: #FFF;">
+                    <img src="img\productos\icons-96\python.png" alt="Python"/><br/>
+                    Python</a> 
+                </td>  
+              </tr>
+              <tr style="background-color: #eaf6fb;">
+                <td colspan="2">
+                  Lunes a viernes<br/>
+                  10/05/2021 al 21/05/2021
+                </td>
+              </tr>
+              <tr style="background-color: #eaf6fb;">                 
+                <td colspan="2">
+                  <br/>
+                  15:00 - 18:00
+                  <br/>
+                    <button
+                      style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;"
+                      id="Reservar-PythonMOV-tar"
+                      role="link">
+                    <img src="img\productos\icons-24\libros.png" alt="Libros" />
+                      Reservar
+                    </button>
+                  <div id="error-message"></div>
+                  <script>
+                    (function() {
+                      var stripe = Stripe('pk_live_RBwBvMH6OGnYaHTv9OqEyGWQ00K56Niu0z');
+                      var checkoutButton = document.getElementById('Reservar-PythonMOV-tar');
+                      checkoutButton.addEventListener('click', function () {
+                        stripe.redirectToCheckout({
+                          lineItems: [{price: 'price_1GzKmgGCyao516pg7sENwZTh', quantity: 1}],
+                          mode: 'payment',
+                          successUrl: 'http://www.pronoide.com/pago-confirmado',
+                          cancelUrl: 'http://www.pronoide.com/pago-cancelado',
+                        })
+                        .then(function (result) {
+                          if (result.error) {
+                            var displayError = document.getElementById('error-message');
+                            displayError.textContent = result.error.message;
+                          }
+                        });
+                      });
+                    })();
+                  </script> 
+                </td>
+              </tr>
+              <tr style="background-color: #eaf6fb;">
+                <td colspan="2">
+                  <button style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;">
+                    <a href="mailto:formacion@pronoide.com?subject=Curso%20Python"
+                    style="text-decoration: none; color: #FFF; font-size: inherit;">
+                    <img src="img\productos\icons-24\info.png" alt="Información" />
+                    Pedir Info</a>
+                </td>
+              </tr> 
+              <!--Curso Patrones de arquitectura-->
+              <tr>
+                <td colspan="2" style="background-color: #7090A0;color: orangered;"><br/>
+                  <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/774111233/MAD-060+Patrones+de+Arquitectura" 
+                  style="color: #FFF;">
+                    <img src="img\productos\icons-96\patrones.jpg" alt="Patrones de arquitectura"/><br/>
+                  Patrones de arquitectura</a>            
+                </td>                 
+              </tr>
+              <tr>          
+                <td colspan="2">
+                  Lunes a viernes<br/>
+                  24/05/2021 al 03/06/2021
+                </td>
+              </tr>       
+              <tr>
+                <td>
+                  <br/>
+                  11:00 - 13:00
+                  <br/>
+                    <button
+                      style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;"
+                      id="Reservar-patronesMOV-ma"
+                      role="link">
+                    <img src="img\productos\icons-24\libros.png" alt="Libros" />
+                      Reservar
+                    </button>
+                  <div id="error-message"></div>
+                  <script>
+                    (function() {
+                      var stripe = Stripe('pk_live_RBwBvMH6OGnYaHTv9OqEyGWQ00K56Niu0z');
+                      var checkoutButton = document.getElementById('Reservar-patronesMOV-ma');
+                      checkoutButton.addEventListener('click', function () {
+                        stripe.redirectToCheckout({
+                          lineItems: [{price: 'price_1GyGcEGCyao516pgRgjtCUrN', quantity: 1}],
+                          mode: 'payment',
+                          successUrl: 'http://www.pronoide.com/pago-confirmado',
+                          cancelUrl: 'http://www.pronoide.com/pago-cancelado',
+                        })
+                        .then(function (result) {
+                          if (result.error) {
+                            var displayError = document.getElementById('error-message');
+                            displayError.textContent = result.error.message;
+                          }
+                        });
+                      });
+                    })();
+                  </script> 
+                </td>                  
+                <td>
+                  <br/>
+                  15:30 - 17:30
+                   <br/>
+                    <button
+                      style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;"
+                      id="Reservar-patronesMOV-tar"
+                      role="link">
+                    <img src="img\productos\icons-24\libros.png" alt="Libros" />
+                      Reservar
+                    </button>
+                  <div id="error-message"></div>
+                  <script>
+                    (function() {
+                      var stripe = Stripe('pk_live_RBwBvMH6OGnYaHTv9OqEyGWQ00K56Niu0z');
+                      var checkoutButton = document.getElementById('Reservar-patronesMOV-tar');
+                      checkoutButton.addEventListener('click', function () {
+                        stripe.redirectToCheckout({
+                          lineItems: [{price: 'price_1GyGgDGCyao516pgbBCClwr5', quantity: 1}],
+                          mode: 'payment',
+                          successUrl: 'http://www.pronoide.com/pago-confirmado',
+                          cancelUrl: 'http://www.pronoide.com/pago-cancelado',
+                        })
+                        .then(function (result) {
+                          if (result.error) {
+                            var displayError = document.getElementById('error-message');
+                            displayError.textContent = result.error.message;
+                          }
+                        });
+                      });
+                    })();
+                  </script> 
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <button style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;">
+                  <a href="mailto:formacion@pronoide.com?subject=Curso%20Patrones%20de%20arquitectura"
+                  style="text-decoration: none; color: #FFF; font-size: inherit;">
+                  <img src="img\productos\icons-24\info.png" alt="Información" />
+                  Pedir Info</a>
+                  </button>
+                </td>
+              </tr>
+            <!--Curso VUE-->
+              <tr>
+                <td colspan="2" style="background-color: #7090A0;color: orangered;"><br/>
+                  <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/632651821/TWB-220+Vue.js" 
+                  style="color: #FFF;">
+                    <img src="img\productos\icons-96\vue.png" alt="VUE"/><br/>
+                  VUE.js</a> 
+                </td>
+              </tr>
+              <tr style="background-color: #eaf6fb;">
+                <td colspan="2">
+                  Lunes a jueves<br/>
+                  07/06/2021 al 17/06/2021
+                </td>
+              </tr>
+              <tr style="background-color: #eaf6fb;">
+                <td>
+                  <br/>
+                  10:00 - 13:00
+                  <br/>
+                    <button
+                      style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;"
+                      id="Reservar-VUEMOV-ma"
+                      role="link">
+                    <img src="img\productos\icons-24\libros.png" alt="Libros" />
+                      Reservar
+                    </button>
+                  <div id="error-message"></div>
+                  <script>
+                    (function() {
+                      var stripe = Stripe('pk_live_RBwBvMH6OGnYaHTv9OqEyGWQ00K56Niu0z');
+                      var checkoutButton = document.getElementById('Reservar-VUEMOV-ma');
+                      checkoutButton.addEventListener('click', function () {
+                        stripe.redirectToCheckout({
+                          lineItems: [{price: 'price_1GzKrcGCyao516pgi3U3dbWr', quantity: 1}],
+                          mode: 'payment',
+                          successUrl: 'http://www.pronoide.com/pago-confirmado',
+                          cancelUrl: 'http://www.pronoide.com/pago-cancelado',
+                        })
+                        .then(function (result) {
+                          if (result.error) {
+                            var displayError = document.getElementById('error-message');
+                            displayError.textContent = result.error.message;
+                          }
+                        });
+                      });
+                    })();
+                  </script> 
+                </td>                  
+                <td>
+                  <br/>
+                  15:30 - 18:30
+                   <br/>
+                    <button
+                      style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;"
+                      id="Reservar-VUEMOV-tar"
+                      role="link">
+                    <img src="img\productos\icons-24\libros.png" alt="Libros" />
+                      Reservar
+                    </button>
+                  <div id="error-message"></div>
+                  <script>
+                    (function() {
+                      var stripe = Stripe('pk_live_RBwBvMH6OGnYaHTv9OqEyGWQ00K56Niu0z');
+                      var checkoutButton = document.getElementById('Reservar-VUEMOV-tar');
+                      checkoutButton.addEventListener('click', function () {
+                        stripe.redirectToCheckout({
+                          lineItems: [{price: 'price_1GyGXmGCyao516pggihBynbp', quantity: 1}],
+                          mode: 'payment',
+                          successUrl: 'http://www.pronoide.com/pago-confirmado',
+                          cancelUrl: 'http://www.pronoide.com/pago-cancelado',
+                        })
+                        .then(function (result) {
+                          if (result.error) {
+                            var displayError = document.getElementById('error-message');
+                            displayError.textContent = result.error.message;
+                          }
+                        });
+                      });
+                    })();
+                  </script> 
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2" style="background-color: #eaf6fb;">
+                  <button style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;">
+                    <a href="mailto:formacion@pronoide.com?subject=Curso%20VUE.js"
+                    style="text-decoration: none; color: #FFF; font-size: inherit;">
+                    <img src="img\productos\icons-24\info.png" alt="Información" />
+                    Pedir Info</a>
+                </td>
+              </tr> 
+              <!--Curso Spring Boot-->
+              <tr>
+                <td colspan="2" style="background-color: #7090A0;color: orangered;"><br/>
+                  <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/629571610/SPR-050+Spring+Boot" 
+                  style="color: #FFF;">
+                    <img src="img\productos\icons-96\spring.png" alt="Spring Boot"/><br/>
+                  Spring Boot</a> 
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  Lunes a jueves<br/>
+                  21/06/2021 al 01/07/2021
+                </td>
+              </tr>
+              <tr>                 
+                <td colspan="2">
+                  <br/>
+                  15:30 - 18:30
+                  <br/>
+                    <button
+                      style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;"
+                      id="Reservar-SBMOV-tar"
+                      role="link">
+                    <img src="img\productos\icons-24\libros.png" alt="Libros" />
+                      Reservar
+                    </button>
+                  <div id="error-message"></div>
+                  <script>
+                    (function() {
+                      var stripe = Stripe('pk_live_RBwBvMH6OGnYaHTv9OqEyGWQ00K56Niu0z');
+                      var checkoutButton = document.getElementById('Reservar-SBMOV-tar');
+                      checkoutButton.addEventListener('click', function () {
+                        stripe.redirectToCheckout({
+                          lineItems: [{price: 'price_1GyGxUGCyao516pgC0wuQ1uq', quantity: 1}],
+                          mode: 'payment',
+                          successUrl: 'http://www.pronoide.com/pago-confirmado',
+                          cancelUrl: 'http://www.pronoide.com/pago-cancelado',
+                        })
+                        .then(function (result) {
+                          if (result.error) {
+                            var displayError = document.getElementById('error-message');
+                            displayError.textContent = result.error.message;
+                          }
+                        });
+                      });
+                    })();
+                  </script> 
+                </td>
+              </tr>
+              <tr>
+                <td colspan="2">
+                  <button style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;">
+                    <a href="mailto:formacion@pronoide.com?subject=Curso%20Spring%20Boot"
+                    style="text-decoration: none; color: #FFF; font-size: inherit;">
+                    <img src="img\productos\icons-24\info.png" alt="Información" />
+                    Pedir Info</a>
+                </td>
+              </tr>   
+
+              <!--Curso Big Data-->
+              <!-- <tr>
+                <td colspan="2" style="background-color: #7090A0;color: orangered;"><br/>
+                  <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/63406120/BDN-010+Fundamentos+de+Big+Data" 
+                  style="color: #FFF;">
+                    <img src="img\productos\icons-96\big.png" alt="Fundamentos Big Data"/><br/>
+                  Fundamentos Big Data</a>       
+              </tr> 
+              <tr style="background-color: #eaf6fb;">
+                <td colspan="2">
+                  Lunes a jueves<br/>
+                  20/07/2020 al 30/07/2020
+                </td>
+              </tr>
+              <tr style="background-color: #eaf6fb;">
+                <td>
+                  <br/>
+                  10:00 - 13:00
+                   <br/>
+                    <button
+                      style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;"
+                      id="Reservar-BDMOV-ma"
+                      role="link">
+                    <img src="img\productos\icons-24\libros.png" alt="Libros" />
+                      Reservar
+                    </button>
+                  <div id="error-message"></div>
+                  <script>
+                    (function() {
+                      var stripe = Stripe('pk_live_RBwBvMH6OGnYaHTv9OqEyGWQ00K56Niu0z');
+                      var checkoutButton = document.getElementById('Reservar-BDMOV-ma');
+                      checkoutButton.addEventListener('click', function () {
+                        stripe.redirectToCheckout({
+                          lineItems: [{price: 'price_1GyGsiGCyao516pg5rk8rUN7', quantity: 1}],
+                          mode: 'payment',
+                          successUrl: 'http://www.pronoide.com/pago-confirmado',
+                          cancelUrl: 'http://www.pronoide.com/pago-cancelado',
+                        })
+                        .then(function (result) {
+                          if (result.error) {
+                            var displayError = document.getElementById('error-message');
+                            displayError.textContent = result.error.message;
+                          }
+                        });
+                      });
+                    })();
+                  </script> 
+                </td>                  
+                <td>
+                  <br/>
+                  15:30 - 18:30
+                  <br/>
+                    <button
+                      style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;"
+                      id="Reservar-BDMOV-tar"
+                      role="link">
+                    <img src="img\productos\icons-24\libros.png" alt="Libros" />
+                      Reservar
+                    </button>
+                  <div id="error-message"></div>
+                  <script>
+                    (function() {
+                      var stripe = Stripe('pk_live_RBwBvMH6OGnYaHTv9OqEyGWQ00K56Niu0z');
+                      var checkoutButton = document.getElementById('Reservar-BDMOV-tar');
+                      checkoutButton.addEventListener('click', function () {
+                        stripe.redirectToCheckout({
+                          lineItems: [{price: 'price_1GyGtrGCyao516pgwRARC7Lo', quantity: 1}],
+                          mode: 'payment',
+                          successUrl: 'http://www.pronoide.com/pago-confirmado',
+                          cancelUrl: 'http://www.pronoide.com/pago-cancelado',
+                        })
+                        .then(function (result) {
+                          if (result.error) {
+                            var displayError = document.getElementById('error-message');
+                            displayError.textContent = result.error.message;
+                          }
+                        });
+                      });
+                    })();
+                  </script> 
+                </td>
+              </tr>
+              <tr style="background-color: #eaf6fb;">
+                <td colspan="2">
+                  <button style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;">
+                    <a href="mailto:formacion@pronoide.com?subject=Curso%20Fundamentos%20Big%20Data"
+                    style="text-decoration: none; color: #FFF; font-size: inherit;">
+                    <img src="img\productos\icons-24\info.png" alt="Información" />
+                    Pedir Info</a>
+                </td>
+              </tr> -->
+               <!--Curso de Spark-->
               <!-- <tr>
                 <td colspan="2" style="background-color: #7090A0; color: #FFF;">
                   <br/>
@@ -1615,678 +2287,6 @@
                     Pedir Info</a>
                 </td>
               </tr> -->
-              <!--Curso React-->
-              <tr>
-                <td colspan="2" style="background-color: #7090A0; color: orangered;">
-                  <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/776929286/TWB-170+React" 
-                  style="color: #FFF;">
-                    <img src="img\productos\icons-96\react.png" alt="React"/><br/>
-                  React</a>             
-                </td>  
-              </tr>   
-              <tr>          
-                <td colspan="2">
-                  <br/>
-                  Lunes a viernes<br/>
-                  31/08/2020 al 11/09/2020
-                </td>
-              </tr>       
-              <tr>
-                <td>
-                  <br/>
-                  10:00 - 13:00
-                  <br/>
-                    <button
-                      style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;"
-                      id="Reservar-ReactMOV-ma"
-                      role="link">
-                    <img src="img\productos\icons-24\libros.png" alt="Libros" />
-                      Reservar
-                    </button>
-                  <div id="error-message"></div>
-                  <script>
-                    (function() {
-                      var stripe = Stripe('pk_live_RBwBvMH6OGnYaHTv9OqEyGWQ00K56Niu0z');
-                      var checkoutButton = document.getElementById('Reservar-ReactMOV-ma');
-                      checkoutButton.addEventListener('click', function () {
-                        stripe.redirectToCheckout({
-                          lineItems: [{price: 'price_1GyG05GCyao516pgLTvSdfdW', quantity: 1}],
-                          mode: 'payment',
-                          successUrl: 'http://www.pronoide.com/pago-confirmado',
-                          cancelUrl: 'http://www.pronoide.com/pago-cancelado',
-                        })
-                        .then(function (result) {
-                          if (result.error) {
-                            var displayError = document.getElementById('error-message');
-                            displayError.textContent = result.error.message;
-                          }
-                        });
-                      });
-                    })();
-                  </script> 
-                </td>                  
-                <td>
-                  <br/>
-                  15:30 - 18:30
-                  <br/>
-                    <button
-                      style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;"
-                      id="Reservar-ReactMOV-tar"
-                      role="link">
-                    <img src="img\productos\icons-24\libros.png" alt="Libros" />
-                      Reservar
-                    </button>
-                  <div id="error-message"></div>
-                  <script>
-                    (function() {
-                      var stripe = Stripe('pk_live_RBwBvMH6OGnYaHTv9OqEyGWQ00K56Niu0z');
-                      var checkoutButton = document.getElementById('Reservar-ReactMOV-tar');
-                      checkoutButton.addEventListener('click', function () {
-                        stripe.redirectToCheckout({
-                          lineItems: [{price: 'price_1GyG2ZGCyao516pggehyFoYN', quantity: 1}],
-                          mode: 'payment',
-                          successUrl: 'http://www.pronoide.com/pago-confirmado',
-                          cancelUrl: 'http://www.pronoide.com/pago-cancelado',
-                        })
-                        .then(function (result) {
-                          if (result.error) {
-                            var displayError = document.getElementById('error-message');
-                            displayError.textContent = result.error.message;
-                          }
-                        });
-                      });
-                    })();
-                  </script> 
-                </td>
-              </tr>
-              <tr>
-                <td colspan="2">
-                  <button style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;">
-                  <a href="mailto:formacion@pronoide.com?subject=Curso%20React"
-                  style="text-decoration: none; color: #FFF; font-size: inherit;">
-                  <img src="img\productos\icons-24\info.png" alt="Información" />
-                  Pedir Info</a>
-                  </button>
-                </td>
-              </tr>         
-              <!--Curso Python-->
-              <tr>
-                <td colspan="2" style="background-color: #7090A0; color: orangered;"><br/>
-                  <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/1208877396/OTL-020+Python" 
-                  style="color: #FFF;">
-                    <img src="img\productos\icons-96\python.png" alt="Python"/><br/>
-                    Python</a> 
-                </td>  
-              </tr>
-              <tr style="background-color: #eaf6fb;">
-                <td colspan="2">
-                  Lunes a jueves<br/>
-                  31/08/2020 al 11/09/2020
-                </td>
-              </tr>
-              <tr style="background-color: #eaf6fb;">                 
-                <td colspan="2">
-                  <br/>
-                  15:00 - 18:00
-                  <br/>
-                    <button
-                      style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;"
-                      id="Reservar-PythonMOV-tar"
-                      role="link">
-                    <img src="img\productos\icons-24\libros.png" alt="Libros" />
-                      Reservar
-                    </button>
-                  <div id="error-message"></div>
-                  <script>
-                    (function() {
-                      var stripe = Stripe('pk_live_RBwBvMH6OGnYaHTv9OqEyGWQ00K56Niu0z');
-                      var checkoutButton = document.getElementById('Reservar-PythonMOV-tar');
-                      checkoutButton.addEventListener('click', function () {
-                        stripe.redirectToCheckout({
-                          lineItems: [{price: 'price_1GzKmgGCyao516pg7sENwZTh', quantity: 1}],
-                          mode: 'payment',
-                          successUrl: 'http://www.pronoide.com/pago-confirmado',
-                          cancelUrl: 'http://www.pronoide.com/pago-cancelado',
-                        })
-                        .then(function (result) {
-                          if (result.error) {
-                            var displayError = document.getElementById('error-message');
-                            displayError.textContent = result.error.message;
-                          }
-                        });
-                      });
-                    })();
-                  </script> 
-                </td>
-              </tr>
-              <tr style="background-color: #eaf6fb;">
-                <td colspan="2">
-                  <button style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;">
-                    <a href="mailto:formacion@pronoide.com?subject=Curso%20Python"
-                    style="text-decoration: none; color: #FFF; font-size: inherit;">
-                    <img src="img\productos\icons-24\info.png" alt="Información" />
-                    Pedir Info</a>
-                </td>
-              </tr>                
-              <!--Curso Docker-->
-              <!-- <tr>
-                <td colspan="2" style="background-color: #7090A0;color: orangered;"><br/>
-                  <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/64290892/DCH-020+Docker" 
-                  style="color: #FFF;">
-                    <img src="img\productos\icons-96\docker.png" alt="Docker"/><br/>
-                  Docker</a> 
-                </td>    
-              </tr>
-              <tr>          
-                <td colspan="2">
-                  Lunes a viernes<br/>
-                  13/07/2020 al 16/07/2020
-                </td>
-              </tr>       
-              <tr>
-                <td>
-                  <br/>
-                  10:00 - 14:00
-                  <br/>
-                    <button
-                      style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;"
-                      id="Reservar-DockerMOV-ma"
-                      role="link">
-                    <img src="img\productos\icons-24\libros.png" alt="Libros" />
-                      Reservar
-                    </button>
-                  <div id="error-message"></div>
-                  <script>
-                    (function() {
-                      var stripe = Stripe('pk_live_RBwBvMH6OGnYaHTv9OqEyGWQ00K56Niu0z');
-                      var checkoutButton = document.getElementById('Reservar-DockerMOV-ma');
-                      checkoutButton.addEventListener('click', function () {
-                        stripe.redirectToCheckout({
-                          lineItems: [{price: 'price_1GyGOpGCyao516pgu1uGTKsu', quantity: 1}],
-                          mode: 'payment',
-                          successUrl: 'http://www.pronoide.com/pago-confirmado',
-                          cancelUrl: 'http://www.pronoide.com/pago-cancelado',
-                        })
-                        .then(function (result) {
-                          if (result.error) {
-                            var displayError = document.getElementById('error-message');
-                            displayError.textContent = result.error.message;
-                          }
-                        });
-                      });
-                    })();
-                  </script> 
-                </td>                  
-                <td>
-                  <br/>
-                  15:30 - 19:30
-                  <br/>
-                    <button
-                      style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;"
-                      id="Reservar-DockerMOV-tar"
-                      role="link">
-                    <img src="img\productos\icons-24\libros.png" alt="Libros" />
-                      Reservar
-                    </button>
-                  <div id="error-message"></div>
-                  <script>
-                    (function() {
-                      var stripe = Stripe('pk_live_RBwBvMH6OGnYaHTv9OqEyGWQ00K56Niu0z');
-                      var checkoutButton = document.getElementById('Reservar-DockerMOV-tar');
-                      checkoutButton.addEventListener('click', function () {
-                        stripe.redirectToCheckout({
-                          lineItems: [{price: 'price_1GyGSNGCyao516pgWF1iwCqJ', quantity: 1}],
-                          mode: 'payment',
-                          successUrl: 'http://www.pronoide.com/pago-confirmado',
-                          cancelUrl: 'http://www.pronoide.com/pago-cancelado',
-                        })
-                        .then(function (result) {
-                          if (result.error) {
-                            var displayError = document.getElementById('error-message');
-                            displayError.textContent = result.error.message;
-                          }
-                        });
-                      });
-                    })();
-                  </script> 
-                </td>
-              </tr>
-              <tr>
-                <td colspan="2">
-                  <button style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;">
-                  <a href="mailto:formacion@pronoide.com?subject=Curso%20Docker"
-                  style="text-decoration: none; color: #FFF; font-size: inherit;">
-                  <img src="img\productos\icons-24\info.png" alt="Información" />
-                  Pedir Info</a>
-                  </button>
-                </td>
-              </tr> -->
-              <!--Curso VUE-->
-              <!-- <tr>
-                <td colspan="2" style="background-color: #7090A0;color: orangered;"><br/>
-                  <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/632651821/TWB-220+Vue.js" 
-                  style="color: #FFF;">
-                    <img src="img\productos\icons-96\vue.png" alt="VUE"/><br/>
-                  VUE.js</a> 
-                </td>
-              </tr>
-              <tr style="background-color: #eaf6fb;">
-                <td colspan="2">
-                  Lunes a jueves<br/>
-                  20/07/2020 al 30/07/2020
-                </td>
-              </tr>
-              <tr style="background-color: #eaf6fb;">
-                <td>
-                  <br/>
-                  10:00 - 13:00
-                  <br/>
-                    <button
-                      style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;"
-                      id="Reservar-VUEMOV-ma"
-                      role="link">
-                    <img src="img\productos\icons-24\libros.png" alt="Libros" />
-                      Reservar
-                    </button>
-                  <div id="error-message"></div>
-                  <script>
-                    (function() {
-                      var stripe = Stripe('pk_live_RBwBvMH6OGnYaHTv9OqEyGWQ00K56Niu0z');
-                      var checkoutButton = document.getElementById('Reservar-VUEMOV-ma');
-                      checkoutButton.addEventListener('click', function () {
-                        stripe.redirectToCheckout({
-                          lineItems: [{price: 'price_1GzKrcGCyao516pgi3U3dbWr', quantity: 1}],
-                          mode: 'payment',
-                          successUrl: 'http://www.pronoide.com/pago-confirmado',
-                          cancelUrl: 'http://www.pronoide.com/pago-cancelado',
-                        })
-                        .then(function (result) {
-                          if (result.error) {
-                            var displayError = document.getElementById('error-message');
-                            displayError.textContent = result.error.message;
-                          }
-                        });
-                      });
-                    })();
-                  </script> 
-                </td>                  
-                <td>
-                  <br/>
-                  15:30 - 18:30
-                   <br/>
-                    <button
-                      style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;"
-                      id="Reservar-VUEMOV-tar"
-                      role="link">
-                    <img src="img\productos\icons-24\libros.png" alt="Libros" />
-                      Reservar
-                    </button>
-                  <div id="error-message"></div>
-                  <script>
-                    (function() {
-                      var stripe = Stripe('pk_live_RBwBvMH6OGnYaHTv9OqEyGWQ00K56Niu0z');
-                      var checkoutButton = document.getElementById('Reservar-VUEMOV-tar');
-                      checkoutButton.addEventListener('click', function () {
-                        stripe.redirectToCheckout({
-                          lineItems: [{price: 'price_1GyGXmGCyao516pggihBynbp', quantity: 1}],
-                          mode: 'payment',
-                          successUrl: 'http://www.pronoide.com/pago-confirmado',
-                          cancelUrl: 'http://www.pronoide.com/pago-cancelado',
-                        })
-                        .then(function (result) {
-                          if (result.error) {
-                            var displayError = document.getElementById('error-message');
-                            displayError.textContent = result.error.message;
-                          }
-                        });
-                      });
-                    })();
-                  </script> 
-                </td>
-              </tr>
-              <tr>
-                <td colspan="2" style="background-color: #eaf6fb;">
-                  <button style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;">
-                    <a href="mailto:formacion@pronoide.com?subject=Curso%20VUE.js"
-                    style="text-decoration: none; color: #FFF; font-size: inherit;">
-                    <img src="img\productos\icons-24\info.png" alt="Información" />
-                    Pedir Info</a>
-                </td>
-              </tr> -->
-              <!--Curso Patrones de arquitectura-->
-              <!-- <tr>
-                <td colspan="2" style="background-color: #7090A0;color: orangered;"><br/>
-                  <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/774111233/MAD-060+Patrones+de+Arquitectura" 
-                  style="color: #FFF;">
-                    <img src="img\productos\icons-96\patrones.jpg" alt="Patrones de arquitectura"/><br/>
-                  Patrones de arquitectura</a>            
-                </td>                 
-              </tr>
-              <tr>          
-                <td colspan="2">
-                  Lunes a viernes<br/>
-                  20/07/2020 al 24/07/2020
-                </td>
-              </tr>       
-              <tr>
-                <td>
-                  <br/>
-                  10:00 - 14:00
-                  <br/>
-                    <button
-                      style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;"
-                      id="Reservar-patronesMOV-ma"
-                      role="link">
-                    <img src="img\productos\icons-24\libros.png" alt="Libros" />
-                      Reservar
-                    </button>
-                  <div id="error-message"></div>
-                  <script>
-                    (function() {
-                      var stripe = Stripe('pk_live_RBwBvMH6OGnYaHTv9OqEyGWQ00K56Niu0z');
-                      var checkoutButton = document.getElementById('Reservar-patronesMOV-ma');
-                      checkoutButton.addEventListener('click', function () {
-                        stripe.redirectToCheckout({
-                          lineItems: [{price: 'price_1GyGcEGCyao516pgRgjtCUrN', quantity: 1}],
-                          mode: 'payment',
-                          successUrl: 'http://www.pronoide.com/pago-confirmado',
-                          cancelUrl: 'http://www.pronoide.com/pago-cancelado',
-                        })
-                        .then(function (result) {
-                          if (result.error) {
-                            var displayError = document.getElementById('error-message');
-                            displayError.textContent = result.error.message;
-                          }
-                        });
-                      });
-                    })();
-                  </script> 
-                </td>                  
-                <td>
-                  <br/>
-                  15:30 - 19:30
-                   <br/>
-                    <button
-                      style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;"
-                      id="Reservar-patronesMOV-tar"
-                      role="link">
-                    <img src="img\productos\icons-24\libros.png" alt="Libros" />
-                      Reservar
-                    </button>
-                  <div id="error-message"></div>
-                  <script>
-                    (function() {
-                      var stripe = Stripe('pk_live_RBwBvMH6OGnYaHTv9OqEyGWQ00K56Niu0z');
-                      var checkoutButton = document.getElementById('Reservar-patronesMOV-tar');
-                      checkoutButton.addEventListener('click', function () {
-                        stripe.redirectToCheckout({
-                          lineItems: [{price: 'price_1GyGgDGCyao516pgbBCClwr5', quantity: 1}],
-                          mode: 'payment',
-                          successUrl: 'http://www.pronoide.com/pago-confirmado',
-                          cancelUrl: 'http://www.pronoide.com/pago-cancelado',
-                        })
-                        .then(function (result) {
-                          if (result.error) {
-                            var displayError = document.getElementById('error-message');
-                            displayError.textContent = result.error.message;
-                          }
-                        });
-                      });
-                    })();
-                  </script> 
-                </td>
-              </tr>
-              <tr>
-                <td colspan="2">
-                  <button style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;">
-                  <a href="mailto:formacion@pronoide.com?subject=Curso%20Patrones%20de%20arquitectura"
-                  style="text-decoration: none; color: #FFF; font-size: inherit;">
-                  <img src="img\productos\icons-24\info.png" alt="Información" />
-                  Pedir Info</a>
-                  </button>
-                </td>
-              </tr> -->
-              <!--Curso Big Data-->
-              <!-- <tr>
-                <td colspan="2" style="background-color: #7090A0;color: orangered;"><br/>
-                  <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/63406120/BDN-010+Fundamentos+de+Big+Data" 
-                  style="color: #FFF;">
-                    <img src="img\productos\icons-96\big.png" alt="Fundamentos Big Data"/><br/>
-                  Fundamentos Big Data</a>       
-              </tr> 
-              <tr style="background-color: #eaf6fb;">
-                <td colspan="2">
-                  Lunes a jueves<br/>
-                  20/07/2020 al 30/07/2020
-                </td>
-              </tr>
-              <tr style="background-color: #eaf6fb;">
-                <td>
-                  <br/>
-                  10:00 - 13:00
-                   <br/>
-                    <button
-                      style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;"
-                      id="Reservar-BDMOV-ma"
-                      role="link">
-                    <img src="img\productos\icons-24\libros.png" alt="Libros" />
-                      Reservar
-                    </button>
-                  <div id="error-message"></div>
-                  <script>
-                    (function() {
-                      var stripe = Stripe('pk_live_RBwBvMH6OGnYaHTv9OqEyGWQ00K56Niu0z');
-                      var checkoutButton = document.getElementById('Reservar-BDMOV-ma');
-                      checkoutButton.addEventListener('click', function () {
-                        stripe.redirectToCheckout({
-                          lineItems: [{price: 'price_1GyGsiGCyao516pg5rk8rUN7', quantity: 1}],
-                          mode: 'payment',
-                          successUrl: 'http://www.pronoide.com/pago-confirmado',
-                          cancelUrl: 'http://www.pronoide.com/pago-cancelado',
-                        })
-                        .then(function (result) {
-                          if (result.error) {
-                            var displayError = document.getElementById('error-message');
-                            displayError.textContent = result.error.message;
-                          }
-                        });
-                      });
-                    })();
-                  </script> 
-                </td>                  
-                <td>
-                  <br/>
-                  15:30 - 18:30
-                  <br/>
-                    <button
-                      style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;"
-                      id="Reservar-BDMOV-tar"
-                      role="link">
-                    <img src="img\productos\icons-24\libros.png" alt="Libros" />
-                      Reservar
-                    </button>
-                  <div id="error-message"></div>
-                  <script>
-                    (function() {
-                      var stripe = Stripe('pk_live_RBwBvMH6OGnYaHTv9OqEyGWQ00K56Niu0z');
-                      var checkoutButton = document.getElementById('Reservar-BDMOV-tar');
-                      checkoutButton.addEventListener('click', function () {
-                        stripe.redirectToCheckout({
-                          lineItems: [{price: 'price_1GyGtrGCyao516pgwRARC7Lo', quantity: 1}],
-                          mode: 'payment',
-                          successUrl: 'http://www.pronoide.com/pago-confirmado',
-                          cancelUrl: 'http://www.pronoide.com/pago-cancelado',
-                        })
-                        .then(function (result) {
-                          if (result.error) {
-                            var displayError = document.getElementById('error-message');
-                            displayError.textContent = result.error.message;
-                          }
-                        });
-                      });
-                    })();
-                  </script> 
-                </td>
-              </tr>
-              <tr style="background-color: #eaf6fb;">
-                <td colspan="2">
-                  <button style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;">
-                    <a href="mailto:formacion@pronoide.com?subject=Curso%20Fundamentos%20Big%20Data"
-                    style="text-decoration: none; color: #FFF; font-size: inherit;">
-                    <img src="img\productos\icons-24\info.png" alt="Información" />
-                    Pedir Info</a>
-                </td>
-              </tr> -->
-              <!--Curso Spring Boot-->
-              <!-- <tr>
-                <td colspan="2" style="background-color: #7090A0;color: orangered;"><br/>
-                  <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/629571610/SPR-050+Spring+Boot" 
-                  style="color: #FFF;">
-                    <img src="img\productos\icons-96\spring.png" alt="Spring Boot"/><br/>
-                  Spring Boot</a> 
-                </td>
-              </tr>
-              <tr>
-                <td colspan="2">
-                  Lunes a jueves<br/>
-                  20/07/2020 al 30/07/2020
-                </td>
-              </tr>
-              <tr>                 
-                <td colspan="2">
-                  <br/>
-                  15:30 - 18:30
-                  <br/>
-                    <button
-                      style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;"
-                      id="Reservar-SBMOV-tar"
-                      role="link">
-                    <img src="img\productos\icons-24\libros.png" alt="Libros" />
-                      Reservar
-                    </button>
-                  <div id="error-message"></div>
-                  <script>
-                    (function() {
-                      var stripe = Stripe('pk_live_RBwBvMH6OGnYaHTv9OqEyGWQ00K56Niu0z');
-                      var checkoutButton = document.getElementById('Reservar-SBMOV-tar');
-                      checkoutButton.addEventListener('click', function () {
-                        stripe.redirectToCheckout({
-                          lineItems: [{price: 'price_1GyGxUGCyao516pgC0wuQ1uq', quantity: 1}],
-                          mode: 'payment',
-                          successUrl: 'http://www.pronoide.com/pago-confirmado',
-                          cancelUrl: 'http://www.pronoide.com/pago-cancelado',
-                        })
-                        .then(function (result) {
-                          if (result.error) {
-                            var displayError = document.getElementById('error-message');
-                            displayError.textContent = result.error.message;
-                          }
-                        });
-                      });
-                    })();
-                  </script> 
-                </td>
-              </tr>
-              <tr>
-                <td colspan="2">
-                  <button style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;">
-                    <a href="mailto:formacion@pronoide.com?subject=Curso%20Spring%20Boot"
-                    style="text-decoration: none; color: #FFF; font-size: inherit;">
-                    <img src="img\productos\icons-24\info.png" alt="Información" />
-                    Pedir Info</a>
-                </td>
-              </tr> -->
-              <!--Curso Kubernetes-->
-              <!-- <tr>
-                <td colspan="2" style="background-color: #7090A0;color: orangered;"><br/>
-                  <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/681050134/DCH-060+Kubernetes" 
-                  style="color: #FFF;">
-                    <img src="img\productos\icons-96\kubernetes.png" alt="Kubernetes"/><br/>
-                  Kubernetes</a>          
-              </tr>
-              <tr style="background-color: #eaf6fb;">
-                <td colspan="2">
-                  Lunes a jueves<br/>
-                  20/07/2020 al 23/07/2020
-                </td>
-              </tr>
-              <tr style="background-color: #eaf6fb;">
-                <td>
-                  <br/>
-                  10:00 - 14:00
-                  <br/>
-                    <button
-                      style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;"
-                      id="Reservar-KubernetesMOV-ma"
-                      role="link">
-                    <img src="img\productos\icons-24\libros.png" alt="Libros" />
-                      Reservar
-                    </button>
-                  <div id="error-message"></div>
-                  <script>
-                    (function() {
-                      var stripe = Stripe('pk_live_RBwBvMH6OGnYaHTv9OqEyGWQ00K56Niu0z');
-                      var checkoutButton = document.getElementById('Reservar-KubernetesMOV-ma');
-                      checkoutButton.addEventListener('click', function () {
-                        stripe.redirectToCheckout({
-                          lineItems: [{price: 'price_1GyH0gGCyao516pg6LB5zKFf', quantity: 1}],
-                          mode: 'payment',
-                          successUrl: 'http://www.pronoide.com/pago-confirmado',
-                          cancelUrl: 'http://www.pronoide.com/pago-cancelado',
-                        })
-                        .then(function (result) {
-                          if (result.error) {
-                            var displayError = document.getElementById('error-message');
-                            displayError.textContent = result.error.message;
-                          }
-                        });
-                      });
-                    })();
-                  </script> 
-                </td>                  
-                <td>
-                  <br/>
-                  15:30 - 19:30
-                   <br/>
-                    <button
-                      style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;"
-                      id="Reservar-KubernetesMOV-tar"
-                      role="link">
-                    <img src="img\productos\icons-24\libros.png" alt="Libros" />
-                      Reservar
-                    </button>
-                  <div id="error-message"></div>
-                  <script>
-                    (function() {
-                      var stripe = Stripe('pk_live_RBwBvMH6OGnYaHTv9OqEyGWQ00K56Niu0z');
-                      var checkoutButton = document.getElementById('Reservar-KubernetesMOV-tar');
-                      checkoutButton.addEventListener('click', function () {
-                        stripe.redirectToCheckout({
-                          lineItems: [{price: 'price_1GyH2JGCyao516pgiNAJDCYy', quantity: 1}],
-                          mode: 'payment',
-                          successUrl: 'http://www.pronoide.com/pago-confirmado',
-                          cancelUrl: 'http://www.pronoide.com/pago-cancelado',
-                        })
-                        .then(function (result) {
-                          if (result.error) {
-                            var displayError = document.getElementById('error-message');
-                            displayError.textContent = result.error.message;
-                          }
-                        });
-                      });
-                    })();
-                  </script> 
-                </td>
-              </tr>
-              <tr style="background-color: #eaf6fb;">
-                <td colspan="2">
-                  <button style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;">
-                    <a href="mailto:formacion@pronoide.com?subject=Curso%20Kubernetes"
-                    style="text-decoration: none; color: #FFF; font-size: inherit;">
-                    <img src="img\productos\icons-24\info.png" alt="Información" />
-                    Pedir Info</a>
-                </td>
-              </tr>    -->
               <!--Curso OpenShift-->
               <!-- <tr>
               <td colspan="2" style="background-color: #7090A0;color: orangered;"><br/>
