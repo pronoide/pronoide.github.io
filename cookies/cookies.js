@@ -1,23 +1,3 @@
-function cargarAnalytics() {
-  window.dataLayer = window.dataLayer || [];
-  function gtag() { dataLayer.push(arguments); }
-  gtag('js', new Date());
-  gtag('config', 'UA-161887876-1');
-}
-
-// function cargarLinkedin() {
-//   _linkedin_partner_id = "2246385";
-//   window._linkedin_data_partner_ids = window._linkedin_data_partner_ids || [];
-//   window._linkedin_data_partner_ids.push(_linkedin_partner_id);
-
-//   var s = document.getElementsByTagName("script")[0];
-//   var b = document.createElement("script");
-//   b.type = "text/javascript";
-//   b.async = true;
-//   b.src = "https://snap.licdn.com/li.lms-analytics/insight.min.js";
-//   s.parentNode.insertBefore(b, s);
-// }
-
 const PronoideCookies = {
   cookieLevelName: 'cookiesLevel',
   // currentDomain: 'localhost',
@@ -47,7 +27,7 @@ const PronoideCookies = {
         html = html.replace(/%s/g, PronoideCookies.urlPoliticaDeCookies)
 				jQuery("body").append(html);
 				jQuery("#emCookieBtnAccept").click(function(){
-          const keysScriptLevels = Object.keys(PronoideCookies.scriptsToLoad.scriptsByLevels);
+          const keysScriptLevels = Object.keys(scriptsByLevels);
           const level = keysScriptLevels[keysScriptLevels.length-1]
 					PronoideCookies.cookies.setCookie(level, PronoideCookies.currentDomain);
           PronoideCookies.reloadPage();
@@ -102,65 +82,27 @@ const PronoideCookies = {
 							<a href="#" class="emCookieBtn emCookieBtn-error emCookieBtn-secondary" aria-describedby="emCookieType2" id="emCookieType2_no">Rechazar</a> <a href="#" class="emCookieBtn emCookieBtn-success emCookieBtn-secondary" aria-describedby="emCookieType2" id="emCookieType2_yes">Aceptar</a> \
 						</span>\
 					</li>\
+					<li>\
+						<span class="emCookieDesc">\
+							<strong id="emCookieType3" class="emCookieType">3. Otras <span id="emCookieType3Status"></span></strong> \
+							<a href="#emCookieInfo3" class="emCookieInfoToggler" id="emCookieInfo3Toggler" title="Mostrar m&aacute;s informaci&oacute;n">Informaci&oacute;n sobre finalidades de proveedores externos</a>\
+							<span class="emCookieInfo" id="emCookieInfo3">\
+								<a href="#emCookieInfo3" class="emCookieInfoHide" title="Ocultar la informaci&oacute;n" id="emCookieInfo3Hide">Informaci&oacute;n sobre finalidades de proveedores externos</a> &rarr; \
+								Son <em>cookies</em> de terceros insertadas, en la mayor&iacute;a de los casos, por los usuarios de los servicios de la Plataforma Pronoide para mostrar contenidos (de diferentes or&iacute;genes, como Youtube, Issuu, Scribd, Twitter, Padlet o cualquier otro proveedor de contenidos externo), o crear enlaces para facilitar la compartici&oacute;n de contenidos en redes sociales (AddThis, por ejemplo).<br /><br />\
+								Las <em>cookies</em> utilizadas en dichos contenidos no son tratadas por Pronoide, sino por dichos proveedores, y podr&iacute;an ser utilizadas con diferentes objetivos, incluyendo fines publicitarios. Encontrar&aacute; m&aacute;s informaci&oacute;n sobre este aspecto en nuestra <a href="%s" target="_blank" rel="noreferrer noopener">pol&iacute;tica de <em>cookies</em><span class="emCookieSrAv"> (se abre en ventana nueva)</span></a>.<br /><br />\
+								Si rechaza estas <em>cookies</em>, <strong>no podr&aacute; ver esos contenidos</strong> (v&iacute;deos externos, etc.) cuando est&eacute;n insertados en una p&aacute;gina de Pronoide.<br /><br />\
+								<strong>Pronoide prohibe la inserci&oacute;n directa de publicidad en sus p&aacute;ginas.</strong> Por favor, si detecta alg&uacute;n caso, contacte con los responsables de la Plataforma para informar de la infracci&oacute;n.\
+							</span>\
+						</span>\
+						<span class="emCookieBtns">\
+							<a href="#" class="emCookieBtn emCookieBtn-error emCookieBtn-secondary" aria-describedby="emCookieType3" id="emCookieType3_no">Rechazar</a> <a href="#" class="emCookieBtn emCookieBtn-success emCookieBtn-secondary" aria-describedby="emCookieType3" id="emCookieType3_yes">Aceptar</a> \
+						</span>\
+					</li>\
 				</ol>\
 				<p id="emCookieSaveBtns"><a href="#" class="emCookieBtn emCookieBtn emCookieBtn-secondary" id="emCookieBtnRejectAll">Rechazar todas las cookies</a> <a href="#" class="emCookieBtn emCookieBtn emCookieBtn-secondary" id="emCookieBtnAcceptSelected">Aceptar las cookies seleccionadas</a> <a href="#" class="emCookieBtn emCookieBtn" id="emCookieBtnAcceptAll">Aceptar todas las cookies</a></p>\
 			</div>\
 		</div>\
 		',
-		// html : '\
-		// <div id="emCookieTool">\
-		// 	<div class="emCookieContent">\
-		// 		<p class="emCookieRight"><a href="#emCookieBtnConfigure" id="emCookieBtnConfigureClose" title="Cerrar el di&aacute;logo informativo"><span class="emCookieSrAv">Cerrar</span></a></p>\
-		// 		<h2>Configuraci&oacute;n de <em>cookies</em> en Pronoide</h2>\
-		// 		<p>Usamos <em>cookies</em> propias y de terceros en los dominios <strong>pronoide.com</strong> y <strong>pronoide.es</strong> para las finalidades indicadas a continuaci&oacute;n. Si no est&aacute; de acuerdo con alguna de ellas, puede cambiar sus opciones desde esta pantalla.</p>\
-		// 		<p>M&aacute;s informaci&oacute;n sobre las <em>cookies</em> (qu&eacute; son, para qu&eacute; sirven, qui&eacute;n las usa, c&oacute;mo rechazarlas&hellip;) en nuestra <a href="%s" target="_blank" rel="noreferrer noopener">pol&iacute;tica de <em>cookies</em><span class="emCookieSrAv"> (se abre en ventana nueva)</span></a>.</p>\
-		// 		<h3>Permitir las cookies para las siguientes finalidades:</h3>\
-		// 		<ol>\
-		// 			<li>\
-		// 				<span class="emCookieDesc">\
-		// 					<strong id="emCookieType1" class="emCookieType">1. Esenciales</strong> \
-		// 					<span class="emCookieInfo" id="emCookieInfo1">\
-		// 						Necesarias para prestar el servicio solicitado (autenticaci&oacute;n, navegaci&oacute;n, personalizaci&oacute;n de interfaz, reproducci&oacute;n de v&iacute;deos&hellip;). No se pueden rechazar.\
-		// 					</span>\
-		// 				</span>\
-		// 				<span class="emCookieBtns">\
-		// 					<a href="#" class="emCookieBtn emCookieBtn-secondary emCookieBtn-disabled" aria-describedby="emCookieType1">Rechazar</a> <a href="#" class="emCookieBtn emCookieBtn-secondary emCookieBtn-disabled" aria-describedby="emCookieType1">Aceptar</a> \
-		// 				</span>\
-		// 			</li>\
-		// 			<li>\
-		// 				<span class="emCookieDesc">\
-		// 					<strong id="emCookieType2" class="emCookieType">2. De an&aacute;lisis <span id="emCookieType2Status"></span></strong> \
-		// 					<a href="#emCookieInfo2" class="emCookieInfoToggler" id="emCookieInfo2Toggler" title="Mostrar m&aacute;s informaci&oacute;n">Informaci&oacute;n sobre las finalidades estad&iacute;sticas</a>\
-		// 					<span class="emCookieInfo" id="emCookieInfo2">\
-		// 						 <a href="#emCookieInfo2" class="emCookieInfoHide" title="Ocultar la informaci&oacute;n" id="emCookieInfo2Hide">Informaci&oacute;n sobre las finalidades estad&iacute;sticas</a> &rarr; \
-		// 						 Para cuantificar las visitas y elaborar estad&iacute;sticas de uso de los servicios para mejorarlos. Usamos sistemas de estad&iacute;sticas propios y, en algunos espacios, Google Analytics.\
-		// 					</span>\
-		// 				</span>\
-		// 				<span class="emCookieBtns">\
-		// 					<a href="#" class="emCookieBtn emCookieBtn-error emCookieBtn-secondary" aria-describedby="emCookieType2" id="emCookieType2_no">Rechazar</a> <a href="#" class="emCookieBtn emCookieBtn-success emCookieBtn-secondary" aria-describedby="emCookieType2" id="emCookieType2_yes">Aceptar</a> \
-		// 				</span>\
-		// 			</li>\
-		// 			<li>\
-		// 				<span class="emCookieDesc">\
-		// 					<strong id="emCookieType3" class="emCookieType">3. Otras <span id="emCookieType3Status"></span></strong> \
-		// 					<a href="#emCookieInfo3" class="emCookieInfoToggler" id="emCookieInfo3Toggler" title="Mostrar m&aacute;s informaci&oacute;n">Informaci&oacute;n sobre finalidades de proveedores externos</a>\
-		// 					<span class="emCookieInfo" id="emCookieInfo3">\
-		// 						<a href="#emCookieInfo3" class="emCookieInfoHide" title="Ocultar la informaci&oacute;n" id="emCookieInfo3Hide">Informaci&oacute;n sobre finalidades de proveedores externos</a> &rarr; \
-		// 						Son <em>cookies</em> de terceros insertadas, en la mayor&iacute;a de los casos, por los usuarios de los servicios de la Plataforma Pronoide para mostrar contenidos (de diferentes or&iacute;genes, como Youtube, Issuu, Scribd, Twitter, Padlet o cualquier otro proveedor de contenidos externo), o crear enlaces para facilitar la compartici&oacute;n de contenidos en redes sociales (AddThis, por ejemplo).<br /><br />\
-		// 						Las <em>cookies</em> utilizadas en dichos contenidos no son tratadas por Pronoide, sino por dichos proveedores, y podr&iacute;an ser utilizadas con diferentes objetivos, incluyendo fines publicitarios. Encontrar&aacute; m&aacute;s informaci&oacute;n sobre este aspecto en nuestra <a href="%s" target="_blank" rel="noreferrer noopener">pol&iacute;tica de <em>cookies</em><span class="emCookieSrAv"> (se abre en ventana nueva)</span></a>.<br /><br />\
-		// 						Si rechaza estas <em>cookies</em>, <strong>no podr&aacute; ver esos contenidos</strong> (v&iacute;deos externos, etc.) cuando est&eacute;n insertados en una p&aacute;gina de Pronoide.<br /><br />\
-		// 						<strong>Pronoide prohibe la inserci&oacute;n directa de publicidad en sus p&aacute;ginas.</strong> Por favor, si detecta alg&uacute;n caso, contacte con los responsables de la Plataforma para informar de la infracci&oacute;n.\
-		// 					</span>\
-		// 				</span>\
-		// 				<span class="emCookieBtns">\
-		// 					<a href="#" class="emCookieBtn emCookieBtn-error emCookieBtn-secondary" aria-describedby="emCookieType3" id="emCookieType3_no">Rechazar</a> <a href="#" class="emCookieBtn emCookieBtn-success emCookieBtn-secondary" aria-describedby="emCookieType3" id="emCookieType3_yes">Aceptar</a> \
-		// 				</span>\
-		// 			</li>\
-		// 		</ol>\
-		// 		<p id="emCookieSaveBtns"><a href="#" class="emCookieBtn emCookieBtn emCookieBtn-secondary" id="emCookieBtnRejectAll">Rechazar todas las cookies</a> <a href="#" class="emCookieBtn emCookieBtn emCookieBtn-secondary" id="emCookieBtnAcceptSelected">Aceptar las cookies seleccionadas</a> <a href="#" class="emCookieBtn emCookieBtn" id="emCookieBtnAcceptAll">Aceptar todas las cookies</a></p>\
-		// 	</div>\
-		// </div>\
-		// ',
 		enableButton : function(e) {
 			var id = e.id;
 			var parts = id.split("_");
@@ -314,15 +256,10 @@ const PronoideCookies = {
     },
   },
   scriptsToLoad: {
-    scriptsByLevels: {
-      0: [],
-      1: [cargarAnalytics]
-      // 2: []
-    },
     getScriptsByLevel: function (level) {
-      const scriptsToLoad = Object.keys(PronoideCookies.scriptsToLoad.scriptsByLevels).reduce((acc, el) => {
+      const scriptsToLoad = Object.keys(scriptsByLevels).reduce((acc, el) => {
         if (el <= level) {
-          return [...acc, ...PronoideCookies.scriptsToLoad.scriptsByLevels[el]]
+          return [...acc, ...scriptsByLevels[el]]
         }
         return acc;
       }, [])
