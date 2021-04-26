@@ -1,6 +1,6 @@
 const PronoideCookies = {
   cookieLevelName: 'cookiesLevel',
-  // currentDomain: 'localhost',
+//   currentDomain: 'localhost',
   currentDomain: 'pronoide.com',
   urlPoliticaDeCookies: 'https://pronoide.atlassian.net/wiki/spaces/CAT/pages/1101856864/Notas+legales+y+privacidad',
   expires: 30,
