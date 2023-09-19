@@ -1273,9 +1273,14 @@
                   </td>
                   <td style="background-color: #f1f8fb;"><br/>10:00 - 13:00
                     <br/>
+                    <script async src="https://js.stripe.com/v3/buy-button.js"></script>
+              <!-- <stripe-buy-button
+                buy-button-id="buy_btn_1Ns0AYGCyao516pgfJBkkpHW"
+                publishable-key="pk_test_mKH7OwG8T5FcqYlsuibgDXqr00JEnmNFgH">
+              </stripe-buy-button> -->
                     <button
                       style="background-color:#44a729;color:#FFF;padding:8px 12px;border:0;border-radius:4px;font-size:1em;"
-                      id="Reservar-SW-ma"
+                      id="buy_btn_1Ns0AYGCyao516pgfJBkkpHW"
                       role="link">
                     <img src="img\productos\icons-24\libros.png" alt="Libros" />
                       Reservar
@@ -1283,8 +1288,8 @@
                     <div id="error-message"></div>
                     <script>
                       (function() {
-                        var stripe = Stripe('pk_live_RBwBvMH6OGnYaHTv9OqEyGWQ00K56Niu0z');
-                        var checkoutButton = document.getElementById('Reservar-SW-ma');
+                        var stripe = Stripe('pk_test_mKH7OwG8T5FcqYlsuibgDXqr00JEnmNFgH');
+                        var checkoutButton = document.getElementById('buy_btn_1Ns0AYGCyao516pgfJBkkpHW');
                         checkoutButton.addEventListener('click', function () {
                           stripe.redirectToCheckout({
                             lineItems: [{price: 'price_1NryyyGCyao516pgUbGUQ6JY', quantity: 1}],
