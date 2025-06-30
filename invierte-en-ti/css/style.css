@@ -1,0 +1,338 @@
+/* Reset de estilos */
+@import url('_resets.css');
+
+/* Variables */
+@import url('vars.css');
+
+
+body {
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #fdfcfc;
+    color: #222;
+}
+
+.tilt-warp {
+    font-family: "Tilt Warp", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 400;
+    font-style: normal;
+    font-variation-settings: "XROT" 0, "YROT" 0;
+}
+
+.title {
+    font-size: 5rem; 
+}
+
+.subtitle {
+    font-size: 1.5rem; 
+    color: var(--naranja-corporativo);
+}
+
+
+.header {
+    background-color: #ffffff;
+    padding: 2rem 1rem 0 1rem;
+}
+
+.container {
+  max-width: 1100px;
+  margin: 0 auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2rem;
+}
+
+.column {
+    flex: 1;
+}
+
+.image-col {
+  flex: 1.2;
+  text-align: center;
+}
+
+.logo {
+  width: 100px;
+  /* padding-bottom: 30px; */
+  display: block;
+  margin: 0 0 1rem 0; /* elimina auto e pon 0 á esquerda */
+}
+
+
+.plan-image {
+  width: 120%;
+  max-width: 600px; /* controla aquí o tamaño máximo */
+  height: auto;
+}
+
+
+.text-col {
+  flex: 1.2;
+  text-align: left;
+}
+
+.description-section {
+    background-color: var(--naranja-claro);
+    padding: 2rem;
+    text-align: center;
+    margin-bottom: 4rem;
+}
+
+.description-section .content {
+    margin-top: 1rem;
+    font-size: 1.4rem;
+}
+
+.description-section .content p{
+    padding-bottom: 10px;
+}
+
+.description-section h3 {
+    font-size: 2.5rem;
+    padding-bottom: 0.5rem;
+}
+
+/* Lista centrada como bloque, pero texto interno aliñado á esquerda */
+.description-section ul {
+  list-style: none; /* eliminar viñetas por defecto */
+  padding-left: 0;
+  margin: 2rem auto;
+  max-width: 600px; /* controla o ancho da lista */
+  text-align: left; /* aliña os li internamente á esquerda */
+}
+
+.description-section li {
+  position: relative;
+  padding-left: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Icono circular */
+.description-section li::before {
+  content: '';
+  position: absolute;
+  top: 0.6em;
+  left: 0;
+  width: 0.60em;
+  height: 0.60em;
+  background-color: var(--naranja-corporativo);
+  border-radius: 50%;
+}
+
+.subtext {
+    font-size: 2rem;
+    padding-bottom: 15px;
+}
+
+.section {
+    text-align: center;
+    padding: 2rem;
+}
+
+.section h3{
+    font-size: 2rem;
+    padding-bottom: 0.5rem;
+}
+
+.section p{
+    font-size: 1.4rem;
+    padding-bottom: 10px;
+}
+
+/* Lista centrada como bloque, pero texto interno aliñado á esquerda */
+.section ul {
+  list-style: none; /* eliminar viñetas por defecto */
+  padding-left: 0;
+  margin: 1.5rem auto;
+  max-width: 600px; /* controla o ancho da lista */
+  text-align: left; /* aliña os li internamente á esquerda */
+}
+
+.section li {
+  position: relative;
+  padding-left: 2rem;
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+}
+
+/* Icono circular */
+.section li::before {
+  content: '';
+  position: absolute;
+  top: 0.6em;
+  left: 0;
+  width: 0.60em;
+  height: 0.60em;
+  background-color: var(--naranja-corporativo);
+  border-radius: 50%;
+}
+
+.how-it-works {
+    text-align: center;
+    padding: 2rem;
+}
+
+.how-it-works h3{
+    font-size: 2rem;
+    padding-bottom: 15px;
+}
+
+.how-it-works p{
+    font-size: 1.4rem;
+    padding-bottom: 10px;
+}
+
+/* Lista centrada como bloque, pero texto interno aliñado á esquerda */
+.how-it-works ol {
+  padding-left: 0;
+  margin: 0.5rem auto 0 auto;
+  max-width: 600px; /* controla o ancho da lista */
+  text-align: left; /* aliña os li internamente á esquerda */
+}
+
+.how-it-works li {
+  position: relative;
+  padding-left: 0.5rem;
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+}
+
+.how-it-works li::marker {
+  color:var(--naranja-corporativo); /* cor laranxa */
+  font-weight: bold;
+}
+
+.icon {
+    font-size: 3rem;
+    margin-bottom: 0.5rem;
+    color: var(--naranja-corporativo);
+}
+
+button {
+    margin-top: 1rem;
+    background-color: var(--naranja-corporativo);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border: none;
+    border-radius: 10px;
+    font-weight: bold;
+}
+
+.btn {
+  display: inline-block;
+  background-color: var(--naranja-corporativo);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+  margin: 1.5rem auto;
+}
+
+
+
+.section-with-image {
+  text-align: center;
+  padding: 2rem;
+}
+
+.section-with-image h3 {
+  font-size: 2rem;
+  padding-bottom: 1.5rem;
+}
+
+/* Contedor flex para lista + imaxe */
+.section-with-image .content-flex {
+  display: flex;
+  justify-content: center; /* centra o conxunto na páxina */
+  align-items: center; /* centra verticalmente */
+  /* gap: 1rem; */
+  max-width: 900px; /* máximo ancho do conxunto */
+  margin: 0 auto;
+}
+
+/* Lista con texto xustificado á esquerda */
+.section-with-image ul {
+  list-style: none;
+  padding-left: 0;
+  margin: 0;
+  max-width: 450px;
+  text-align: left;
+  font-size: 1.4rem;
+}
+
+.section-with-image li {
+  position: relative;
+  padding-left: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Icono circular da lista */
+.section-with-image li::before {
+  content: '';
+  position: absolute;
+  top: 0.6em;
+  left: 0;
+  width: 0.60em;
+  height: 0.60em;
+  background-color: var(--naranja-corporativo);
+  border-radius: 50%;
+}
+
+/* Estilo da imaxe */
+.section-with-image .side-image {
+  max-width: 300px;
+  width: 100%;
+  height: auto;
+}
+
+
+footer {
+    background-color: var(--azul-claro);
+    text-align: center;
+    padding: 1rem;
+}
+
+.footer-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.footer-icons a i {
+  font-size: 1.8rem;
+  color: var(--azul-corporativo);
+  transition: color 0.3s ease;
+}
+
+.footer-icons a:hover i {
+  color: var(--naranja-corporativo); 
+}
+
+.footer-address a {
+  color: var(--azul-corporativo);
+  text-decoration: none;
+}
+
+.footer-address i {
+  margin-right: 0.5rem;
+}
+
+.footer-copy {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--azul-corporativo);
+  font-weight: bold;
+}
+
+.footer-copy a {
+  color: var(--azul-corporativo);
+  text-decoration: underline;
+  
+}
