@@ -4,9 +4,6 @@
 /* Variables */
 @import url('vars.css');
 
-/* Footer */
-@import url('_footer.css');
-
 
 body {
     margin: 0;
@@ -298,5 +295,44 @@ footer {
     background-color: var(--azul-claro);
     text-align: center;
     padding: 1rem;
-    /* font-weight: bold; */
+}
+
+.footer-icons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+}
+
+.footer-icons a i {
+  font-size: 1.8rem;
+  color: var(--azul-corporativo);
+  transition: color 0.3s ease;
+}
+
+.footer-icons a:hover i {
+  color: var(--naranja-corporativo); 
+}
+
+.footer-address a {
+  color: var(--azul-corporativo);
+  text-decoration: none;
+}
+
+.footer-address i {
+  margin-right: 0.5rem;
+}
+
+.footer-copy {
+  font-size: 1rem;
+  line-height: 1.5;
+  color: var(--azul-corporativo);
+  font-weight: bold;
+}
+
+.footer-copy a {
+  color: var(--azul-corporativo);
+  text-decoration: underline;
+  
 }
