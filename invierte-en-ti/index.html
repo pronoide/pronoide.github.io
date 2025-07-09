@@ -8,16 +8,18 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
-    <script src="https://kit.fontawesome.com/3d245d70bc.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/3d245d70bc.js" crossorigin="anonymous" aria-hidden="true"></script>
     <link rel="icon" href="img/PRONOIDE_GLOBES_only.png" type="image/x-icon">
 </head>
 <body>
     <!-- *** HEADER *** -->
-    <header class="header">
+    <header class="header" role="banner">
         <div class="container">
             <div class="column image-col">
-                <a href="https://www.pronoide.com" target="_blank"><img src="img/pronoide-logo.png" alt="Logo" class="logo"></a>
-                <img src="img/head-image.png" alt="Plan" class="plan-image">
+                <a href="https://www.pronoide.com" target="_blank" aria-label="Ir al sitio web de Pronoide (se abre en una nueva pestaña)">
+                    <img src="img/pronoide-logo.png" alt="Logo de Pronoide" class="logo">
+                </a>
+                <img src="img/head-image.png" alt="Imagen de plan de formación" class="plan-image">
             </div>
             <div class="column text-col">
                 <h1 class="tilt-warp title">Invierte en TI</h1>
@@ -25,15 +27,17 @@
                     Convierte tu presupuesto de formación en aprendizaje
                     útil, práctico y personalizado
                 </h2>
-                <a href="https://eu.bigin.online/org20092830437/forms/contacta-con-pronoide" target="_blank" class="btn">Quiero diseñar mi curso</a>
+                <a href="https://eu.bigin.online/org20092830437/forms/contacta-con-pronoide" target="_blank" class="btn" aria-label="Formulario externo para diseñar tu curso (se abre en una nueva pestaña)">
+                    Quiero diseñar mi curso
+                </a>
             </div>
         </div>
     </header>
     <!-- *** END HEADER *** -->
 
     <!-- *** DESCRIPTION *** -->
-    <section class="description-section">
-        <h3 class="tilt-warp">Aprende en equipo, crece en conjunto</h3>
+    <section class="description-section" role="region" aria-labelledby="equipo">
+        <h3 id="equipo" class="tilt-warp">Aprende en equipo, crece en conjunto</h3>
         <p class="subtext"><strong>Invierte tu presupuesto de formación en lo que realmente te impulsa</strong></p>
         <div class="content">
             <p>Cursos técnicos 100% a medida, pensados para ti y tu equipo</p>
@@ -53,43 +57,41 @@
     <!-- *** END DESCRIPTION *** -->
 
     <!-- *** IDEA *** -->
-    <section class="section">
-        <i class="fa-solid fa-lightbulb icon"></i>
-        <h3 class="tilt-warp">¿Tenéis un tema en mente?</h3>
+    <section class="section" role="region" aria-labelledby="tema">
+        <i class="fa-solid fa-lightbulb icon" aria-hidden="true"></i>
+        <h3 id="tema" class="tilt-warp">¿Tenéis un tema en mente?</h3>
         <p>Organiza un grupo, cuéntanos lo que necesitáis, y diseñaremos un curso solo para vosotros.</p>
         <p>Nosotros nos encargamos de todo: desde el diseño del temario hasta la impartición y seguimiento.</p>
     </section>
     <!-- *** END IDEA *** -->
 
     <!-- *** TECHNOLOGIES *** -->
-    <section class="section section-with-image">
-        <i class="fa-solid fa-school icon"></i>
-        <h3 class="tilt-warp">Temas que puedes aprender</h3>
+    <section class="section section-with-image" role="region" aria-labelledby="temas">
+        <i class="fa-solid fa-school icon" aria-hidden="true"></i>
+        <h3 id="temas" class="tilt-warp">Temas que puedes aprender</h3>
         <div class="content-flex">
             <ul>
-            <li>Desarrollo de software (Java, Python, .NET, Frontend/Backend)</li>
-            <li>Inteligencia Artificial aplicada a tu sector</li>
-            <li>DevOps, Cloud (AWS, Azure, GCP)</li>
-            <li>Ciberseguridad y buenas prácticas</li>
-            <li>Automatización de procesos</li>
-            <li>Ciencia de datos y visualización</li>
-            <li>Bases de datos modernas y legacy</li>
-            <li><strong>¡Y cualquier otro que tú propongas!</strong></li>
+                <li>Desarrollo de software (Java, Python, .NET, Frontend/Backend)</li>
+                <li>Inteligencia Artificial aplicada a tu sector</li>
+                <li>DevOps, Cloud (AWS, Azure, GCP)</li>
+                <li>Ciberseguridad y buenas prácticas</li>
+                <li>Automatización de procesos</li>
+                <li>Ciencia de datos y visualización</li>
+                <li>Bases de datos modernas y legacy</li>
+                <li><strong>¡Y cualquier otro que tú propongas!</strong></li>
             </ul>
             <picture>
-                <source srcset="img/tecnologies-responsive.svg" media="(max-width: 768px)" class="side-image">
-                <img src="img/tecnologies.svg" alt="Logotipos tecnologías TI" class="side-image">
+                <source srcset="img/tecnologies-responsive.svg" media="(max-width: 768px)">
+                <img src="img/tecnologies.svg" alt="Logotipos de tecnologías como Java, Python, AWS, entre otros" class="side-image">
             </picture>
-            <!-- <img class="side-image" src="img/tecnologies.svg" alt="Imagen temática"> -->
         </div>
     </section>
-
     <!-- *** END TECHNOLOGIES *** -->
 
     <!-- *** HOW IT WORKS *** -->
-    <section class="how-it-works">
-        <i class="fa-solid fa-gears icon"></i>
-        <h3 class="tilt-warp">¿Cómo funciona?</h3>
+    <section class="how-it-works" role="region" aria-labelledby="funciona">
+        <i class="fa-solid fa-gears icon" aria-hidden="true"></i>
+        <h3 id="funciona" class="tilt-warp">¿Cómo funciona?</h3>
         <ol>
             <li>Organiza un grupo con tus compañeros (mínimo 3 personas).</li>
             <li>Cuéntanos tu idea o necesidad.</li>
@@ -100,45 +102,49 @@
     <!-- *** END HOW IT WORKS *** -->
 
     <!-- *** INTERESTED? *** -->
-    <section class="section">
-        <i class="fa-solid fa-face-smile-wink icon"></i>
-        <h3 class="tilt-warp">¿Te interesa?</h3>
-        <p>Rellena un breve formulario o escríbenos, y nos pondremos en contacto 
-        </br>para ayudarte a crear el curso perfecto para ti y tu equipo.</p>
-        <a href="https://eu.bigin.online/org20092830437/forms/contacta-con-pronoide" target="_blank" class="btn">Quiero diseñar mi curso</a>
+    <section class="section" role="region" aria-labelledby="interes">
+        <i class="fa-solid fa-face-smile-wink icon" aria-hidden="true"></i>
+        <h3 id="interes" class="tilt-warp">¿Te interesa?</h3>
+        <p>
+            Rellena un breve formulario o escríbenos, y nos pondremos en contacto
+            <br>para ayudarte a crear el curso perfecto para ti y tu equipo.
+        </p>
+        <a href="https://eu.bigin.online/org20092830437/forms/contacta-con-pronoide" target="_blank" class="btn" aria-label="Accede al formulario externo para diseñar tu curso (se abre en una nueva pestaña)">
+            Quiero diseñar mi curso
+        </a>
     </section>
     <!-- *** END INTERESTED? *** -->
 
     <!-- *** FOOTER *** -->
-    <footer>
-        <div class="footer-icons">
-            <a href="mailto:info@pronoide.com" title="Email"><i class="fas fa-envelope"></i></a>
-            <a href="http://blog.pronoide.es" title="Blog" target="_blank"><i class="fas fa-rss"></i></a>
-            <a href="https://www.linkedin.com/company/pronoide" title="LinkedIn" target="_blank"><i class="fab fa-linkedin"></i></a>
-            <a href="https://github.com/pronoide" title="GitHub" target="_blank"><i class="fab fa-github"></i></a>
-            <a href="https://twitter.com/pronoide" title="Twitter" target="_blank"><i class="fab fa-x-twitter"></i></a>
-            <a href="https://www.facebook.com/pronoide" title="Facebook" target="_blank"><i class="fab fa-facebook"></i></a>
-            <a href="https://www.youtube.com/user/pronoide" title="YouTube" target="_blank"><i class="fab fa-youtube"></i></a>
-            <a href="https://www.instagram.com/pronoidesl/" title="Instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+    <footer role="contentinfo">
+        <div class="footer-icons" aria-label="Redes sociales de Pronoide">
+            <a href="mailto:info@pronoide.com" title="Email" aria-label="Enviar correo a info@pronoide.com"><i class="fas fa-envelope" aria-hidden="true"></i></a>
+            <a href="http://blog.pronoide.es" title="Blog" target="_blank" aria-label="Blog de Pronoide (se abre en una nueva pestaña)"><i class="fas fa-rss" aria-hidden="true"></i></a>
+            <a href="https://www.linkedin.com/company/pronoide" title="LinkedIn" target="_blank" aria-label="Perfil de LinkedIn de Pronoide (se abre en una nueva pestaña)"><i class="fab fa-linkedin" aria-hidden="true"></i></a>
+            <a href="https://github.com/pronoide" title="GitHub" target="_blank" aria-label="Perfil de GitHub de Pronoide (se abre en una nueva pestaña)"><i class="fab fa-github" aria-hidden="true"></i></a>
+            <a href="https://twitter.com/pronoide" title="Twitter" target="_blank" aria-label="Perfil de Twitter de Pronoide (se abre en una nueva pestaña)"><i class="fab fa-x-twitter" aria-hidden="true"></i></a>
+            <a href="https://www.facebook.com/pronoide" title="Facebook" target="_blank" aria-label="Página de Facebook de Pronoide (se abre en una nueva pestaña)"><i class="fab fa-facebook" aria-hidden="true"></i></a>
+            <a href="https://www.youtube.com/user/pronoide" title="YouTube" target="_blank" aria-label="Canal de YouTube de Pronoide (se abre en una nueva pestaña)"><i class="fab fa-youtube" aria-hidden="true"></i></a>
+            <a href="https://www.instagram.com/pronoidesl/" title="Instagram" target="_blank" aria-label="Perfil de Instagram de Pronoide (se abre en una nueva pestaña)"><i class="fab fa-instagram" aria-hidden="true"></i></a>
         </div>
 
         <div class="footer-address">
-            <a href="https://goo.gl/maps/mnTWcLdT6Yh1HHfCA">
-            Paseo de los Sauces nº 12, 9 dcha, 28668, Boadilla del Monte, Madrid (España)
+            <a href="https://goo.gl/maps/mnTWcLdT6Yh1HHfCA" aria-label="Dirección física de Pronoide en Google Maps">
+                Paseo de los Sauces nº 12, 9 dcha, 28668, Boadilla del Monte, Madrid (España)
             </a>
             <br/>
-            <a href="callto:+34910513058">
-            <i class="fas fa-phone"></i> +34 91 051 30 58
+            <a href="callto:+34910513058" aria-label="Llamar al teléfono +34 91 051 30 58">
+                <i class="fas fa-phone" aria-hidden="true"></i> +34 91 051 30 58
             </a>
         </div>
 
         <div class="footer-copy">
             © 2025 Pronoide Formación S.L. Todos los derechos reservados |
-            <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/1101856864/Notas+legales+y+privacidad">
-            Notas legales y privacidad
+            <a href="https://pronoide.atlassian.net/wiki/spaces/CAT/pages/1101856864/Notas+legales+y+privacidad" aria-label="Ir a la página de notas legales y privacidad de Pronoide">
+                Notas legales y privacidad
             </a>
         </div>
-        </footer>
+    </footer>
     <!-- *** END FOOTER *** -->
 </body>
 </html>
