@@ -4,35 +4,39 @@
 /* Variables */
 @import url('vars.css');
 
-
 body {
-    margin: 0;
-    font-family: sans-serif;
-    background-color: #fdfcfc;
-    color: #222;
+  margin: 0;
+  font-family: sans-serif;
+  background-color: #fdfcfc;
+  color: #222;
 }
 
+/* Font especial */
 .tilt-warp {
-    font-family: "Tilt Warp", sans-serif;
-    font-optical-sizing: auto;
-    font-weight: 400;
-    font-style: normal;
-    font-variation-settings: "XROT" 0, "YROT" 0;
+  font-family: "Tilt Warp", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
+  font-variation-settings: "XROT" 0, "YROT" 0;
 }
 
-.title {
-    font-size: 5rem; 
-}
+/* Textos */
+.title { font-size: 5rem; }
 
 .subtitle {
-    font-size: 1.5rem; 
-    color: var(--naranja-corporativo);
+  font-size: 1.5rem;
+  color: var(--naranja-corporativo);
 }
 
+.subtext {
+  font-size: 2rem;
+  padding-bottom: 15px;
+}
 
+/* Containers principales */
 .header {
-    background-color: #ffffff;
-    padding: 2rem 1rem 0 1rem;
+  background-color: #ffffff;
+  padding: 2rem 1rem 0 1rem;
 }
 
 .container {
@@ -44,234 +48,71 @@ body {
   gap: 2rem;
 }
 
-.column {
-    flex: 1;
-}
-
-.image-col {
-  flex: 1.2;
+.column, .text-col, .image-col {
+  flex: 1;
   text-align: center;
 }
+
+.image-col { flex: 1.2; }
+.text-col  { flex: 1.2; text-align: left; }
 
 .logo {
   width: 100px;
-  /* padding-bottom: 30px; */
   display: block;
-  margin: 0 0 1rem 0; /* elimina auto e pon 0 á esquerda */
+  margin: 0 0 1rem 0; 
 }
-
 
 .plan-image {
   width: 120%;
-  max-width: 600px; /* controla aquí o tamaño máximo */
+  max-width: 600px;
   height: auto;
 }
 
-
-.text-col {
-  flex: 1.2;
-  text-align: left;
+/* Secciones comunes*/
+.section, .description-section, .section-with-image, .how-it-works {
+  padding: 2rem;
+  text-align: center;
 }
 
-.description-section {
-    background-color: var(--naranja-claro);
-    padding: 2rem;
-    text-align: center;
-    margin-bottom: 4rem;
-}
-
-.description-section .content {
-    margin-top: 1rem;
-    font-size: 1.4rem;
-}
-
-.description-section .content p{
-    padding-bottom: 10px;
+.section h3,
+.description-section h3,
+.section-with-image h3,
+.how-it-works h3 {
+  font-size: 2rem;
+  padding-bottom: 0.6rem;
 }
 
 .description-section h3 {
-    font-size: 2.5rem;
-    padding-bottom: 0.5rem;
+  font-size: 2.5rem;
 }
 
-/* Lista centrada como bloque, pero texto interno aliñado á esquerda */
-.description-section ul {
-  list-style: none; /* eliminar viñetas por defecto */
-  padding-left: 0;
-  margin: 2rem auto;
-  max-width: 600px; /* controla o ancho da lista */
-  text-align: left; /* aliña os li internamente á esquerda */
-}
-
-.description-section li {
-  position: relative;
-  padding-left: 2rem;
-  margin-bottom: 1rem;
-}
-
-/* Icono circular */
-.description-section li::before {
-  content: '';
-  position: absolute;
-  top: 0.6em;
-  left: 0;
-  width: 0.60em;
-  height: 0.60em;
-  background-color: var(--naranja-corporativo);
-  border-radius: 50%;
-}
-
-.subtext {
-    font-size: 2rem;
-    padding-bottom: 15px;
-}
-
-.section {
-    text-align: center;
-    padding: 2rem;
-}
-
-.section h3{
-    font-size: 2rem;
-    padding-bottom: 0.5rem;
-}
-
-.section p{
-    font-size: 1.4rem;
-    padding-bottom: 10px;
-}
-
-/* Lista centrada como bloque, pero texto interno aliñado á esquerda */
-.section ul {
-  list-style: none; /* eliminar viñetas por defecto */
-  padding-left: 0;
-  margin: 1.5rem auto;
-  max-width: 600px; /* controla o ancho da lista */
-  text-align: left; /* aliña os li internamente á esquerda */
-}
-
-.section li {
-  position: relative;
-  padding-left: 2rem;
-  margin-bottom: 1rem;
+.section p,
+.how-it-works p {
   font-size: 1.4rem;
+  padding-bottom: 10px;
 }
 
-/* Icono circular */
-.section li::before {
-  content: '';
-  position: absolute;
-  top: 0.6em;
-  left: 0;
-  width: 0.60em;
-  height: 0.60em;
-  background-color: var(--naranja-corporativo);
-  border-radius: 50%;
-}
-
-.how-it-works {
-    text-align: center;
-    padding: 2rem;
-}
-
-.how-it-works h3{
-    font-size: 2rem;
-    padding-bottom: 15px;
-}
-
-.how-it-works p{
-    font-size: 1.4rem;
-    padding-bottom: 10px;
-}
-
-/* Lista centrada como bloque, pero texto interno aliñado á esquerda */
-.how-it-works ol {
-  padding-left: 0;
-  margin: 0.5rem auto 0 auto;
-  max-width: 600px; /* controla o ancho da lista */
-  text-align: left; /* aliña os li internamente á esquerda */
-}
-
-.how-it-works li {
-  position: relative;
-  padding-left: 0.5rem;
-  margin-bottom: 1rem;
-  font-size: 1.4rem;
-}
-
-.how-it-works li::marker {
-  color:var(--naranja-corporativo); /* cor laranxa */
-  font-weight: bold;
-}
-
-.icon {
-    font-size: 3rem;
-    margin-bottom: 0.5rem;
-    color: var(--naranja-corporativo);
-}
-
-button {
-    margin-top: 1rem;
-    background-color: var(--naranja-corporativo);
-    color: white;
-    padding: 0.75rem 1.5rem;
-    border: none;
-    border-radius: 10px;
-    font-weight: bold;
-}
-
-.btn {
-  display: inline-block;
-  background-color: var(--naranja-corporativo);
-  color: white;
-  padding: 0.75rem 1.5rem;
-  border: none;
-  border-radius: 10px;
-  font-weight: bold;
-  text-decoration: none;
-  text-align: center;
-  margin: 1.5rem auto;
-}
-
-
-
-.section-with-image {
-  text-align: center;
-  padding: 2rem;
-}
-
-.section-with-image h3 {
-  font-size: 2rem;
-  padding-bottom: 1.5rem;
-}
-
-/* Contedor flex para lista + imaxe */
-.section-with-image .content-flex {
-  display: flex;
-  justify-content: center; /* centra o conxunto na páxina */
-  align-items: center; /* centra verticalmente */
-  /* gap: 1rem; */
-  max-width: 900px; /* máximo ancho do conxunto */
-  margin: 0 auto;
-}
-
-/* Lista con texto xustificado á esquerda */
+.section ul,
+.description-section ul,
 .section-with-image ul {
   list-style: none;
   padding-left: 0;
-  margin: 0;
-  max-width: 450px;
+  margin: 2rem auto;
+  max-width: 600px;
   text-align: left;
   font-size: 1.4rem;
 }
 
+.section li,
+.description-section li,
 .section-with-image li {
   position: relative;
   padding-left: 2rem;
   margin-bottom: 1rem;
 }
 
-/* Icono circular da lista */
+.section li::before,
+.description-section li::before,
 .section-with-image li::before {
   content: '';
   position: absolute;
@@ -283,18 +124,90 @@ button {
   border-radius: 50%;
 }
 
-/* Estilo da imaxe */
+.section-with-image ul {
+  margin: 0;
+  max-width: 450px;
+}
+
+.description-section .content {
+  margin-top: 1rem;
+  font-size: 1.4rem;
+}
+
+.description-section .content p {
+  padding-bottom: 10px;
+}
+
+/* DESCRIPTION */
+.description-section {
+    background-color: var(--naranja-claro);
+    margin-bottom: 4rem;
+}
+
+/* HOW IT WORKS */
+.how-it-works ol {
+  list-style: decimal;
+  margin: 0 auto 2rem auto;
+  max-width: 600px;
+  text-align: left;
+  padding-inline-start: 2rem;
+}
+
+.how-it-works li {
+  margin-bottom: 1rem;
+  font-size: 1.4rem;
+  padding-left: 0;
+}
+
+.how-it-works li::marker {
+  color: var(--naranja-corporativo);
+  font-weight: bold;
+}
+
+/* Icono */
+.icon {
+  font-size: 3rem;
+  margin-bottom: 0.5rem;
+  color: var(--naranja-corporativo);
+}
+
+/* Botones */
+button, .btn {
+  display: inline-block;
+  background-color: var(--naranja-corporativo);
+  color: white;
+  padding: 0.75rem 1.5rem;
+  border: none;
+  border-radius: 10px;
+  font-weight: bold;
+  text-decoration: none;
+  text-align: center;
+}
+
+.btn {
+  margin: 1.5rem auto;
+}
+
+/* SECTION WITH IMAGE */
+.section-with-image .content-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 900px;
+  margin: 0 auto;
+}
+
 .section-with-image .side-image {
   max-width: 300px;
   width: 100%;
   height: auto;
 }
 
-
+/* FOOTER */
 footer {
-    background-color: var(--azul-claro);
-    text-align: center;
-    padding: 1rem;
+  background-color: var(--azul-claro);
+  text-align: center;
+  padding: 1rem;
 }
 
 .footer-icons {
@@ -312,7 +225,7 @@ footer {
 }
 
 .footer-icons a:hover i {
-  color: var(--naranja-corporativo); 
+  color: var(--naranja-corporativo);
 }
 
 .footer-address a {
@@ -334,5 +247,114 @@ footer {
 .footer-copy a {
   color: var(--azul-corporativo);
   text-decoration: underline;
-  
+}
+
+
+/* ============================== */
+/*  ESTILOS RESPONSIVOS MÓVILES  */
+/* ============================== */
+@media (max-width: 768px) {
+  .container {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1rem;
+    text-align: center;
+  }
+
+  .logo {
+    width: 70px;
+  }
+
+  .text-col,
+  .image-col {
+    flex: 1;
+    text-align: center;
+  }
+
+  .title { font-size: 3rem; }
+
+  .subtitle { font-size: 1.2rem; }
+
+  .plan-image {
+    width: 100%;
+    max-width: 100%;
+    height: auto;
+  }
+
+
+  .description-section {
+    padding: 1.5rem 1rem;
+  }
+
+  .description-section h3 {
+    font-size: 2rem;
+  }
+
+  .description-section .content {
+    font-size: 1.2rem;
+  }
+
+  .description-section ul,
+  .section-with-image ul,
+  .how-it-works ol {
+    padding: 0 1rem;
+  }
+
+  .how-it-works ol {
+    max-width: 600px;
+    text-align: left;
+    padding-inline-start: 2rem;
+  }
+
+  .section,
+  .how-it-works,
+  .section-with-image {
+    padding: 1.5rem 1rem;
+  }
+
+  .section h3,
+  .how-it-works h3,
+  .section-with-image h3 {
+    font-size: 1.8rem;
+  }
+
+  .section p,
+  .how-it-works li,
+  .section-with-image li,
+  .content li {
+    font-size: 1.2rem;
+  }
+
+  .section-with-image .content-flex {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+
+  .section-with-image .side-image {
+    max-width: 60%;
+    display: block;
+    margin: 0 auto;
+  }
+
+  .btn {
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+  }
+
+  .footer-address {
+    padding: 0.5rem;
+    font-size: 0.9rem;
+  }
+
+  .footer-copy {
+    font-size: 0.8rem;
+  }
+
+  .footer-icons {
+    gap: 0.7rem;
+  }
+
+  .footer-icons a i {
+    font-size: 1.4rem;
+  }
 }

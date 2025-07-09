@@ -9,6 +9,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Tilt+Warp&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <script src="https://kit.fontawesome.com/3d245d70bc.js" crossorigin="anonymous"></script>
+    <link rel="icon" href="img/PRONOIDE_GLOBES_only.png" type="image/x-icon">
 </head>
 <body>
     <!-- *** HEADER *** -->
@@ -75,7 +76,11 @@
             <li>Bases de datos modernas y legacy</li>
             <li><strong>¡Y cualquier otro que tú propongas!</strong></li>
             </ul>
-            <img class="side-image" src="img/tecnologies.svg" alt="Imagen temática">
+            <picture>
+                <source srcset="img/tecnologies-responsive.svg" media="(max-width: 768px)" class="side-image">
+                <img src="img/tecnologies.svg" alt="Logotipos tecnologías TI" class="side-image">
+            </picture>
+            <!-- <img class="side-image" src="img/tecnologies.svg" alt="Imagen temática"> -->
         </div>
     </section>
 
